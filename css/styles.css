@@ -212,14 +212,14 @@ text-align: center;
     position:relative;
     overflow: hidden;
   }
-@media screen and  (max-width:428px)
+@media screen and  (max-width:480px)
 {
   .trans-content
   {
     justify-content: center;
     top:200px;
-    right: 175px;
-    left: 207px;
+    right: 1028px;
+    left: 90px;
     font-family:"Montserrat";
     font-weight:400;
     font-size:20px;
