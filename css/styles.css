@@ -1,0 +1,703 @@
+/*NAVBAR*/
+body{
+  overflow-y:scroll;
+overflow-x: hidden;
+}
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  position: relative;
+  font-family: "poppins",sans-serif;
+  box-sizing: border-box;
+}
+h2
+{
+  font-family:'Montserrat'
+}
+nav{
+  background:white;
+  height: 100px;
+  width: 100%;
+  z-index: 1;
+  top:0px;
+
+  border-bottom:2px solid green;
+}
+.logo
+{
+  padding-top: 8px;
+  padding-left: 30px;
+}
+/*label.logo{
+  color:green;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}*/
+nav ul{
+  font-family:'Montserrat', san-serif;
+  font-weight:500;
+  margin-top: 0px;
+  font-size: 20px;
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height:70px;
+  margin: 0 5px;
+
+}
+nav ul li a{
+  color:green;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,a:hover{
+  background:white;
+  transition: .5s;
+  text-decoration: none;
+  color:inherit;
+
+}
+.checkbtn{
+  font-size: 30px;
+  color:green;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: green;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 0px 8px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color:#FFA33E;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:white;
+
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+
+    a.active{
+    background: none;
+    color:blue;
+  }
+  #check:checked ~ ul{
+    left: 0;
+    z-index:1;
+
+  }
+}
+
+.bg-image{
+
+  background: url(vegetables.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 10px);
+  margin-top: -95px;
+
+}
+
+
+
+
+.trans-content
+{
+
+  position: absolute;
+ border:2px solid;
+ border-style:dashed;
+  top: 220px;
+  right: 360px;
+  background-color:#4a361cb8;/*#170e02 #89ac2b87;*/
+justify-content: center;
+text-align: center;
+  color: white;
+  padding:3% 3%;
+}
+.Delivery
+{
+  color:#FFA33E;
+  font-family:'ubuntu', sans-serif;
+  font-weight:600;
+  font-size: 30px;
+  line-height:1.5;
+  padding-bottom: 10px;
+}
+.del-info{
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+.btn-grad
+  {
+    width:130px;
+    margin:8px;
+    padding:5px 2px;
+    text-align:center;
+    border-radius: 7px;
+    border:2px solid #FFA33E ;
+    background:transparent;
+    color:#fff;
+    position:relative;
+    overflow: hidden;
+  }
+@media screen and  (max-width:428px)
+{
+  .trans-content
+  {
+    justify-content: center;
+    top:200px;
+    right: 175px;
+    left: 207px;
+    font-family:"Montserrat";
+    font-weight:400;
+    font-size:20px;
+  }
+}
+
+
+
+/*2-section*/
+.sec-sec
+{
+  background-color: #FBAB7E;
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
+  color:white;
+}
+
+.how-works-h2
+{
+  margin-top:10px;
+  margin-bottom: 10px;
+  padding:5px;
+  color:#18394c;
+  font-family:'Montserrat',serif;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+}
+.how-works-h5
+{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: 'Montserrat',serif;
+  font-weight: 400;
+  font-size:20px;
+  color: black;
+  text-align: center;
+
+}
+.how-works-h6
+{
+font-family: 'Montserrat',serif;
+font-weight: 600;
+font-size:25px;
+color:white;
+
+}
+.sec-row{
+  text-align:center;
+  padding: 40px 0px;
+}
+
+
+.quote
+{
+  padding-top:10px;
+  color:black;
+  font-family:'Poppins',serif;
+  font-weight: 100;
+  font-size:20px;
+  line-height:1.5;
+  text-align:center;
+}
+
+.home-del{
+  background: #30E8BF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+.del-h2{
+  color:white;
+  font-family: cursive;
+  font-style: italic;
+  font-size:40px;
+
+  text-align: center;
+}
+#delivery-area-check{
+  justify-content: center;
+}
+.large-text{
+  justify-content:center;
+
+}
+
+
+.box{
+  padding-left: 20px;
+  height:45px;
+  width:400px;
+  font-family: cursive;
+  background-color:white;
+  border: 1px solid #FFA33E;
+}
+
+.check-box{
+  padding-top: 60px;
+ padding-bottom: 30px;
+ text-align: center;
+
+}
+.radio-box{
+  padding-top: 50px;
+  font-family: sans-serif;
+  color:white;
+  font-size:20px;
+}
+.go
+{
+  padding-top: 7px;
+  padding-left: 50px;
+}
+.go-btn {
+    background: url(go-btn.png);
+    background-size: 100% 100%;
+    height:40px;
+    width:80px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    font-family: cursive;
+
+    color: #fff;
+    letter-spacing: .1em;
+    text-align: center;
+}
+@media (min-width:480px) and (max-width:980px) {
+  .check-box{
+    padding-top:15px;
+   padding-bottom:3px;
+}
+.radio-box{
+  padding-top:15px;
+}
+
+}
+/*3-section*/
+.third-sec
+{
+  background-color:White;
+}
+.container-fluid
+{
+  padding:70px 50px;
+
+}
+
+  .abt-us:link, .abt-us:visited {
+background-color: green;
+border-radius: 10px;
+  color:white;
+  padding: 3px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.abt-us:hover, .abt-us:active {
+  background-color: red;
+}
+
+
+
+.About-us-left
+{
+    padding-top:30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: left;
+}
+.para
+{
+  padding-top: 30px;
+  text-align: justify;
+  font-family:'poppins';
+  font-weight:600;
+  font-style:italic;
+  font-size:22px;
+
+}
+.para:hover
+{
+
+  color:green;
+}
+.para-2
+{
+
+  text-align: justify;
+  font-family:'poppins';
+  font-weight:400;
+  font-style:normal;
+  font-size:20px;
+
+}
+
+/*products*/
+/*fourth-sec*/
+.fourth-sec
+{
+
+background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+}
+.how-works-h2-4
+{
+  color:#18394c;
+  margin-top:10px;
+  margin-bottom: 10px;
+  padding:5px;
+  font-family:'Montserrat';
+  font-weight:600;
+  font-size: 40px;
+  text-align: center;
+}
+.products
+{
+  padding:10px 0px;
+
+}
+
+#prod-row
+{
+  padding:30px 30px;
+  text-align: center;
+}
+.prod-col
+{
+  margin-top: 5px;
+  padding-top:30px;
+
+}
+
+.prod-img
+{
+  border:2px solid white;
+  border-radius:100%;
+  height:230px;
+  width:230px;
+  justify-content: center;
+  overflow: hidden;
+
+}
+.prod-img:hover{
+  opacity: 0.5;
+  transform: scale(1.0);
+
+}
+.text
+{
+  padding:20px;
+  font-weight:500;
+  font-family: 'Poppins';
+  font-size: 25px;
+  color:white;/*#7556D0;*/
+  text-align:center;
+}
+.slogan
+{ padding-top: 20px;
+  font-family:'Montserrat';
+  font-weight: 600;
+  font-size: 20px;
+
+
+  color:black;
+  text-align: center;
+}
+/*fiv-sec*/
+.fiv-sec
+{
+  background-color: white;
+}
+.how-works-h2-5
+{
+  color:green;
+  margin-top:10px;
+  margin-bottom: 10px;
+  padding:5px;
+  font-family:'Montserrat';
+  font-weight:600;
+  font-size: 40px;
+  text-align: center;
+
+}
+.how-works-h4-5
+{
+  color:#18394c;
+  font-family: 'Montserrat' ,serif;
+  font-weight:600;
+  font-size: 25px;
+  padding-bottom: 10px;
+
+}
+.choose{
+  padding-bottom:20px;
+}
+#row-farm{
+padding:30px 180px;
+
+}
+.farm-con
+{
+  padding-top:20px;
+  text-align:center;
+}
+.bn{
+  padding-top: 20px;
+}
+.con-style{
+
+  border-radius:25%;
+}
+
+
+/* footer section */
+.footer-sec
+{
+  background-color:Black;
+  color:white;
+}
+
+.footer
+{
+  padding:30px;
+  text-align:left;
+
+}
+#div-row{
+  padding-top: 30px;
+}
+.contact{
+  padding-top: 10px;
+  text-align: left;
+  color:orange;
+}
+#text-link a:hover{
+  color:orange;
+}
+#icon{
+  vertical-align: middle;
+}
+.sub-info
+{
+  padding-top: 10px;
+  text-align:left;
+  text-decoration: none;
+}
+.no{
+  color:white;
+}
+ a:hover{
+  color:orange;
+  background:none;
+  color:inherit
+
+}
+.links a:hover{
+  color:orange;
+}
+
+.center{
+
+  padding-left: 80px;
+}
+
+.card{
+padding-top: 10px;
+padding-left: 20px;
+  height:330px;
+  width:280px;
+background-color: black;
+border:2px solid white;
+}
+
+.input-container
+{
+border-radius: 50%;
+  padding-top:5px;
+  color:orange;
+
+}
+.label{
+  padding-left: 5px;
+  margin-bottom: 0px;
+}
+
+.txt
+{
+
+  text-align: left;
+  padding-left:5px;
+  font-size:15px;
+  font-weight: lighter;
+  padding-bottom: 0px;
+
+}
+
+
+.input-field
+{
+
+ padding-top:10px;
+  height:25px;
+  width:90%;
+
+}
+.button{
+
+  width:30%;
+  color:white;
+  border:1px solid white;
+}
+.button:hover{
+  color:white;
+  background-color: orange;
+
+}
+.social
+{
+
+  text-align: center;
+  padding-top:20px;
+  padding-bottom: 30px;
+}
+.soc-icon {
+  margin: 20px 10px;
+  padding:5px;
+  text-align: center;
+  color: white;
+}
+.soc-icon:hover{
+  color:orange;
+}
+
+
+/*@media screen and (max-width:1028px)
+{
+  .trans-content
+  {
+    justify-content: center;
+    top:200px;
+    right:30px;
+    left:30px;
+    font-family:"Montserrat";
+    font-weight:400;
+    font-size:20px;
+  }
+}*/
+@media screen and (min-width:480px) and (max-width:1028px)
+{
+  .trans-content
+  {
+    justify-content: center;
+    top:200px;
+    right:30px;
+    left:30px;
+    font-family:"Montserrat";
+    font-weight:400;
+    font-size:20px;
+  }
+  #prod-row
+  {
+    padding:0px;
+}
+.prod-col{
+  padding:0px;
+}
+
+  #row-farm{
+  padding:30px 50px;
+
+  }
+
+
+}
+}
+#bg{
+  width:100%;
+}

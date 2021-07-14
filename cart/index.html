@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--fontawesome-->
+<!--fontawesome-->
+<script src="https://kit.fontawesome.com/e4fa7fcfdb.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--scroll-scripts-->
+<script type="text/javascript">
+!function(t,e){t.artibotApi={l:[],t:[],on:function(){this.l.push(arguments)},trigger:function(){this.t.push(arguments)}};var a=!1,i=e.createElement("script");
+i.async=!0,i.type="text/javascript",i.src="https://app.artibot.ai/loader.js",e.getElementsByTagName("head").item(0).appendChild(i),i.onreadystatechange=i.onload=function(){if(!(a||this.readyState&&"loaded"!=this.readyState&&"complete"!=this.readyState))
+{new window.ArtiBot({i:"f5c005ca-5faf-4593-b380-2ce4cb062dc4"});a=!0}}}
+(window,document);
+</script>
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 0px;
+  margin:0px;
+
+}
+nav{
+  background:white;
+  height: 100px;
+  width: 100%;
+  z-index: 1;
+  top:0px;
+
+  border-bottom:2px solid green;
+}
+.logo
+{
+  padding-top: 8px;
+  padding-left: 30px;
+}
+/*label.logo{
+  color:green;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}*/
+nav ul{
+  font-family:'Montserrat', san-serif;
+  font-weight:500;
+  margin-top: 0px;
+  font-size: 20px;
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height:70px;
+  margin: 0 5px;
+
+}
+nav ul li a{
+  color:green;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,a:hover{
+  background:white;
+  transition: .5s;
+  text-decoration: none;
+  color:inherit;
+
+}
+.checkbtn{
+  font-size: 30px;
+  color:green;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: green;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 0px 8px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color:#FFA33E;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:white;
+
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+
+    a.active{
+    background: none;
+    color:blue;
+  }
+  #check:checked ~ ul{
+    left: 0;
+    z-index:1;
+
+  }
+}
+/*footer
+.footer-sec
+{
+  background-color:Black;
+  color:white;
+}
+
+.footer
+{
+  padding:30px;
+  text-align:left;
+
+}
+#div-row{
+  padding-top: 30px;
+}
+.contact{
+  padding-top: 10px;
+  text-align: left;
+  color:orange;
+}
+#text-link a:hover{
+  color:orange;
+}
+#icon{
+  vertical-align: middle;
+}
+.sub-info
+{
+  padding-top: 10px;
+  text-align:left;
+  text-decoration: none;
+}
+.no{
+  color:white;
+}
+ a:hover{
+  color:orange;
+  background:none;
+  color:inherit
+
+}
+.links a:hover{
+  color:orange;
+}
+
+.center{
+
+  padding-left: 80px;
+}
+
+.card{
+padding-top: 10px;
+padding-left: 20px;
+  height:330px;
+  width:280px;
+background-color: black;
+border:2px solid white;
+}
+
+.input-container
+{
+border-radius: 50%;
+  padding-top:5px;
+  color:orange;
+
+}
+.label{
+  padding-left: 5px;
+  margin-bottom: 0px;
+}
+
+.txt
+{
+
+  text-align: left;
+  padding-left:5px;
+  font-size:15px;
+  font-weight: lighter;
+  padding-bottom: 0px;
+
+}
+
+
+.input-field
+{
+
+ padding-top:10px;
+  height:25px;
+  width:90%;
+
+}
+.button{
+
+  width:30%;
+  color:white;
+  border:1px solid white;
+}
+.button:hover{
+  color:white;
+  background-color: orange;
+
+}
+.social
+{
+
+  text-align: center;
+  padding-top:20px;
+  padding-bottom: 30px;
+}
+.soc-icon {
+  margin: 20px 10px;
+  padding:5px;
+  text-align: center;
+  color: white;
+}
+.soc-icon:hover{
+  color:orange;
+}*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+.header{
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color:Orange;
+}
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+.img{
+  margin-top: 0px;
+}
+</style>
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <img class="logo" src="../images/logo-2 crop.png" height="90px" width="280px" alt="logo">
+
+
+    <ul>
+      <li><a  href="../index.html">Home</a></li>
+      <li><a href="../Blog/index.html" >Blog</a></li>
+      <li><a href="../shop/index.html">Shop</a></li>
+
+      <li><a href="../news/index.html">News</a></li>
+
+      <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Sign Up</a>
+    <div class="dropdown-content">
+      <a href="../cust reg/index1.html">Customer</a>
+      <a href="../far reg/far index.html">Farmer</a>
+    </div>
+  </li>
+      <li><a href="../login/index3.html">Login</a></li>
+      <li> <a class="active" href="#">
+        <img src="../icons/cart.png" height="30px",width="30px"/></a>
+      </li>
+    </ul>
+  </nav>
+  <div class="img">
+    <img src="cart1.jpeg" width="100%" alt="">
+
+  </div>
+  <section>
+
+
+<div class="header">
+  <p>Checkout</p>
+</div>
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="New York">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+      <p><a href="../shop/index.html/#product1">Product 1</a> <span class="price">45</span></p>
+      <p><a href="#">Product 2</a> <span class="price">50</span></p>
+      <p><a href="#">Product 3</a> <span class="price">35</span></p>
+      <p><a href="#">Product 4</a> <span class="price">15</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>140</b></span></p>
+    </div>
+  </div>
+</div>
+  </section>
+<!--<section class="footer-sec">
+  <div class="footer">
+    <div class="row" id="div-row">
+      <div class="col-lg-4 col-md-6 col-sm-6" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:-400px;" >
+
+
+        <h5 style="text-align:left;color:orange;">About us</h5>
+        <p class="sub-info" style="text-align:justify">Magic Farm is committed to being a trustworthy & Innovative leader by providing genuine True wellness products. We work with Thousands of small farmers in India to cultivate ten of thousands of
+          acres of sustainable Organic Farmland.
+        </p>
+        <h5 style="text-align:left;color:orange;">Contact</h5>
+        <div class="contact">
+
+          <ul class="list-line">
+
+            <li class="lists">
+              <i id="icon" class="fas fa-phone-square-alt"></i><span id="text-link"><a class="no" href="tel:8317520094">+91-8317520094</a></span><br>
+            </li>
+
+            <li class="lists">
+              <i id="icon" class="fas fa-envelope"></i><span id="text-link"><a class="no" href="mailto:priyaboddeti1998@gmail.com"> priyaboddeti1998@gmail.com </a></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6 center" data-center-center="opacity:1;bottom:0;" data-0-bottom="opacity:0;bottom:-400px;">
+        <div class="Info">
+          <h5 style="color:orange" ; "text-align:left">Information</h5>
+
+
+          <div class="sub-info">
+
+
+            <p class="links"><a class="no" href="about-us/index.html">About-us </a></p>
+            <p class="links"> <a class="no" href="#">Home</a></p>
+            <p class="links"><a class="no" href="Blog/index.html">Blog</a></p>
+            <p class="links"><a class="no" href="News/index.html">News</a></p>
+            <p class="links"><a class="no" href="#">Cart</a></p>
+            <p class="links"><a  class="no"href="#">Sign-in</a></p>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="col-lg-4 col-md-6 col-sm-6" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:400px;">
+
+
+        <div class="card">
+          <h5 style="color:orange;">Contact-us</h5>
+
+          <div class="input-container">
+            <div class="txt">
+              <i class="fa fa-user icon"></i>
+              <label class="label" for="Name"><b class="text-1">Name</b></label>
+            </div>
+
+            <input class="input-field" type="text"  name="usrnm">
+          </div>
+
+          <div class="input-container">
+
+            <div class="txt">
+         <i class="fas fa-envelope"></i>
+              <label class="label" for="Name"><b class="text-1">Email</b></label>
+            </div>
+
+            <input class="input-field" type="text"  name="usrnm">
+          </div>
+          <div class="input-container">
+            <div class="txt">
+              <i class="fas fa-phone-square-alt"></i>
+              <label class="label" for="Name"><b class="text-1">Phone Number</b></label>
+            </div>
+
+            <input class="input-field" type="text"  name="usrnm">
+          </div>
+          <div class="input-container">
+            <div class="txt">
+              <i class="fas fa-pen"></i>
+              <label class="label" for="Name"><b class="text-1">Your Query</b></label>
+            </div>
+
+            <input class="input-field" type="text-area" name="usrnm">
+          </div>
+          <div class="input-container">
+            <button type="button" class="button btn btn-outline-orange">Submit</button>
+
+          </div>
+          </div>
+        </div>
+        </div>
+
+
+      <div class="social" >
+        <h5 style="color:orange;">social media</h5>
+        <a href="" class="soc-icon fab fa-facebook-f" ></a>
+        <a href="" class="soc-icon fab fa-instagram"></a>
+        <a href="" class="soc-icon fab fa-twitter"></a>
+        <a href="" class="soc-icon far fa-envelope"></a>
+        <p>© Copyright 2021 Magic Farm</p>
+      </div>
+
+</body>-->
+<script src="skrollr.js"></script>
+<script type="text/javascript">
+  var s = skrollr.init();
+  </script>
+</body>
+</html>

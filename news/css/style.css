@@ -1,0 +1,545 @@
+* {
+  box-sizing: border-box
+}
+
+html,
+body {
+  line-height: 1.8;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  background: #f6f6f6;
+  font-family: 'Lora', serif;
+}
+nav{
+  background:white;
+  height: 100px;
+  width: 100%;
+  z-index: 1;
+  top:0px;
+  position:sticky;
+  border-bottom:2px solid green;
+}
+.logo
+{
+  padding-top: 8px;
+  padding-left: 30px;
+}
+/*label.logo{
+  color:green;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}*/
+nav ul{
+  font-family:'Montserrat', san-serif;
+  font-weight:600;
+  font-size: 30px;
+  float: right;
+  margin-right: 20px;
+  margin-top: 0px;
+}
+nav ul li{
+  display: inline-block;
+  line-height:70px;
+  margin: 0 5px;
+
+}
+nav ul li a{
+  color:green;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,a:hover{
+  background:white;
+  transition: .5s;
+  text-decoration: none;
+  color:inherit;
+
+}
+.checkbtn{
+  font-size: 30px;
+  color:green;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: green;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 0px 8px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color:#FFA33E;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:white;
+
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+
+    a.active{
+    background: none;
+    color:blue;
+  }
+  #check:checked ~ ul{
+    left: 0;
+    z-index:1;
+
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lora', serif;
+  color: #333;
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.btn {
+  padding: 8px 16px;
+  background: #006669;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: 'Lora', serif;
+}
+
+
+.btn:hover {
+  color: white !important;
+  background: #005255;
+}
+
+
+.page-wrapper {
+  min-height: 100%;
+}
+.page-wrapper a:hover {
+  color: #006669;
+}
+.post-slider {
+  position: relative;
+}
+.post-slider .slider-title {
+  text-align: center;
+  margin: 30px auto;
+  color:green;
+  font-weight: 800;
+  font-size: 40px;
+  font-family: 'Montserrat',serif;
+}
+
+.post-slider .next {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  font-size: 2em;
+  color: #006669;
+  cursor: pointer;
+}
+
+.post-slider .prev {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  font-size: 2em;
+  color: #006669;
+  cursor: pointer;
+}
+
+.post-slider .post-wrapper {
+  width: 84%;
+  height: 350px;
+  margin: 0px auto;
+  overflow: hidden;
+  padding: 10px 0px 10px 0px;
+}
+
+.post-slider .post-wrapper .post {
+  width: 300px;
+  height: 330px;
+  margin: 0px 10px;
+  display: inline-block;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
+}
+
+.post-slider .post-wrapper .post .post-info {
+  height: 130px;
+  padding: 0px 5px;
+}
+
+.post-slider .post-wrapper .post .slider-image {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.content {
+  width: 90%;
+  margin: 30px auto 30px;
+}
+
+.content .main-content {
+  width: 95%;
+
+}
+
+.content .main-content.single {
+  background: white;
+  padding: 20px 50px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  float:left;
+}
+
+.content .main-content.single .post-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.content .main-content.single .post-content{
+  text-align: justify;
+}
+.content .main-content .post {
+  width: 95%;
+  height: 270px;
+  margin: 20px auto;
+  border-radius: 5px;
+  background: white;
+  position: relative;
+}
+
+.content .popular .post {
+  border-top: 1px solid #e0e0e0;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.content .popular .post img {
+  height: 60px;
+  width: 75px;
+  float: left;
+  margin-right: 10px;
+}
+
+.content .main-content .post .post-preview i {
+  color: #757575;
+  font-size: .8em;
+}
+
+.content .main-content .post .preview-text {
+  line-height: 1.5em;
+  font-size: 1.03em;
+  color: #444;
+}
+
+.content .main-content .post .read-more {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border: 1px solid #006669;
+  background: transparent;
+  border-radius: 0px;
+  color: #006669 !important;
+}
+
+.content .main-content .post .read-more:hover {
+  background: #006669;
+  color: white !important;
+  transition: .25s;
+}
+
+.content .main-content .post .post-image {
+  width: 40%;
+  height: 100%;
+  float: left;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.content .main-content .post .post-preview {
+  width: 60%;
+  padding: 10px;
+  float: right;
+}
+
+.content .main-content .recent-post-title {
+  margin: 20px;
+}
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 934px) {
+  .content {
+    width: 100%;
+  }
+
+
+  .content .main-content .post {
+    width: 100%;
+  }
+
+  .content .main-content {
+    width: 100%;
+    padding: 10px;
+  }
+
+
+}
+
+@media only screen and (max-width: 770px) {
+  .main-content-wrapper {
+    padding: 10px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .content .main-content .post {
+    height: auto;
+  }
+
+  .content .main-content.single {
+    padding: 10px 20px;
+  }
+
+  .content .main-content .post .post-image {
+    width: 100%;
+  }
+
+  .content .main-content .post .post-preview {
+    width: 100%;
+  }
+
+  .content .main-content .post .read-more {
+    position: static;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .post-slider .next {
+    right: 10px;
+  }
+
+  .post-slider .prev {
+    left: 10px;
+  }
+}
+figure {
+
+
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+}
+img.scaled {
+  width: 100%;
+}
+/*footer*/
+.footer-sec
+{
+  background-color:Black;
+  color:white;
+}
+
+.footer
+{
+  padding:30px;
+  text-align:left;
+
+}
+#div-row{
+  padding-top: 30px;
+}
+.contact{
+  padding-top: 10px;
+  text-align: left;
+  color:orange;
+}
+#text-link a:hover{
+  color:orange;
+}
+#icon{
+  vertical-align: middle;
+}
+.sub-info
+{
+  padding-top: 10px;
+  text-align:left;
+  text-decoration: none;
+}
+.no{
+  color:white;
+}
+ a:hover{
+  color:orange;
+  background:none;
+  color:inherit
+
+}
+.links a:hover{
+  color:orange;
+}
+
+.center{
+
+  padding-left: 80px;
+}
+
+.card{
+padding-top: 10px;
+padding-left: 20px;
+  height:330px;
+  width:280px;
+background-color: black;
+border:2px solid white;
+}
+
+.input-container
+{
+border-radius: 50%;
+  padding-top:5px;
+  color:orange;
+
+}
+.label{
+  padding-left: 5px;
+  margin-bottom: 0px;
+}
+
+.txt
+{
+
+  text-align: left;
+  padding-left:5px;
+  font-size:15px;
+  font-weight: lighter;
+  padding-bottom: 0px;
+
+}
+
+
+.input-field
+{
+
+ padding-top:10px;
+  height:25px;
+  width:90%;
+
+}
+.button{
+
+  width:30%;
+  color:white;
+  border:1px solid white;
+}
+.button:hover{
+  color:white;
+  background-color: orange;
+
+}
+.social
+{
+
+  text-align: center;
+  padding-top:20px;
+  padding-bottom: 30px;
+}
+.soc-icon {
+  margin: 20px 10px;
+  padding:5px;
+  text-align: center;
+  color: white;
+}
+.soc-icon:hover{
+  color:orange;
+}

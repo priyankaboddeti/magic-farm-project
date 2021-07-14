@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+     <script src="https://kit.fontawesome.com/e4fa7fcfdb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--scroll-scripts-->
+    <script type="text/javascript">
+    !function(t,e){t.artibotApi={l:[],t:[],on:function(){this.l.push(arguments)},trigger:function(){this.t.push(arguments)}};var a=!1,i=e.createElement("script");
+    i.async=!0,i.type="text/javascript",i.src="https://app.artibot.ai/loader.js",e.getElementsByTagName("head").item(0).appendChild(i),i.onreadystatechange=i.onload=function(){if(!(a||this.readyState&&"loaded"!=this.readyState&&"complete"!=this.readyState))
+    {new window.ArtiBot({i:"f5c005ca-5faf-4593-b380-2ce4cb062dc4"});a=!0}}}
+    (window,document);
+    </script>
+    <title>Farmer Registration form</title>
+
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <img class="logo" src="../images/logo-2 crop.png" height="90px" width="280px" alt="logo">
+
+
+    <ul>
+      <li><a  href="../index.html">Home</a></li>
+      <li><a href="../Blog/index.html" >Blog</a></li>
+      <li><a href="../shop/index.html">Shop</a></li>
+
+      <li><a href="../news/index.html">News</a></li>
+
+      <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Sign Up</a>
+    <div class="dropdown-content">
+      <a  href="../cust reg/index1.html">Customer</a>
+      <a class="active" href="../far reg/far index.html">Farmer</a>
+    </div>
+  </li>
+      <li><a href="../login/index3.html">Login</a></li>
+      <li> <a href="../cart/index.html">
+        <img src="../icons/cart.png" height="30px",width="30px"/></a>
+      </li>
+    </ul>
+  </nav>
+<section class="first-sec">
+
+  <div class="image">
+    <img src="farmers.jpg" width="100%" alt="cust">
+  </div>
+
+</section>
+
+
+        <div class="container">
+
+            <div class="heading">
+             <h2 style="text-align:left;">Farmer Registration</h4>
+               <div class="sub-info">
+
+
+
+             <p style="text-align:justify";>Welcome! Thank you for your interest in connecting directly with Magic farm to produce farm fresh fruits and vegetables.  </p></div>
+
+            <div class="signin">
+              <p>Please fill this form to create an account.</p>
+              <p><b>Already have an account?</b> <a href="../login/index3.html">Sign in</a>.</p>
+            </div>
+            <div class="row">
+
+             <div class="col-lg-6 ">
+              <div class="text">
+	             <label class="left-text" for="name"><b class="name">Name</b></label><br>
+               <input class="box" type="text" placeholder="Enter your name" name="name" id="name" required><br>
+              </div>
+
+       <div class="text">
+       <label class="left-text" for="email"><b class="name">Email</b></label> <br>
+       <input class="box" type="text" placeholder="Enter Email" name="email" id="email" required><br>
+      </div>
+
+      <div class="text">
+       <label class="left-text" for="address"><b class="name">Address</b></label><br>
+       <input class="box" type="text" placeholder="Address" name="address" id="address" required><br>
+      </div>
+
+    <div class="text">
+       <label class="left-text"  for="state"><b class="name">State</b></label><br>
+      <select class="box" id="state" name="state">
+      <option value="">--select state--</option>
+      <option value="">Andhra pradesh</option>
+      <option value="">Telangana</option>
+    </select><br>
+    </div>
+
+      <div class="text">
+      <label class="left-text" for="farm-loc"><b class="name">Farm Location</b></label><br>
+      <input class="box" type="text" placeholder="Locality" name="farm-loc" id="farm-loc" required><br>
+      </div>
+      <div class="text">
+        <label class="left-text" for="mobile "><b class="name">which Crops are you Harvesting?</b></label><br>
+        <input  class="box" type="text" placeholder="Enter 10-digit mobile no." name="mobile" id="mobile"  required><br>
+     </div>
+     <div class="text">
+        <label class="left-text" for="country"><b class="name">How many Acres?</b></label><br>
+       <input class="box" type="text" placeholder="country" name="country" id="country" required><br>
+     </div>
+
+  </div>
+      <div class="col-lg-6 ">
+
+
+      <div class="text">
+        <label class="left-text" for="psw"><b class="name">Mobile No</b></label><br>
+       <input class="box" type="password" placeholder="Enter Password" name="psw" id="psw" required><br>
+      </div>
+
+      <div class="text">
+        <label class="left-text" for="city"><b class="name">Password</b></label><br>
+        <input class="box" type="text" placeholder="city" name="city" id="city" required><br>
+      </div>
+
+      <div class="text">
+         <label class="left-text" for="country"><b class="name">City</b></label><br>
+        <input class="box" type="text" placeholder="country" name="country" id="country" required><br>
+      </div>
+
+      <div class="text">
+         <label class="left-text" for="country"><b class="name">Country</b></label><br>
+        <input class="box" type="text" placeholder="country" name="country" id="country" required><br>
+      </div>
+
+      <div class="text">
+         <label class="left-text" for="country"><b class="name">How many Acres?</b></label><br>
+        <input class="box" type="text" placeholder="country" name="country" id="country" required><br>
+      </div>
+
+      <div class="text">
+         <label class="form-label" for="crop"><b class="name">What Fruits & Vegetables do you have capacity to supply?</label>
+         <textarea id="w3review" name="w3review" rows="4" cols="60"></textarea>
+      </div>
+
+    </div>
+
+  </div>
+
+
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+      <div class="button1">
+
+
+      <button type="submit" class="btn1">Register</button>
+        </div>
+     </div>
+
+    </div>
+  </div>
+</div>
+
+<section class="footer-sec">
+  <div class="footer">
+    <div class="row" id="div-row">
+      <div class="col-lg-4 col-md-6 col-sm-6" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:-400px;" >
+
+
+        <h5 style="text-align:left;color:orange;">About us</h5>
+        <p class="sub-info" style="text-align:justify">Magic Farm is committed to being a trustworthy & Innovative leader by providing genuine True wellness products. We work with Thousands of small farmers in India to cultivate ten of thousands of
+          acres of sustainable Organic Farmland.
+        </p>
+        <h5 style="text-align:left;color:orange;">Contact</h5>
+        <div class="contact">
+
+          <ul class="list-line">
+
+            <li class="lists">
+              <i id="icon" class="fas fa-phone-square-alt"></i><span id="text-link"><a class="no" href="tel:8317520094">+91-8317520094</a></span><br>
+            </li>
+
+            <li class="lists">
+              <i id="icon" class="fas fa-envelope"></i><span id="text-link"><a class="no" href="mailto:priyaboddeti1998@gmail.com"> priyaboddeti1998@gmail.com </a></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6 center" data-center-center="opacity:1;bottom:0;" data-0-bottom="opacity:0;bottom:-400px;">
+        <div class="Info">
+          <h5 style="color:orange" ; "text-align:left">Information</h5>
+
+
+          <div class="sub-info">
+
+
+            <p class="links"><a class="no" href="about-us/index.html">About-us </a></p>
+            <p class="links"> <a class="no" href="#">Home</a></p>
+            <p class="links"><a class="no" href="Blog/index.html">Blog</a></p>
+            <p class="links"><a class="no" href="News/index.html">News</a></p>
+            <p class="links"><a class="no" href="#">Cart</a></p>
+            <p class="links"><a  class="no"href="#">Sign-in</a></p>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="col-lg-4 col-md-6 col-sm-6" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:400px;">
+
+
+        <div class="card">
+          <h5 style="color:orange;">Contact-us</h5>
+
+          <div class="input-container">
+            <div class="txt">
+              <i class="fa fa-user icon"></i>
+              <label class="label" for="Name"><b class="text-1">Name</b></label>
+            </div>
+
+            <input class="input-field" type="text"  name="usrnm">
+          </div>
+
+          <div class="input-container">
+
+            <div class="txt">
+         <i class="fas fa-envelope"></i>
+              <label class="label" for="Name"><b class="text-1">Email</b></label>
+            </div>
+
+            <input class="input-field" type="text"  name="usrnm">
+          </div>
+          <div class="input-container">
+            <div class="txt">
+              <i class="fas fa-phone-square-alt"></i>
+              <label class="label" for="Name"><b class="text-1">Phone Number</b></label>
+            </div>
+
+            <input class="input-field" type="text"  name="usrnm">
+          </div>
+          <div class="input-container">
+            <div class="txt">
+              <i class="fas fa-pen"></i>
+              <label class="label" for="Name"><b class="text-1">Your Query</b></label>
+            </div>
+
+            <input class="input-field" type="text-area" name="usrnm">
+          </div>
+          <div class="input-container">
+            <button type="button" class="button btn btn-outline-orange">Submit</button>
+
+          </div>
+          </div>
+        </div>
+        </div>
+
+
+      <div class="social" >
+        <h5 style="color:orange;">social media</h5>
+        <a href="" class="soc-icon fab fa-facebook-f" ></a>
+        <a href="" class="soc-icon fab fa-instagram"></a>
+        <a href="" class="soc-icon fab fa-twitter"></a>
+        <a href="" class="soc-icon far fa-envelope"></a>
+        <p>© Copyright 2021 Magic Farm</p>
+      </div>
+</section>
+<script src="skrollr.js"></script>
+<script type="text/javascript">
+  var s = skrollr.init();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Magic Farm</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap|Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+
+  <!--css stylesheets-->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--fontawesome-->
+  <script src="https://kit.fontawesome.com/e4fa7fcfdb.js" crossorigin="anonymous"></script>
+
+  <!--bootstrap scripts-->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!--scroll-scripts-->
+<script type="text/javascript">
+!function(t,e){t.artibotApi={l:[],t:[],on:function(){this.l.push(arguments)},trigger:function(){this.t.push(arguments)}};var a=!1,i=e.createElement("script");
+i.async=!0,i.type="text/javascript",i.src="https://app.artibot.ai/loader.js",e.getElementsByTagName("head").item(0).appendChild(i),i.onreadystatechange=i.onload=function(){if(!(a||this.readyState&&"loaded"!=this.readyState&&"complete"!=this.readyState))
+{new window.ArtiBot({i:"f5c005ca-5faf-4593-b380-2ce4cb062dc4"});a=!0}}}
+(window,document);
+</script>
+
+<body>
+
+  <!---NAVBAR SECTION---->
+
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <img class="logo" src="images/logo-2 crop.png" height="90px" width="280px" alt="logo">
+
+
+    <ul>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="Blog/index.html" >Blog</a></li>
+      <li><a href="shop/index.html">Shop</a></li>
+
+      <li><a href="news/index.html">News</a></li>
+
+      <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Sign Up</a>
+    <div class="dropdown-content">
+      <a href="cust reg/index1.html">Customer</a>
+      <a href="far reg/far index.html">Farmer</a>
+    </div>
+  </li>
+      <li><a href="login/index3.html">Login</a></li>
+      <li> <a href="cart/index.html">
+        <img src="icons/cart.png" height="30px",width="30px"/></a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <div class="bg-image ">
+    <div class="trans-content"  >
+      <h4 class="Delivery">Deliver your Package with Love</h4>
+      <p class="del-info">From Farm to your Door</p>
+      <div>
+        <button  class="btn-grad" type="button">
+          <p style="font-size:20px;margin-bottom: 0px;">Learn More</p>
+        </button>
+
+        <button  class="btn-grad" type="button">
+          <p style="font-size:20px;margin-bottom: 0px;">Register</p>
+        </button>
+
+      </div>
+    </div>
+  </div>
+
+  <!--sec-sec-->
+  <section class="sec-sec">
+
+    <div class="container-fluid" >
+      <h2 class='how-works-h2' data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:500px;">How it works</h2>
+      <h5 class='how-works-h5'>Fresh Produce Direct From the Farm to your Home </h5>
+      <div class="row sec-row">
+        <div class="col-lg-4 col-md-6 col-sm-6" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-500px;">
+          <h6 class='how-works-h6'>Farmer</h6><br>
+          <img src="icons/farmers.png" height=65px width=65px alt="farmer-icon">
+          <p class='quote'>Farming the Organic Products to produce Hygenic Farm for Customers </p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6" data-center-center="opacity:1;bottom:0;" data-0-bottom="opacity:0;bottom:-400px;">
+          <h6 class='how-works-h6'>Magic Farm</h6><br>
+          <img src="icons/link.png" height=65px width=65px alt="link-icon">
+          <p class='quote'> Delivery from farm to door within less than 12 hours</p>
+
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6" data-center-center="opacity:1;left:0px;" data-0-bottom="opacity:0;left:500px;">
+          <h6 class='how-works-h6'>Consumer</h6><br>
+          <img src="icons/consumer.png" height=65px width=65px alt="consumer-icon">
+          <p class='quote'>Acces to Fresh, Hygenic produce <br>From Local Farmers</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="home-del">
+    <div class="container-fluid" data-center-center="opacity:1;bottom:0;" data-0-bottom="opacity:0;bottom:-400px;">
+
+      <div class="row">
+
+
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <p></p>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 center-block">
+          <div class="center-box">
+            <div class="row" id="delivery-area-check">
+
+
+              <div class="large-text">
+
+
+                <h2 class="del-h2">Check our Delivery Areas :</h2>
+              </div>
+
+
+              <div class="col-lg-8 col-md-12 col-sm-12 check-box">
+
+
+                <input class="box" type="text" placeholder="Enter your Pincode" name="name" id="name" required>
+              </div>
+              <div class="col-lg-4 col-md-5 col-sm-5 radio-box">
+                <input type="radio" id="html" name="fav_language" value="HTML" checked>
+                  <label for="html">Home</label><span></span>
+                  <input type="radio" id="css" name="fav_language" value="CSS">
+                  <label for="css">Office</label><br>
+                <div class="go">
+                  <button class="go-btn" type="button" name="button">Go!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+    </div>
+
+  </section>
+
+
+  <!--third-sec-->
+  <section class="third-sec">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center"  data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:-400px;">
+          <div class="About-us-left" >
+
+
+            <img src="images/collage.jpeg" height=500px width=500px alt="image">
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center" >
+          <div class="About-us-right">
+            <h2 class='how-works-h2' data-center-center="opacity:1;right:0;" data-0-bottom="opacity:0;right:-400px;" style="padding-top:40px;">About us</h2>
+            <div class="matter" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:400px;" >
+
+
+            <p class="para" >" We are on a mission to do something meaningful and bring a fundamental change in lives of our farmers and customers at large."</p>
+            <p class="para-2"  >It gives us great joy when we are able to increase income of our farmers and and bring a smile of the faces of customers as they enjoy the freshness of the produce. <em><b>Because what we eat is the fuel that drives
+                  us.</b></em> So, we started <strong style="color:#FFA33E" ;>Magic Farm</strong> as a solution to benefit the farmer who is producing organic food products as well as the customers who seek to eat healthy at affordable prices.</p>
+            <a class="abt-us" href="about-us/index.html"><u>Read more..</u></a>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--fourth-sec-->
+  <section class="fourth-sec">
+    <div class="container-fluid">
+      <div class="products">
+        <h2 class='how-works-h2-4' data-center-center="opacity:1;top:0;" data-0-bottom="opacity:0;top:-100px;">Are you looking for healthy ?</h2>
+      </div>
+      <div class="row" id="prod-row">
+        <div class="col-lg-3 col-md-4 col-sm-6 prod-col" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:-400px;">
+          <img class="prod-img" src="products/veg.jpeg" alt="veg">
+          <a href="#">
+            <p class="text"><a href="shop/index.html">All Vegetables</p></a>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 prod-col" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:-400px;">
+          <img class="prod-img" src="products/Fruits.jpeg" alt="Fruits">
+          <a href="#">
+            <p class="text"><a href="shop/index.html">Fruits</p></a>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 prod-col" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:400px;">
+          <img class="prod-img" src="products/Millets.jpg" alt="Millets & Grains">
+          <a href="#">
+            <p class="text"><a href="shop/index.html">Pulses</p></a>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 prod-col" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:400px;">
+          <img class="prod-img" src="products/spices.jfif" alt="Herbs">
+          <a href="#">
+            <p class="text"><a href="shop/index.html">Spices</p></a>
+          </a>
+        </div>
+      </div>
+      <p class="slogan">Let's add years to your life with organic food</p>
+
+    </div>
+  </section>
+  <!--fiv-sec-->
+  <section class="fiv-sec">
+    <div class="container-fluid">
+      <div class="choose d-flex justify-content-center">
+        <h2 class='how-works-h2-5'>Choose Who you Are ?</h2>
+      </div>
+      <div class="row" id="row-farm">
+        <div class="col-lg-6 col-sm-6" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:-400px;">
+          <div class="farm-con">
+            <h4 class='how-works-h4-5'>I'm a Customer</h4>
+            <p class='quote' style="text-align:justify" ;>Looking to fresh, hygenic organic farm food directly from farmers.</p>
+            <div class="bn">
+              <a class="btn btn-success" href="cust reg/index1.html" role="button">Connect With Us</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-6" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:-400px;">
+          <div class="farm-con">
+            <img class="con-style" src="customers/cust illu.jpeg" height=200px width=200px alt="Farmers-pic">
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="row-farm">
+        <div class="col-lg-6 col-md-6 col-sm-6" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:400px;">
+          <div class="farm-con">
+            <h4 class='how-works-h4-5'>I'm a Supplier</h4>
+            <p class='quote' style="text-align:justify">Produce fresh organic farms to customers <br>
+              I farm,You eat
+            </p>
+
+            <div class="bn">
+              <a class="btn btn-success" href="farmer-reg/index3.html" role="button">Connect With Us</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:400px;">
+          <div class="farm-con">
+            <img class="con-style" src="Farmers/Farmer.jpeg" height=200px width=200px alt="cust-pic">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="footer-sec">
+    <div class="footer">
+      <div class="row" id="div-row">
+        <div class="col-lg-4 col-md-6 col-sm-6" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:-400px;" >
+
+
+          <h5 style="text-align:left;color:orange;">About us</h5>
+          <p class="sub-info" style="text-align:justify">Magic Farm is committed to being a trustworthy & Innovative leader by providing genuine True wellness products. We work with Thousands of small farmers in India to cultivate ten of thousands of
+            acres of sustainable Organic Farmland.
+          </p>
+          <h5 style="text-align:left;color:orange;">Contact</h5>
+          <div class="contact">
+
+            <ul class="list-line">
+
+              <li class="lists">
+                <i id="icon" class="fas fa-phone-square-alt"></i><span id="text-link"><a class="no" href="tel:8317520094">+91-8317520094</a></span><br>
+              </li>
+
+              <li class="lists">
+                <i id="icon" class="fas fa-envelope"></i><span id="text-link"><a class="no" href="mailto:priyaboddeti1998@gmail.com"> priyaboddeti1998@gmail.com </a></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 center" data-center-center="opacity:1;bottom:0;" data-0-bottom="opacity:0;bottom:-400px;">
+          <div class="Info">
+            <h5 style="color:orange" ; "text-align:left">Information</h5>
+
+
+            <div class="sub-info">
+
+
+              <p class="links"><a class="no" href="about-us/index.html">About-us </a></p>
+              <p class="links"> <a class="no" href="#">Home</a></p>
+              <p class="links"><a class="no" href="Blog/index.html">Blog</a></p>
+              <p class="links"><a class="no" href="News/index.html">News</a></p>
+              <p class="links"><a class="no" href="#">Cart</a></p>
+              <p class="links"><a  class="no"href="#">Sign-in</a></p>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 col-sm-6" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:400px;">
+
+
+          <div class="card">
+            <h5 style="color:orange;">Contact-us</h5>
+
+            <div class="input-container">
+              <div class="txt">
+                <i class="fa fa-user icon"></i>
+                <label class="label" for="Name"><b class="text-1">Name</b></label>
+              </div>
+
+              <input class="input-field" type="text"  name="usrnm">
+            </div>
+
+            <div class="input-container">
+
+              <div class="txt">
+           <i class="fas fa-envelope"></i>
+                <label class="label" for="Name"><b class="text-1">Email</b></label>
+              </div>
+
+              <input class="input-field" type="text"  name="usrnm">
+            </div>
+            <div class="input-container">
+              <div class="txt">
+                <i class="fas fa-phone-square-alt"></i>
+                <label class="label" for="Name"><b class="text-1">Phone Number</b></label>
+              </div>
+
+              <input class="input-field" type="text"  name="usrnm">
+            </div>
+            <div class="input-container">
+              <div class="txt">
+                <i class="fas fa-pen"></i>
+                <label class="label" for="Name"><b class="text-1">Your Query</b></label>
+              </div>
+
+              <input class="input-field" type="text-area" name="usrnm">
+            </div>
+            <div class="input-container">
+              <button type="button" class="button btn btn-outline-orange">Submit</button>
+
+            </div>
+            </div>
+          </div>
+          </div>
+
+
+        <div class="social" >
+          <h5 style="color:orange;">social media</h5>
+          <a href="" class="soc-icon fab fa-facebook-f" ></a>
+          <a href="" class="soc-icon fab fa-instagram"></a>
+          <a href="" class="soc-icon fab fa-twitter"></a>
+          <a href="" class="soc-icon far fa-envelope"></a>
+          <p>© Copyright 2021 Magic Farm</p>
+        </div>
+  </section>
+
+  <script src="skrollr.js"></script>
+  <script type="text/javascript">
+    var s = skrollr.init();
+    </script>
+
+
+</body>
+</html>
