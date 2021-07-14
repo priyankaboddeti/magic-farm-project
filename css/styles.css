@@ -2,6 +2,7 @@
 body{
   overflow-y:scroll;
 overflow-x: hidden;
+font-family: 'Montserrat',serif;
 }
 *{
   padding: 0;
@@ -52,7 +53,7 @@ nav ul li{
 
 }
 nav ul li a{
-  color:green;
+  color:orange;
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
@@ -80,7 +81,7 @@ a.active,a:hover{
 }
 li a, .dropbtn {
   display: inline-block;
-  color: green;
+  color: Orange;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -231,8 +232,8 @@ text-align: center;
 /*2-section*/
 .sec-sec
 {
-  background-color: #FBAB7E;
-background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  background-color:/*#F7CE68;*/ #FFA33E;
+
 
   color:white;
 }
@@ -277,28 +278,20 @@ color:white;
 {
   padding-top:10px;
   color:black;
-  font-family:'Poppins',serif;
-  font-weight: 100;
-  font-size:20px;
+  font-family:'Montserrat',serif;
+  font-weight: 400;
+  font-size:18px;
   line-height:1.5;
   text-align:center;
 }
 
 .home-del{
-  background: #30E8BF;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background:#B1D056;  /* fallback for old browsers */
+
 
 
 }
-.del-h2{
-  color:white;
-  font-family: cursive;
-  font-style: italic;
-  font-size:40px;
 
-  text-align: center;
-}
 #delivery-area-check{
   justify-content: center;
 }
@@ -318,7 +311,8 @@ background: linear-gradient(to right, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, F
 }
 
 .check-box{
-  padding-top: 60px;
+  padding-top: 57px;
+  padding-left: 129px;
  padding-bottom: 30px;
  text-align: center;
 
@@ -384,7 +378,7 @@ border-radius: 10px;
   background-color: red;
 }
 
-
+/*third -sec*/
 
 .About-us-left
 {
@@ -397,10 +391,10 @@ border-radius: 10px;
 {
   padding-top: 30px;
   text-align: justify;
-  font-family:'poppins';
-  font-weight:600;
+  font-family:'Montserrat', serif;
+  font-weight:400;
   font-style:italic;
-  font-size:22px;
+  font-size:18px;
 
 }
 .para:hover
@@ -631,12 +625,12 @@ border-radius: 50%;
 .button{
 
   width:30%;
-  color:white;
+  color:orange;
   border:1px solid white;
 }
 .button:hover{
   color:white;
-  background-color: orange;
+  background-color:#F4D03F;
 
 }
 .social
