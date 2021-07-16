@@ -1,67 +1,103 @@
-nav{
-  background:white;
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: 'Montserrat', serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  position: relative;
+  font-family: "Montserrat", serif;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: 'Montserrat'
+}
+nav {
+  background: white;
   height: 100px;
   width: 100%;
   z-index: 1;
-  top:0px;
-  position:sticky;
-  border-bottom:2px solid green;
+  top: 0px;
+  border-bottom: 2px solid green;
 }
-.logo
-{
-  height:90px;
-  width:250px;
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.logo {
+
   padding-top: 8px;
   padding-left: 20px;
 }
-nav ul{
-  font-family:'Montserrat', san-serif;
-  font-weight:500;
-  float: right;
-  margin-right: 20px;
-}
-nav ul li{
-  display: inline-block;
-  line-height:70px;
-  margin: 0 5px;
 
+
+nav ul {
+  font-family: 'Montserrat', serif;
+  font-weight: 500;
+  margin-top: 28px;
+  font-size: 20px;
+  float: right;
+
+  margin-right: 5px;
+  margin-bottom: 10px;
 }
-nav ul li a{
-  color:green;
+
+nav ul li {
+  display: inline-block;
+  line-height: 30px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: orange;
   font-size: 17px;
-  padding: 7px 13px;
+  padding-bottom: 3px;
+  padding-top: 12px ;
+  padding-left:12px;
+  padding-right: 12px;
   border-radius: 3px;
   text-transform: uppercase;
 }
 
-a.active,a:hover{
-  background:white;
+nav ul li a.active {
+  border-bottom: 3px solid orange;
+}
+
+a.active, a:hover {
+  background: white;
   transition: .5s;
   text-decoration: none;
-  color:inherit;
-
+  color: inherit;
 }
-.checkbtn{
+
+.checkbtn {
   font-size: 30px;
-  color:green;
+  color: green;
   float: right;
-  line-height: 80px;
+  line-height: 100px;
   margin-right: 40px;
   cursor: pointer;
   display: none;
+  height: 50px;
 }
-#check{
+
+#check {
   display: none;
 }
+
 li a, .dropbtn {
   display: inline-block;
-  color: green;
+  color: Orange;
   text-align: center;
-  padding: 14px 16px;
+  padding: 12px 10px;
   text-decoration: none;
 }
-
-
 
 li.dropdown {
   display: inline-block;
@@ -71,115 +107,86 @@ li.dropdown {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 20px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index:1;
+  min-width: 40px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 .dropdown-content a {
   color: black;
-  padding: 0px 8px;
+  padding: 12px 10px;
   text-decoration: none;
   display: block;
   text-align: left;
 }
 
 .dropdown-content a:hover {
-  background-color:#FFA33E;
+  background-color: #FFA33E;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
-nav ul{
-  font-family:'Montserrat', san-serif;
-  font-weight:500;
-  float: right;
-  margin-right: 20px;
-  margin-bottom: 0px;
-}
-nav ul li{
-  display: inline-block;
-  line-height:70px;
-  margin: 0 5px;
 
-}
-nav ul li a{
-  color:green;
-  font-size: 17px;
-  padding: 7px 13px;
-  border-radius: 3px;
-  text-transform: uppercase;
-}
-
-a.active,a:hover{
-  background:white;
-  transition: .5s;
-  text-decoration: none;
-  color:inherit;
-
-}
-.checkbtn{
-  font-size: 30px;
-  color:green;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-#check{
-  display: none;
-}
-@media (max-width: 952px){
-  .logo{
+@media (max-width: 952px) {
+  .logo {
     font-size: 30px;
-    padding-left: 50px;
-
+    padding-left: 10px;
+    height: 90px;
+    width: 180px;
   }
-  nav ul li a{
+
+  nav ul li a {
     font-size: 16px;
   }
 }
-@media (max-width: 870px){
-  .checkbtn{
+
+@media (max-width: 858px) {
+  .checkbtn {
     display: block;
+    font-size: 30px;
+    height: 40px;
   }
-  ul{
+
+  ul {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background:white;
-
+    background: white;
     top: 80px;
     left: -100%;
+    padding-top: 20px;
     text-align: center;
     transition: all .5s;
   }
-  nav ul li{
+
+  nav ul li {
     display: block;
-    margin: 50px 0;
-    line-height: 30px;
+    margin: 19px 0;
+    line-height: 19px;
   }
-  nav ul li a{
+
+  li.dropdown {
+    margin: 19px 0;
+    line-height: 19px;
+    margin-top: 0px;
+  }
+
+  nav ul li a {
     font-size: 20px;
   }
 
-    a.active{
+  a.active {
     background: none;
-    color:blue;
+    color: black;
   }
-  #check:checked ~ ul{
-    left: 0;
-    z-index:1;
 
-  }
-  .logo{
-    height:90px;
-    width:200px;
-    padding-left: 8px;
+  #check:checked~ul {
+    left: 0;
+    z-index: 1;
   }
 }
+
 
 /*---common---*/
 
@@ -193,6 +200,12 @@ a.active,a:hover{
 
 .sec-sec{
 
+}
+.rate{
+  margin-top: 5px;
+}
+.row-row{
+  padding:0px 3px;
 }
 .container
 {
@@ -260,16 +273,23 @@ color: #fff;
       text-align: center;
       font-size: 20px;
       /* font-weight: bold; */
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Montserrat', serif;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
   }
+  label
+  {
+    margin-bottom: 0px;
+  }
+  radio
+  {
+    padding-left: 0px;
+  }
   /*third-sec*/
   .third-sec{
-    background: rgb(34,193,195);
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(157,190,111,1) 56%, rgba(253,187,45,1) 100%);;
+   background-color: #F7CE68;
   }
 
 /*fourth -sec*/
@@ -301,9 +321,27 @@ color: #fff;
   font-weight: 600;
 
 }
+#delivery-date-C0.
+{
+  font-size: 10px;
+  font-weight: normal;
+}
 
 .drop-down{
-  padding:10px;
+  padding-top:10px;
+  padding-left: 13px;
+}
+@media max-width(1160px)
+{
+  #grams
+  {
+    width:120%;
+    padding-left: 5px;
+  }
+  .drop-down{
+    padding-left: 5px;
+
+  }
 }
 
 #grams
@@ -313,25 +351,41 @@ color: #fff;
   border-color: green;
   border-radius: 2px solid;
 }
+
 .group{
   padding-top: 10px;
+
 }
 .input-group
 {
   width:100%;
   height:auto;
-background-color:#28a745;
+background-color:orange;
   color:white;
   font-family:'poppins' ,sans-serif;
   font-weight: 600;
   font-size: 20px;
+  border-color: green;
 
 }
+.input-group-btn
+{
+  border-color: green;
+}
+
 .btn-outline-secondary {
     color:white;
-    border-color: green;
+    border-color:orange;
 
 }
+.btn-decrement:hover
+{
+  background-color: green;
+}
+.btn-increment:hover{
+  background-color: green;
+}
+
 
 
 .row{
@@ -343,7 +397,7 @@ background-color:#28a745;
   text-align:center;
   color:red;
   font-size:18px;
-  font-family: "poppins",sans-serif;
+  font-family: "Montserrat",sans-serif;
   font-weight:400;
 }
 .calender{
@@ -353,14 +407,16 @@ background-color:#28a745;
   text-align: center;
   padding-top: 10px;
 
+
 }
 .button-1{
   height:40px;
   width:120px;
+    background-color: orange;
 }
 /*fourth-sec*/
 .fourth-sec{
-background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+background-color: #B1D056;
 }
 .product-sec1.product-sec2 {
 
@@ -388,135 +444,156 @@ background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
 }
 /*sixth-sec*/
 .six-sec{
-  background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+background-color: #B1D056;
 }
 .sev-sec
 {
-  background: rgb(34,193,195);
-background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(157,190,111,1) 56%, rgba(253,187,45,1) 100%);
+  background-color: #F7CE68;
 }
-/*footer-sec*/
-.footer
-{
-  padding:30px;
-  text-align:left;
- background-color: black;
+/* footer section */
+.footer-sec {
+  background-color: Black;
+  color: white;
 }
-.text-links{
-  color:white;
+
+.footer {
+  padding: 30px;
+  text-align: left;
 }
-#div-row{
+
+#div-row {
   padding-top: 30px;
 }
-.contact{
-  padding-top: 10px;
+
+.contact {
   text-align: left;
-  color:orange;
+  color: orange;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
-#text-link a:hover{
-  color:orange;
+
+#text-link a:hover {
+  color: orange;
 }
-.list-line
-{
-  padding-left: 0px;
-}
-.lists{
-  text-decoration: none;
-  list-style-type: none;
-}
-#icon{
+
+#icon {
   vertical-align: middle;
-
 }
-.sub-info
-{
-  color:white;
-  padding-top: 10px;
-  text-align:left;
+
+.sub-info {
+  padding-top: 5px;
+  text-align: left;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.list-line {
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+
+.sub-info1 {
+  padding-top: 0px;
+  text-align: left;
   text-decoration: none;
 }
-a{
-  color:white;
-}
- a:hover{
-  color:orange;
-  background:none;
-  color:inherit
 
-}
-.links a:hover{
-  color:orange;
+.no {
+  color: white;
+  padding-left: 5px;
+  padding-right: 0px;
+  padding-top: 5px;
+  padding-bottom: 2px;
 }
 
-.center{
+a:hover {
+  color: orange;
+  background: none;
+  color: inherit
+}
 
+.links a:hover {
+  color: orange;
+}
+
+.center {
   padding-left: 80px;
 }
 
-.card1{
-padding-top: 10px;
-padding-left: 20px;
-  height:330px;
-  width:280px;
-background-color: black;
-border:2px solid white;
+.card1 {
+  padding-top: 10px;
+  padding-left: 20px;
+  height: 330px;
+  width: 280px;
+  background-color: black;
+  border: 2px solid white;
 }
 
-.input-container
-{
-border-radius: 50%;
-  padding-top:5px;
-  color:orange;
-
+.input-container {
+  border-radius: 50%;
+  padding-top: 5px;
+  color: orange;
 }
-.label{
+
+.label {
   padding-left: 5px;
   margin-bottom: 0px;
 }
 
-.txt
-{
-
+.txt {
   text-align: left;
-  padding-left:5px;
-  font-size:15px;
+  padding-left: 5px;
+  font-size: 15px;
   font-weight: lighter;
   padding-bottom: 0px;
-
 }
 
-
-.input-field
-{
-
- padding-top:10px;
-  height:25px;
-  width:90%;
-
+.input-field {
+  padding-top: 10px;
+  height: 25px;
+  width: 90%;
 }
-.butt{
 
-  width:30%;
-  color:white;
-  border:1px solid white;
-}
-.butt:hover{
-  color:white;
-  background-color: orange;
-
-}
-.social
-{
-
+.abt-us:link, .abt-us:visited {
+  background-color: Orange;
+  border-radius: 10px;
+  color: white;
+  padding: 5px 10px;
   text-align: center;
-  padding-top:20px;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid white;
+}
+
+.abt-us:hover, .abt-us:active {
+  background-color: #F7CE68;
+  ;
+}
+
+.social {
+  text-align: center;
+  padding-top: 20px;
   padding-bottom: 30px;
 }
+
 .soc-icon {
   margin: 20px 10px;
-  padding:5px;
+  padding: 5px;
   text-align: center;
+  color: white;
 }
-.soc-icon:hover{
-  color:orange;
+
+.soc-icon:hover {
+  color: orange;
+}
+
+
+@media screen and (max-width:480px){
+
+nav ul{
+  margin-top: 19px;
+}
+@media screen and (max-width:360px){
+.mid{
+  padding-left: 10px;
 }

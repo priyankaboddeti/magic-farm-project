@@ -3,11 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap|Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!--css stylesheets-->
 
-  <link href="https://fonts.googleapis.com/css?family=Candal|Lora" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/e4fa7fcfdb.js" crossorigin="anonymous"></script>
+
+  <!--bootstrap scripts-->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
   <!--scroll-scripts-->
   <script type="text/javascript">
@@ -26,24 +38,34 @@
     <label for="check" class="checkbtn">
       <i class="fas fa-bars"></i>
     </label>
-    <img class="logo" src="../images/logo-2 crop.png" height="90px" width="280px" alt="logo">
+    <img class="logo" src="../images/logo-2 crop.png" height="90px" width="230px" alt="logo">
 
 
     <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../Blog/index.html" >Blog</a></li>
-      <li><a href="../shop/index.html">Shop</a></li>
+      <li class="dropdown">
+        <a  href="../index.html" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <a href="../about-us/index.html">About Us</a>
 
-      <li><a class="active" href="news/index.html">News</a></li>
+        </div>
+      </li>
+      <li><a href="../shop/index.html">Shop</a></li>
+      <li><a href="../Blog/index.html">Blog</a></li>
+
+
+      <li><a class="active" href="#">News</a></li>
 
       <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Sign Up</a>
-    <div class="dropdown-content">
-      <a href="../cust reg/index1.html">Customer</a>
-      <a href="../far reg/far index.html">Farmer</a>
-    </div>
-  </li>
+        <a href="javascript:void(0)" class="dropbtn">Sign Up <i class="fa fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <a href="../cust reg/index1.html">Customer</a>
+          <a href="../far reg/far index.html">Farmer</a>
+        </div>
+      </li>
       <li><a href="../login/index3.html">Login</a></li>
+      <li> <a href="../cart/index.html">
+          <img src="../icons/cart.png" height="30px" ,width="30px" /></a>
+      </li>
     </ul>
   </nav>
 
@@ -53,7 +75,7 @@
   <div class="page-wrapper">
 
     <div class="post-slider">
-      <h1 class="slider-title">News</h1>
+
       <i class="fas fa-chevron-left prev"></i>
       <i class="fas fa-chevron-right next"></i>
 
@@ -125,10 +147,15 @@
             <i class="far fa-user">  Kumar Rajesh</i>
             &nbsp;
             <i class="far fa-calendar">  Jun 7, 2021</i>
+            <div>
+
+
             <p class="preview-text">
               IIT-Kharagpur alumnus Ajit Kumar has developed an artificial intelligence-driven Farm Surveillance-Cum-Animal Scarer (FSCAS), which is helping farmers to keep animals at bay and thieves away.
-            </p>
+            </p></div><br>
+            <div>
             <a href="post1.html" class="btn read-more">Read More</a>
+          </div>
           </div>
         </div>
 
@@ -142,7 +169,9 @@
             <p class="preview-text">
               '100 per cent organic state' Sikkim gets FAO award for best policies.Sikkim beat 51 other nominees from around the world for the award. Brazil, Denmark and Quito, Ecuador, shared the Silver award.
             </p>
+            <div>
             <a href="post2.html" class="btn read-more">Read More</a>
+            </div>
           </div>
         </div>
         <div class="post clearfix">
@@ -190,109 +219,109 @@
 
   </div>
 </section>
-<!--  <section class="footer-sec">
-    <div class="footer">
-      <div class="row" id="div-row">
-        <div class="col-lg-4 col-md-6 col-sm-6" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:-400px;" >
+<section class="footer-sec">
+  <div class="footer">
+    <div class="row" id="div-row">
+      <div class="col-lg-4 col-md-6 col-sm-6" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-400px;">
 
 
-          <h5 style="text-align:left;color:orange;">About us</h5>
-          <p class="sub-info" style="text-align:justify">Magic Farm is committed to being a trustworthy & Innovative leader by providing genuine True wellness products. We work with Thousands of small farmers in India to cultivate ten of thousands of
-            acres of sustainable Organic Farmland.
-          </p>
-          <h5 style="text-align:left;color:orange;">Contact</h5>
-          <div class="contact">
+        <h5 style="text-align:left;color:orange;">About us</h5>
+        <p class="sub-info" style="text-align:left">Magic Farm is committed to being a trustworthy & Innovative leader by providing genuine True wellness products. We work with Thousands of small farmers in India to cultivate ten of thousands of
+          acres of sustainable Organic Farmland.
+        </p>
+        <h5 style="text-align:left;color:orange;">Contact</h5>
+        <div class="contact">
 
-            <ul class="list-line">
+          <ul class="list-line">
 
-              <li class="lists">
-                <i id="icon" class="fas fa-phone-square-alt"></i><span id="text-link"><a class="no" href="tel:8317520094">+91-8317520094</a></span><br>
-              </li>
+            <li class="sub-info1">
+              <i id="icon" class="fas fa-phone-square-alt"></i><span id="text-link"><a class="no" href="tel:8317520094">+91-8317520094</a></span><br>
+            </li>
 
-              <li class="lists">
-                <i id="icon" class="fas fa-envelope"></i><span id="text-link"><a class="no" href="mailto:priyaboddeti1998@gmail.com"> priyaboddeti1998@gmail.com </a></span>
-              </li>
-            </ul>
+            <li class="sub-info1">
+              <i id="icon" class="fas fa-envelope"></i><span id="text-link"><a class="no" href="mailto:priyaboddeti1998@gmail.com"> priyaboddeti1998@gmail.com </a></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6 mid" data-center-center="opacity:1;bottom:0;" data-0-bottom="opacity:0;bottom:-600px;">
+        <div class="Info">
+          <h5 style="color:orange" ; "text-align:left">Information</h5>
+
+
+          <div class="sub-info">
+
+            <p class="links"><a class="no" href="../index.html">Home</a></p>
+            <p class="links"><a class="no" href="../about-us/index.html">About-us </a></p>
+            <p class="links"><a class="no" href="../shop/index.html">Shop</a></p>
+            <p class="links"><a class="no" href="../Blog/index.html">Blog</a></p>
+            <p class="links"><a class="no" href="../News/index.html">News</a></p>
+
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="col-lg-4 col-md-6 col-sm-6" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:400px;">
+
+
+        <div class="card">
+          <h5 style="color:orange;">Contact-us</h5>
+
+          <div class="input-container">
+            <div class="txt">
+              <i class="fa fa-user icon"></i>
+              <label class="label" for="Name"><b class="text-1">Name</b></label>
+            </div>
+
+            <input class="input-field" type="text" name="usrnm">
+          </div>
+
+          <div class="input-container">
+
+            <div class="txt">
+              <i class="fas fa-envelope"></i>
+              <label class="label" for="Name"><b class="text-1">Email</b></label>
+            </div>
+
+            <input class="input-field" type="text" name="usrnm">
+          </div>
+          <div class="input-container">
+            <div class="txt">
+              <i class="fas fa-phone-square-alt"></i>
+              <label class="label" for="Name"><b class="text-1">Phone Number</b></label>
+            </div>
+
+            <input class="input-field" type="text" name="usrnm">
+          </div>
+          <div class="input-container">
+            <div class="txt">
+              <i class="fas fa-pen"></i>
+              <label class="label" for="Name"><b class="text-1">Your Query</b></label>
+            </div>
+
+            <input class="input-field" type="text-area" name="usrnm">
+          </div>
+          <div class="input-container">
+            <a class="abt-us" href="" role="button">Submit</a>
+
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 center" data-center-center="opacity:1;bottom:0;" data-0-bottom="opacity:0;bottom:-400px;">
-          <div class="Info">
-            <h5 style="color:orange" ; "text-align:left">Information</h5>
+      </div>
+    </div>
 
 
-            <div class="sub-info">
-
-
-              <p class="links"><a class="no" href="about-us/index.html">About-us </a></p>
-              <p class="links"> <a class="no" href="#">Home</a></p>
-              <p class="links"><a class="no" href="Blog/index.html">Blog</a></p>
-              <p class="links"><a class="no" href="News/index.html">News</a></p>
-              <p class="links"><a class="no" href="#">Cart</a></p>
-              <p class="links"><a  class="no"href="#">Sign-in</a></p>
-            </div>
-
-          </div>
-        </div>
-
-
-        <div class="col-lg-4 col-md-6 col-sm-6" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:400px;">
-
-
-          <div class="card">
-            <h5 style="color:orange;">Contact-us</h5>
-
-            <div class="input-container">
-              <div class="txt">
-                <i class="fa fa-user icon"></i>
-                <label class="label" for="Name"><b class="text-1">Name</b></label>
-              </div>
-
-              <input class="input-field" type="text"  name="usrnm">
-            </div>
-
-            <div class="input-container">
-
-              <div class="txt">
-           <i class="fas fa-envelope"></i>
-                <label class="label" for="Name"><b class="text-1">Email</b></label>
-              </div>
-
-              <input class="input-field" type="text"  name="usrnm">
-            </div>
-            <div class="input-container">
-              <div class="txt">
-                <i class="fas fa-phone-square-alt"></i>
-                <label class="label" for="Name"><b class="text-1">Phone Number</b></label>
-              </div>
-
-              <input class="input-field" type="text"  name="usrnm">
-            </div>
-            <div class="input-container">
-              <div class="txt">
-                <i class="fas fa-pen"></i>
-                <label class="label" for="Name"><b class="text-1">Your Query</b></label>
-              </div>
-
-              <input class="input-field" type="text-area" name="usrnm">
-            </div>
-            <div class="input-container">
-              <button type="button" class="button btn btn-outline-orange">Submit</button>
-
-            </div>
-            </div>
-          </div>
-          </div>
-
-
-        <div class="social" >
-          <h5 style="color:orange;">social media</h5>
-          <a href="" class="soc-icon fab fa-facebook-f" ></a>
-          <a href="" class="soc-icon fab fa-instagram"></a>
-          <a href="" class="soc-icon fab fa-twitter"></a>
-          <a href="" class="soc-icon far fa-envelope"></a>
-          <p>© Copyright 2021 Magic Farm</p>
-        </div>
-  </section>-->
+    <div class="social">
+      <h5 style="color:orange;">social media</h5>
+      <a href="" class="soc-icon fab fa-facebook-f"></a>
+      <a href="" class="soc-icon fab fa-instagram"></a>
+      <a href="" class="soc-icon fab fa-twitter"></a>
+      <a href="" class="soc-icon far fa-envelope"></a>
+      <p>© Copyright 2021 Magic Farm</p>
+    </div>
+</section>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

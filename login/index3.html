@@ -2,6 +2,11 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap|Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -24,26 +29,33 @@
   <label for="check" class="checkbtn">
     <i class="fas fa-bars"></i>
   </label>
-  <img class="logo" src="../images/logo-2 crop.png" height="90px" width="280px" alt="logo">
+  <img class="logo" src="../images/logo-2 crop.png" height="90px" width="230px" alt="logo">
 
 
   <ul>
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../Blog/index.html" >Blog</a></li>
+    <li class="dropdown">
+      <a  href="../index.html" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+      <div class="dropdown-content">
+        <a href="../about-us/index.html">About Us</a>
+
+      </div>
+    </li>
     <li><a href="../shop/index.html">Shop</a></li>
+    <li><a href="../Blog/index.html">Blog</a></li>
+
 
     <li><a href="../news/index.html">News</a></li>
 
     <li class="dropdown">
-  <a href="javascript:void(0)" class="dropbtn">Sign Up</a>
-  <div class="dropdown-content">
-    <a href="../cust reg/index1.html">Customer</a>
-    <a href="../far reg/far index.html">Farmer</a>
-  </div>
-</li>
-    <li><a class="active" href="#">Login</a></li>
+      <a href="javascript:void(0)" class="dropbtn">Sign Up <i class="fa fa-caret-down"></i></a>
+      <div class="dropdown-content">
+        <a href="../cust reg/index1.html">Customer</a>
+        <a href="../far reg/far index.html">Farmer</a>
+      </div>
+    </li>
+    <li><a class="active" href="login/index3.html">Login</a></li>
     <li> <a href="../cart/index.html">
-      <img src="../icons/cart.png" height="30px",width="30px"/></a>
+        <img src="../icons/cart.png" height="30px" ,width="30px" /></a>
     </li>
   </ul>
 </nav>
@@ -51,69 +63,79 @@
   <div class="container-fluid">
 
 
-  <div class="card">
     <div class=" row ">
-      <div class=" col-lg-6 col1">
-        <img class="img" src="shop.jpg" width="100%" alt="">
+      <div class=" col-lg-6  col-md-6 col-sm-12 col1 d-flex justify-content-center">
+        <img class="img" src="post.png"  alt="">
       </div>
 
-      <div class="col-lg-6 col2">
+      <div class="col-lg-6 col-md-6 col-sm-12 col2">
         <div class="header">
           <h2>Welcome Back!</h2>
           <p>Login to continue </p>
 
         </div>
+<form action="/action_page.php">
         <div class="input">
 
 
+
+
           <label class="left-text" for="mobile "><b class="name">UserName</b></label><br>
-          <input class="box" type="text" placeholder="Enter 10-digit mobile no." name="mobile" id="mobile" required><br>
+          <input class="box" type="text" placeholder="Enter User Name" name="mobile" id="mobile" minlength="10" required><br>
         </div>
-        <div>
 
 
-          <label class="left-text" for="psw"><b class="name">Password</b></label><br>
-          <input class="box" type="password" placeholder="Enter Password" name="psw" id="psw" required><br>
-        </div>
+
+        <div class="input">
+    <label class="left-text" for="pass"><b class="name">Password (8 characters minimum)</b></label><br>
+    <input class="box" type="password" id="pass" placeholder="Enter your Password" name="password"  minlength="8" required>
+
+</div>
+</form>
 
         <div class="soc-activity">
+          <p>
+            <b class="with">or log in with</b>
+          </p>
 
 
-          <div class="row">
-            <div class="col-lg-2">
+
+
               <a href="#" class="fb btn">
                 <i class="fa fa-facebook fa-fw"></i>
               </a>
-            </div>
-            <div class="col-lg-2">
+
+
               <a href="#" class="twitter btn">
                 <i class="fa fa-twitter fa-fw"></i>
               </a>
-            </div>
-            <div class="col-lg-2">
+
+
               <a href="#" class="google btn"><i class="fa fa-google fa-fw">
                 </i>
               </a>
-            </div>
+              <div class="button1 ">
+                <button type="submit" class="button"><a href="../index.html">Login</a></button>
+              </div>
+
           </div>
+
         </div>
 
-        <div class="button1">
-          <button type="submit" class="button">Login</button>
-        </div>
+
 
       </div>
     </div>
+
   </div>
-  </div>
-  <!--<section class="footer-sec">
+  <section class="footer-sec">
     <div class="footer">
       <div class="row" id="div-row">
-        <div class="col-lg-4 col-md-6 col-sm-6" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:-400px;" >
+        <div class="col-lg-4 col-md-6 col-sm-6" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-400px;">
 
 
           <h5 style="text-align:left;color:orange;">About us</h5>
-          <p class="sub-info" style="text-align:justify">Magic Farm is committed to being a trustworthy & Innovative leader by providing genuine True wellness products. We work with Thousands of small farmers in India to cultivate ten of thousands of
+          <p class="sub-info" style="text-align:left">Magic Farm is committed to being a trustworthy & Innovative leader by providing genuine True wellness products. We work with Thousands of small farmers in India to cultivate ten of thousands of
             acres of sustainable Organic Farmland.
           </p>
           <h5 style="text-align:left;color:orange;">Contact</h5>
@@ -121,37 +143,37 @@
 
             <ul class="list-line">
 
-              <li class="lists">
+              <li class="sub-info1">
                 <i id="icon" class="fas fa-phone-square-alt"></i><span id="text-link"><a class="no" href="tel:8317520094">+91-8317520094</a></span><br>
               </li>
 
-              <li class="lists">
+              <li class="sub-info1">
                 <i id="icon" class="fas fa-envelope"></i><span id="text-link"><a class="no" href="mailto:priyaboddeti1998@gmail.com"> priyaboddeti1998@gmail.com </a></span>
               </li>
             </ul>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 center" data-center-center="opacity:1;bottom:0;" data-0-bottom="opacity:0;bottom:-400px;">
+        <div class="col-lg-4 col-md-6 col-sm-6 mid" data-center-center="opacity:1;bottom:0;" data-0-bottom="opacity:0;bottom:-600px;">
           <div class="Info">
             <h5 style="color:orange" ; "text-align:left">Information</h5>
 
 
             <div class="sub-info">
 
+              <p class="links"><a class="no" href="../index.html">Home</a></p>
+              <p class="links"><a class="no" href="../about-us/index.html">About-us </a></p>
+              <p class="links"><a class="no" href="../shop/index.html">Shop</a></p>
+              <p class="links"><a class="no" href="../Blog/index.html">Blog</a></p>
+              <p class="links"><a class="no" href="../News/index.html">News</a></p>
 
-              <p class="links"><a class="no" href="about-us/index.html">About-us </a></p>
-              <p class="links"> <a class="no" href="#">Home</a></p>
-              <p class="links"><a class="no" href="Blog/index.html">Blog</a></p>
-              <p class="links"><a class="no" href="News/index.html">News</a></p>
-              <p class="links"><a class="no" href="#">Cart</a></p>
-              <p class="links"><a  class="no"href="#">Sign-in</a></p>
+
             </div>
 
           </div>
         </div>
 
 
-        <div class="col-lg-4 col-md-6 col-sm-6" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:400px;">
+        <div class="col-lg-4 col-md-6 col-sm-6" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:400px;">
 
 
           <div class="card">
@@ -163,17 +185,17 @@
                 <label class="label" for="Name"><b class="text-1">Name</b></label>
               </div>
 
-              <input class="input-field" type="text"  name="usrnm">
+              <input class="input-field" type="text" name="usrnm">
             </div>
 
             <div class="input-container">
 
               <div class="txt">
-           <i class="fas fa-envelope"></i>
+                <i class="fas fa-envelope"></i>
                 <label class="label" for="Name"><b class="text-1">Email</b></label>
               </div>
 
-              <input class="input-field" type="text"  name="usrnm">
+              <input class="input-field" type="text" name="usrnm">
             </div>
             <div class="input-container">
               <div class="txt">
@@ -181,7 +203,7 @@
                 <label class="label" for="Name"><b class="text-1">Phone Number</b></label>
               </div>
 
-              <input class="input-field" type="text"  name="usrnm">
+              <input class="input-field" type="text" name="usrnm">
             </div>
             <div class="input-container">
               <div class="txt">
@@ -192,23 +214,24 @@
               <input class="input-field" type="text-area" name="usrnm">
             </div>
             <div class="input-container">
-              <button type="button" class="button btn btn-outline-orange">Submit</button>
+              <a class="abt-us" href="" role="button">Submit</a>
 
             </div>
-            </div>
           </div>
-          </div>
-
-
-        <div class="social" >
-          <h5 style="color:orange;">social media</h5>
-          <a href="" class="soc-icon fab fa-facebook-f" ></a>
-          <a href="" class="soc-icon fab fa-instagram"></a>
-          <a href="" class="soc-icon fab fa-twitter"></a>
-          <a href="" class="soc-icon far fa-envelope"></a>
-          <p>© Copyright 2021 Magic Farm</p>
         </div>
-  </section>-->
+      </div>
+
+
+      <div class="social">
+        <h5 style="color:orange;">social media</h5>
+        <a href="" class="soc-icon fab fa-facebook-f"></a>
+        <a href="" class="soc-icon fab fa-instagram"></a>
+        <a href="" class="soc-icon fab fa-twitter"></a>
+        <a href="" class="soc-icon far fa-envelope"></a>
+        <p>© Copyright 2021 Magic Farm</p>
+      </div>
+  </section>
+
 
 </body>
 

@@ -2,10 +2,24 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--fontawesome-->
-<!--fontawesome-->
-<script src="https://kit.fontawesome.com/e4fa7fcfdb.js" crossorigin="anonymous"></script>
+
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap|Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  rel="stylesheet">
+  <!--fontawesome-->
+  <script src="https://kit.fontawesome.com/e4fa7fcfdb.js" crossorigin="anonymous"></script>
+
+<!--css stylesheets-->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--bootstrap scripts-->
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <!--scroll-scripts-->
 <script type="text/javascript">
 !function(t,e){t.artibotApi={l:[],t:[],on:function(){this.l.push(arguments)},trigger:function(){this.t.push(arguments)}};var a=!1,i=e.createElement("script");
@@ -21,77 +35,103 @@ body {
   margin:0px;
 
 }
-nav{
-  background:white;
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: 'Montserrat', serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  position: relative;
+  font-family: "Montserrat", serif;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: 'Montserrat'
+}
+
+nav {
+  background: white;
   height: 100px;
   width: 100%;
   z-index: 1;
-  top:0px;
+  top: 0px;
+  border-bottom: 2px solid green;
+}
 
-  border-bottom:2px solid green;
-}
-.logo
-{
+.logo {
   padding-top: 8px;
-  padding-left: 30px;
+  padding-left: 20px;
 }
-/*label.logo{
-  color:green;
-  font-size: 35px;
-  line-height: 80px;
-  padding: 0 100px;
-  font-weight: bold;
-}*/
-nav ul{
-  font-family:'Montserrat', san-serif;
-  font-weight:500;
-  margin-top: 0px;
+
+
+nav ul {
+  font-family: 'Montserrat', serif;
+  font-weight: 500;
+  margin-top: 28px;
   font-size: 20px;
   float: right;
-  margin-right: 20px;
-}
-nav ul li{
-  display: inline-block;
-  line-height:70px;
-  margin: 0 5px;
 
+  margin-right: 5px;
+  margin-bottom: 10px;
 }
-nav ul li a{
-  color:green;
+
+nav ul li {
+  display: inline-block;
+  line-height: 30px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: orange;
   font-size: 17px;
-  padding: 7px 13px;
+  padding-bottom: 3px;
+  padding-top: 12px ;
+  padding-left:12px;
+  padding-right: 12px;
   border-radius: 3px;
   text-transform: uppercase;
 }
 
-a.active,a:hover{
-  background:white;
+nav ul li a.active {
+  border-bottom: 3px solid orange;
+}
+
+a.active, a:hover {
+  background: white;
   transition: .5s;
   text-decoration: none;
-  color:inherit;
-
+  color: inherit;
 }
-.checkbtn{
+
+.checkbtn {
   font-size: 30px;
-  color:green;
+  color: green;
   float: right;
-  line-height: 80px;
+  line-height: 100px;
   margin-right: 40px;
   cursor: pointer;
   display: none;
+  height: 50px;
 }
-#check{
+
+#check {
   display: none;
 }
+
 li a, .dropbtn {
   display: inline-block;
-  color: green;
+  color: Orange;
   text-align: center;
-  padding: 14px 16px;
+  padding: 12px 10px;
   text-decoration: none;
 }
-
-
 
 li.dropdown {
   display: inline-block;
@@ -101,193 +141,231 @@ li.dropdown {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 20px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  min-width: 40px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
   color: black;
-  padding: 0px 8px;
+  padding: 12px 10px;
   text-decoration: none;
   display: block;
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color:#FFA33E;}
+.dropdown-content a:hover {
+  background-color: #FFA33E;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
-@media (max-width: 952px){
-  label.logo{
+
+@media (max-width: 952px) {
+  .logo {
     font-size: 30px;
-    padding-left: 50px;
+    padding-left: 10px;
+    height: 90px;
+    width: 180px;
   }
-  nav ul li a{
+
+  nav ul li a {
     font-size: 16px;
   }
 }
-@media (max-width: 858px){
-  .checkbtn{
+
+@media (max-width: 858px) {
+  .checkbtn {
     display: block;
+    font-size: 30px;
+    height: 40px;
   }
-  ul{
+
+  ul {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background:white;
-
+    background: white;
     top: 80px;
     left: -100%;
+    padding-top: 20px;
     text-align: center;
     transition: all .5s;
   }
-  nav ul li{
+
+  nav ul li {
     display: block;
-    margin: 50px 0;
-    line-height: 30px;
+    margin: 19px 0;
+    line-height: 19px;
   }
-  nav ul li a{
+
+  li.dropdown {
+    margin: 19px 0;
+    line-height: 19px;
+    margin-top: 0px;
+  }
+
+  nav ul li a {
     font-size: 20px;
   }
 
-    a.active{
+  a.active {
     background: none;
-    color:blue;
+    color: black;
   }
-  #check:checked ~ ul{
+
+  #check:checked~ul {
     left: 0;
-    z-index:1;
-
+    z-index: 1;
   }
 }
-/*footer
-.footer-sec
-{
-  background-color:Black;
-  color:white;
+/* footer section */
+.footer-sec {
+  background-color: Black;
+  color: white;
 }
 
-.footer
-{
-  padding:30px;
-  text-align:left;
-
+.footer {
+  padding: 30px;
+  text-align: left;
 }
-#div-row{
+
+#div-row {
   padding-top: 30px;
 }
-.contact{
-  padding-top: 10px;
+
+.contact {
   text-align: left;
-  color:orange;
+  color: orange;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
-#text-link a:hover{
-  color:orange;
+
+#text-link a:hover {
+  color: orange;
 }
-#icon{
+
+#icon {
   vertical-align: middle;
 }
-.sub-info
-{
-  padding-top: 10px;
-  text-align:left;
+
+.sub-info {
+  padding-top: 5px;
+  text-align: left;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.list-line {
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+
+.sub-info1 {
+  padding-top: 0px;
+  text-align: left;
   text-decoration: none;
 }
-.no{
-  color:white;
-}
- a:hover{
-  color:orange;
-  background:none;
-  color:inherit
 
-}
-.links a:hover{
-  color:orange;
+.no {
+  color: white;
+  padding-left: 5px;
+  padding-right: 0px;
+  padding-top: 5px;
+  padding-bottom: 2px;
 }
 
-.center{
+a:hover {
+  color: orange;
+  background: none;
+  color: inherit
+}
 
+.links a:hover {
+  color: orange;
+}
+
+.center {
   padding-left: 80px;
 }
 
-.card{
-padding-top: 10px;
-padding-left: 20px;
-  height:330px;
-  width:280px;
-background-color: black;
-border:2px solid white;
+.card {
+  padding-top: 10px;
+  padding-left: 20px;
+  height: 330px;
+  width: 280px;
+  background-color: black;
+  border: 2px solid white;
 }
 
-.input-container
-{
-border-radius: 50%;
-  padding-top:5px;
-  color:orange;
-
+.input-container {
+  border-radius: 50%;
+  padding-top: 5px;
+  color: orange;
 }
-.label{
+
+.one {
   padding-left: 5px;
   margin-bottom: 0px;
 }
 
-.txt
-{
-
+.txt {
   text-align: left;
-  padding-left:5px;
-  font-size:15px;
+  padding-left: 5px;
+  font-size: 15px;
   font-weight: lighter;
   padding-bottom: 0px;
-
 }
 
-
-.input-field
-{
-
- padding-top:10px;
-  height:25px;
-  width:90%;
-
+.fix {
+  padding-top: 10px;
+  height: 25px;
+  width: 90%;
 }
-.button{
 
-  width:30%;
-  color:white;
-  border:1px solid white;
-}
-.button:hover{
-  color:white;
-  background-color: orange;
-
-}
-.social
-{
-
+.abt-us:link, .abt-us:visited {
+  background-color: Orange;
+  border-radius: 10px;
+  color: white;
+  padding: 5px 10px;
   text-align: center;
-  padding-top:20px;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid white;
+}
+
+.abt-us:hover, .abt-us:active {
+  background-color: #F7CE68;
+  ;
+}
+
+.social {
+  text-align: center;
+  padding-top: 20px;
   padding-bottom: 30px;
 }
+
 .soc-icon {
   margin: 20px 10px;
-  padding:5px;
+  padding: 5px;
   text-align: center;
   color: white;
 }
-.soc-icon:hover{
-  color:orange;
-}*/
+
+.soc-icon:hover {
+  color: orange;
+}
 
 
 * {
   box-sizing: border-box;
 }
-
 .header{
+  padding-top: 20px;
+}
+
+.header p{
   font-size: 40px;
   font-family: sans-serif;
   font-weight: 600;
@@ -302,6 +380,7 @@ border-radius: 50%;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
   margin: 0 -16px;
+  padding-top: 20px;
 }
 
 .col-25 {
@@ -327,15 +406,15 @@ border-radius: 50%;
 
 .container {
 
-  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+background-color: #B1D056;
   padding: 5px 20px 15px 20px;
   border: 1px solid lightgrey;
   border-radius: 3px;
 }
 
-input[type=text] {
-  width: 100%;
-  margin-bottom: 20px;
+.ip {
+  width: 90%;
+  margin-bottom: 10px;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -344,6 +423,9 @@ input[type=text] {
 label {
   margin-bottom: 10px;
   display: block;
+  font-family: 'Montserrat',serif;
+  font-weight: 400;
+  font-size: 17px;
 }
 
 .icon-container {
@@ -353,7 +435,7 @@ label {
 }
 
 .btn {
-  background-color: #04AA6D;
+  background-color: orange;
   color: white;
   padding: 12px;
   margin: 10px 0;
@@ -392,6 +474,18 @@ span.price {
 }
 .img{
   margin-top: 0px;
+
+}
+
+.required:after
+{
+    color: red;
+    content: " *";
+}
+.full{
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
 }
 </style>
 </head>
@@ -401,65 +495,68 @@ span.price {
     <label for="check" class="checkbtn">
       <i class="fas fa-bars"></i>
     </label>
-    <img class="logo" src="../images/logo-2 crop.png" height="90px" width="280px" alt="logo">
+    <img class="logo" src="../images/logo-2 crop.png" height="90px" width="230px" alt="logo">
 
 
     <ul>
-      <li><a  href="../index.html">Home</a></li>
-      <li><a href="../Blog/index.html" >Blog</a></li>
+      <li class="dropdown">
+        <a  href="../index.html" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <a href="../about-us/index.html">About Us</a>
+
+        </div>
+      </li>
       <li><a href="../shop/index.html">Shop</a></li>
+      <li><a href="../Blog/index.html">Blog</a></li>
+
 
       <li><a href="../news/index.html">News</a></li>
 
       <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Sign Up</a>
-    <div class="dropdown-content">
-      <a href="../cust reg/index1.html">Customer</a>
-      <a href="../far reg/far index.html">Farmer</a>
-    </div>
-  </li>
-      <li><a href="../login/index3.html">Login</a></li>
+        <a href="javascript:void(0)" class="dropbtn">Sign Up <i class="fa fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <a href="../cust reg/index1.html">Customer</a>
+          <a href="../far reg/far index.html">Farmer</a>
+        </div>
+      </li>
+      <li><a href="login/index3.html">Login</a></li>
       <li> <a class="active" href="#">
-        <img src="../icons/cart.png" height="30px",width="30px"/></a>
+          <img src="../icons/cart.png" height="30px" ,width="30px" /></a>
       </li>
     </ul>
   </nav>
-  <div class="img">
-    <img src="cart1.jpeg" width="100%" alt="">
 
-  </div>
+
+
   <section>
 
 
-<div class="header">
-  <p>Checkout</p>
-</div>
 
-<div class="row">
+<div class="row full">
   <div class="col-75">
     <div class="container">
       <form action="/action_page.php">
 
         <div class="row">
           <div class="col-50">
-            <h3>Billing Address</h3>
-            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            <h3>Shipping Address</h3>
+             <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input  class="ip" type="text" id="fname" name="firstname" placeholder="your Name" required>
             <label for="email"><i class="fa fa-envelope"></i> Email</label>
-            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <input class="ip" type="text" id="email" name="email" placeholder="Your Mail" required>
             <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <input class="ip" type="text" id="adr" name="address" placeholder="Your Address" required>
             <label for="city"><i class="fa fa-institution"></i> City</label>
-            <input type="text" id="city" name="city" placeholder="New York">
+            <input class="ip" type="text" id="city" name="city" placeholder="Enter Your City" required>
 
             <div class="row">
               <div class="col-50">
                 <label for="state">State</label>
-                <input type="text" id="state" name="state" placeholder="NY">
+                <input class="ip" type="text" id="state" name="state" placeholder="select your State" required>
               </div>
               <div class="col-50">
                 <label for="zip">Zip</label>
-                <input type="text" id="zip" name="zip" placeholder="10001">
+                <input class="ip" type="text" id="zip" name="your Pincode" placeholder="10001" required>
               </div>
             </div>
           </div>
@@ -474,27 +571,26 @@ span.price {
               <i class="fa fa-cc-discover" style="color:orange;"></i>
             </div>
             <label for="cname">Name on Card</label>
-            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <input  class="ip"type="text" id="cname" name="cardname" placeholder="Priyanka Boddeti" required>
             <label for="ccnum">Credit card number</label>
-            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <input class="ip" type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
             <label for="expmonth">Exp Month</label>
-            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <input class="ip" type="text" id="expmonth" name="expmonth" placeholder="September" required>
             <div class="row">
               <div class="col-50">
                 <label for="expyear">Exp Year</label>
-                <input type="text" id="expyear" name="expyear" placeholder="2018">
+                <input class="ip" type="text" id="expyear" name="expyear" placeholder="2021" required>
               </div>
               <div class="col-50">
                 <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="352">
+
+                <input class="ip" type="text" id="cvv" name="cvv" placeholder=" CVV eg:352" required>
               </div>
             </div>
           </div>
 
         </div>
-        <label>
-          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-        </label>
+
         <input type="submit" value="Continue to checkout" class="btn">
       </form>
     </div>
@@ -512,110 +608,7 @@ span.price {
   </div>
 </div>
   </section>
-<!--<section class="footer-sec">
-  <div class="footer">
-    <div class="row" id="div-row">
-      <div class="col-lg-4 col-md-6 col-sm-6" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:-400px;" >
 
-
-        <h5 style="text-align:left;color:orange;">About us</h5>
-        <p class="sub-info" style="text-align:justify">Magic Farm is committed to being a trustworthy & Innovative leader by providing genuine True wellness products. We work with Thousands of small farmers in India to cultivate ten of thousands of
-          acres of sustainable Organic Farmland.
-        </p>
-        <h5 style="text-align:left;color:orange;">Contact</h5>
-        <div class="contact">
-
-          <ul class="list-line">
-
-            <li class="lists">
-              <i id="icon" class="fas fa-phone-square-alt"></i><span id="text-link"><a class="no" href="tel:8317520094">+91-8317520094</a></span><br>
-            </li>
-
-            <li class="lists">
-              <i id="icon" class="fas fa-envelope"></i><span id="text-link"><a class="no" href="mailto:priyaboddeti1998@gmail.com"> priyaboddeti1998@gmail.com </a></span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 center" data-center-center="opacity:1;bottom:0;" data-0-bottom="opacity:0;bottom:-400px;">
-        <div class="Info">
-          <h5 style="color:orange" ; "text-align:left">Information</h5>
-
-
-          <div class="sub-info">
-
-
-            <p class="links"><a class="no" href="about-us/index.html">About-us </a></p>
-            <p class="links"> <a class="no" href="#">Home</a></p>
-            <p class="links"><a class="no" href="Blog/index.html">Blog</a></p>
-            <p class="links"><a class="no" href="News/index.html">News</a></p>
-            <p class="links"><a class="no" href="#">Cart</a></p>
-            <p class="links"><a  class="no"href="#">Sign-in</a></p>
-          </div>
-
-        </div>
-      </div>
-
-
-      <div class="col-lg-4 col-md-6 col-sm-6" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:400px;">
-
-
-        <div class="card">
-          <h5 style="color:orange;">Contact-us</h5>
-
-          <div class="input-container">
-            <div class="txt">
-              <i class="fa fa-user icon"></i>
-              <label class="label" for="Name"><b class="text-1">Name</b></label>
-            </div>
-
-            <input class="input-field" type="text"  name="usrnm">
-          </div>
-
-          <div class="input-container">
-
-            <div class="txt">
-         <i class="fas fa-envelope"></i>
-              <label class="label" for="Name"><b class="text-1">Email</b></label>
-            </div>
-
-            <input class="input-field" type="text"  name="usrnm">
-          </div>
-          <div class="input-container">
-            <div class="txt">
-              <i class="fas fa-phone-square-alt"></i>
-              <label class="label" for="Name"><b class="text-1">Phone Number</b></label>
-            </div>
-
-            <input class="input-field" type="text"  name="usrnm">
-          </div>
-          <div class="input-container">
-            <div class="txt">
-              <i class="fas fa-pen"></i>
-              <label class="label" for="Name"><b class="text-1">Your Query</b></label>
-            </div>
-
-            <input class="input-field" type="text-area" name="usrnm">
-          </div>
-          <div class="input-container">
-            <button type="button" class="button btn btn-outline-orange">Submit</button>
-
-          </div>
-          </div>
-        </div>
-        </div>
-
-
-      <div class="social" >
-        <h5 style="color:orange;">social media</h5>
-        <a href="" class="soc-icon fab fa-facebook-f" ></a>
-        <a href="" class="soc-icon fab fa-instagram"></a>
-        <a href="" class="soc-icon fab fa-twitter"></a>
-        <a href="" class="soc-icon far fa-envelope"></a>
-        <p>© Copyright 2021 Magic Farm</p>
-      </div>
-
-</body>-->
 <script src="skrollr.js"></script>
 <script type="text/javascript">
   var s = skrollr.init();

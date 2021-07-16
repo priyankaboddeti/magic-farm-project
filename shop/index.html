@@ -29,10 +29,29 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <!--scroll-scripts-->
   <script type="text/javascript">
-  !function(t,e){t.artibotApi={l:[],t:[],on:function(){this.l.push(arguments)},trigger:function(){this.t.push(arguments)}};var a=!1,i=e.createElement("script");
-  i.async=!0,i.type="text/javascript",i.src="https://app.artibot.ai/loader.js",e.getElementsByTagName("head").item(0).appendChild(i),i.onreadystatechange=i.onload=function(){if(!(a||this.readyState&&"loaded"!=this.readyState&&"complete"!=this.readyState))
-  {new window.ArtiBot({i:"f5c005ca-5faf-4593-b380-2ce4cb062dc4"});a=!0}}}
-  (window,document);
+    ! function(t, e) {
+      t.artibotApi = {
+        l: [],
+        t: [],
+        on: function() {
+          this.l.push(arguments)
+        },
+        trigger: function() {
+          this.t.push(arguments)
+        }
+      };
+      var a = !1,
+        i = e.createElement("script");
+      i.async = !0, i.type = "text/javascript", i.src = "https://app.artibot.ai/loader.js", e.getElementsByTagName("head").item(0).appendChild(i), i.onreadystatechange = i.onload = function() {
+        if (!(a || this.readyState && "loaded" != this.readyState && "complete" != this.readyState)) {
+          new window.ArtiBot({
+            i: "f5c005ca-5faf-4593-b380-2ce4cb062dc4"
+          });
+          a = !0
+        }
+      }
+    }
+    (window, document);
   </script>
 
 </head>
@@ -40,36 +59,42 @@
 <body>
 
   <!---NAVBAR SECTION---->
-
   <nav>
     <input type="checkbox" id="check">
     <label for="check" class="checkbtn">
       <i class="fas fa-bars"></i>
     </label>
-    <img class="logo" src="images/logo-2 crop.png" height="90px" width="280px" alt="logo" />
-
+    <img class="logo" src="../images/logo-2 crop.png" height="90px" width="230px" alt="logo">
 
 
     <ul>
-      <li><a href="../index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="../index.html" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <a href="../about-us/index.html">About Us</a>
+
+        </div>
+      </li>
+      <li><a class="active" href="#">Shop</a></li>
       <li><a href="../Blog/index.html">Blog</a></li>
-      <li><a class="active" href="shop/index.html">Shop</a></li>
+
+
       <li><a href="../news/index.html">News</a></li>
 
       <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Sign Up</a>
-    <div class="dropdown-content">
-      <a href="../cust reg/index1.html">Customer</a>
-      <a href="../far reg/far index.html">Farmer</a>
-
-    </div>
-  </li>
+        <a href="javascript:void(0)" class="dropbtn">Sign Up <i class="fa fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <a href="../cust reg/index1.html">Customer</a>
+          <a href="../far reg/far index.html">Farmer</a>
+        </div>
+      </li>
       <li><a href="../login/index3.html">Login</a></li>
       <li> <a href="../cart/index.html">
-        <img src="../icons/cart.png" height="30px",width="30px"/></a>
+          <img src="../icons/cart.png" height="30px" ,width="30px" /></a>
       </li>
     </ul>
   </nav>
+
   <!--carousel-->
   <section class="first-sec">
 
@@ -92,44 +117,44 @@
           <img class="d-block w-100" src="images/organic.jpeg" height="500px" width="500px" alt="sec slide">
         </div>
 
-          <div class="carousel-item">
-            <img class="d-block w-100" src="images/order.jpeg" height="500px" width="500px" alt="sec slide">
-          </div>
-
-
-
-
-
-          <div class="carousel-item">
-            <img class="d-block w-100" src="images/delivery.jpeg" height="500px" width="500px" alt="sec slide">
-          </div>
-
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/order.jpeg" height="500px" width="500px" alt="sec slide">
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+
+
+
+
+
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/delivery.jpeg" height="500px" width="500px" alt="sec slide">
+        </div>
+
       </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
   </section>
 
   <section class="sec-sec">
     <div class="container">
 
-          <h1 class="heading">Shop by categories</h1>
+      <h1 class="heading">Shop by categories</h1>
 
       <div class="categories">
         <div class="row">
 
 
           <div class="col-lg-3 col-md-6   pt-5 cate-width">
-            <a href="#all-vegetables" class="text-white">
+            <a href="#Vegetables" class="text-white">
               <img class="images" src="images/vegetables.jpg" alt="all products">
               <div class="overlay"></div>
-              <h3 class="cate-text"> All Vegetables</h3>
+              <h3 class="cate-text">Vegetables</h3>
             </a>
           </div>
 
@@ -163,9 +188,9 @@
     </div>
   </section>
 
-  <section class="third-sec" id="all-vegetables">
+  <section class="third-sec" id="Vegetables">
 
-      <h1 class="heading">All vegetables</h1>
+    <h1 class="heading">Vegetables</h1>
 
     <div class="product-sec1">
       <div class="row">
@@ -184,9 +209,9 @@
                 <div class="col-md-6">
                   <div class="drop-down">
                     <select name="grams" id="grams">
-                      <option value="grams">250 gm</option>
-                      <option value="grams">500 gm</option>
-                      <option value="grams">1000 gm</option>
+                      <option value="grams">250 gms</option>
+                      <option value="grams">500 gms</option>
+                      <option value="grams">1 kg</option>
                     </select>
 
                   </div>
@@ -215,12 +240,27 @@
               </div>
 
               <div class="rate">
-                <p>500 gm - ₹ 20/-</p>
+                <p>250gms - ₹ 20/-</p>
               </div>
 
               <div class="calender">
-                <i class="fa fa-calendar"></i>
-                <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+                <div class="row">
+
+                  <div class="col-md-6" <i class="fa fa-calendar"></i>
+                    <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+                  </div>
+                  <div class="col-md-6">
+                    <div>
+                      <input type="radio" id="huey" name="drone" value="huey" checked>
+                      <label for="Morning">Morning</label>
+                    </div>
+
+                    <div>
+                      <input type="radio" id="dewey" name="drone" value="dewey">
+                      <label for="Evening">Evening</label>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="button">
@@ -245,9 +285,9 @@
                 <div class="col-md-6">
                   <div class="drop-down">
                     <select name="grams" id="grams">
-                      <option value="grams">250 gm</option>
-                      <option value="grams">500 gm</option>
-                      <option value="grams">1000 gm</option>
+                      <option value="grams">250 gms</option>
+                      <option value="grams">500 gms</option>
+                      <option value="grams">1 kg</option>
                     </select>
 
                   </div>
@@ -276,13 +316,29 @@
               </div>
 
               <div class="rate">
-                <p>500 gm - ₹ 25/-</p>
+                <p>250gms - ₹ 25/-</p>
               </div>
 
               <div class="calender">
-                <i class="fa fa-calendar"></i>
+                <div class="row">
+
+                  <div class="col-md-6"<i class="fa fa-calendar"></i>
                 <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
               </div>
+              <div class="col-md-6">
+                <div>
+                  <input type="radio" id="huey" name="drone" value="huey" checked>
+                  <label for="Morning">Morning</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="dewey" name="drone" value="dewey">
+                  <label for="Evening">Evening</label>
+                </div>
+              </div>
+              </div>
+            </div>
+
 
               <div class="button">
                 <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
@@ -308,9 +364,9 @@
                 <div class="col-md-6">
                   <div class="drop-down">
                     <select name="grams" id="grams">
-                      <option value="grams">250 gm</option>
-                      <option value="grams">500 gm</option>
-                      <option value="grams">1000 gm</option>
+                      <option value="grams">250 gms</option>
+                      <option value="grams">500 gms</option>
+                      <option value="grams">1 kg</option>
                     </select>
 
                   </div>
@@ -339,12 +395,28 @@
               </div>
 
               <div class="rate">
-                <p>500 gm - ₹ 15/-</p>
+                <p>250gms - ₹ 15/-</p>
               </div>
 
               <div class="calender">
+                <div class="row">
+
+                  <div class="col-md-6"
                 <i class="fa fa-calendar"></i>
                 <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+              </div>
+              <div class="col-md-6">
+                <div>
+                  <input type="radio" id="huey" name="drone" value="huey" checked>
+                  <label for="Morning">Morning</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="dewey" name="drone" value="dewey">
+                  <label for="Evening">Evening</label>
+                </div>
+              </div>
+            </div>
               </div>
 
               <div class="button">
@@ -370,9 +442,9 @@
                 <div class="col-md-6">
                   <div class="drop-down">
                     <select name="grams" id="grams">
-                      <option value="grams">250 gm</option>
-                      <option value="grams">500 gm</option>
-                      <option value="grams">1000 gm</option>
+                      <option value="grams">250 gms</option>
+                      <option value="grams">500 gms</option>
+                      <option value="grams">1 kg</option>
                     </select>
 
                   </div>
@@ -401,12 +473,28 @@
               </div>
 
               <div class="rate">
-                <p>500 gm - ₹ 25/-</p>
+                <p>250gms - ₹ 25/-</p>
               </div>
 
               <div class="calender">
+                <div class="row">
+
+                  <div class="col-md-6"
                 <i class="fa fa-calendar"></i>
                 <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+              </div>
+              <div class="col-md-6">
+                <div>
+                  <input type="radio" id="huey" name="drone" value="huey" checked>
+                  <label for="Morning">Morning</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="dewey" name="drone" value="dewey">
+                  <label for="Evening">Evening</label>
+                </div>
+              </div>
+            </div>
               </div>
 
               <div class="button">
@@ -437,9 +525,9 @@
                 <div class="col-md-6">
                   <div class="drop-down">
                     <select name="grams" id="grams">
-                      <option value="grams">250 gm</option>
-                      <option value="grams">500 gm</option>
-                      <option value="grams">1000 gm</option>
+                      <option value="grams">250 gms</option>
+                      <option value="grams">500 gms</option>
+                      <option value="grams">1 kg</option>
                     </select>
 
                   </div>
@@ -468,12 +556,28 @@
               </div>
 
               <div class="rate">
-                <p>500 gm - ₹ 30/-</p>
+                <p>250gms - ₹ 30/-</p>
               </div>
 
               <div class="calender">
+                <div class="row">
+
+                  <div class="col-md-6"
                 <i class="fa fa-calendar"></i>
                 <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+              </div>
+              <div class="col-md-6">
+                <div>
+                  <input type="radio" id="huey" name="drone" value="huey" checked>
+                  <label for="Morning">Morning</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="dewey" name="drone" value="dewey">
+                  <label for="Evening">Evening</label>
+                </div>
+              </div>
+            </div>
               </div>
 
               <div class="button">
@@ -498,9 +602,9 @@
                 <div class="col-md-6">
                   <div class="drop-down">
                     <select name="grams" id="grams">
-                      <option value="grams">250 gm</option>
-                      <option value="grams">500 gm</option>
-                      <option value="grams">1000 gm</option>
+                      <option value="grams">250 gms</option>
+                      <option value="grams">500 gms</option>
+                      <option value="grams">1 kg</option>
                     </select>
 
                   </div>
@@ -529,12 +633,28 @@
               </div>
 
               <div class="rate">
-                <p>500 gm - ₹ 50/-</p>
+                <p>250gms - ₹ 50/-</p>
               </div>
 
               <div class="calender">
+                <div class="row">
+
+                  <div class="col-md-6"
                 <i class="fa fa-calendar"></i>
                 <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+              </div>
+              <div class="col-md-6">
+                <div>
+                  <input type="radio" id="huey" name="drone" value="huey" checked>
+                  <label for="Morning">Morning</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="dewey" name="drone" value="dewey">
+                  <label for="Evening">Evening</label>
+                </div>
+              </div>
+            </div>
               </div>
 
               <div class="button">
@@ -561,9 +681,9 @@
                 <div class="col-md-6">
                   <div class="drop-down">
                     <select name="grams" id="grams">
-                      <option value="grams">250 gm</option>
-                      <option value="grams">500 gm</option>
-                      <option value="grams">1000 gm</option>
+                      <option value="grams">250 gms</option>
+                      <option value="grams">500 gms</option>
+                      <option value="grams">1 kg</option>
                     </select>
 
                   </div>
@@ -592,12 +712,28 @@
               </div>
 
               <div class="rate">
-                <p>500 gm - ₹ 20/-</p>
+                <p>250gms - ₹ 20/-</p>
               </div>
 
               <div class="calender">
+                <div class="row">
+
+                  <div class="col-md-6"
                 <i class="fa fa-calendar"></i>
                 <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+              </div>
+              <div class="col-md-6">
+                <div>
+                  <input type="radio" id="huey" name="drone" value="huey" checked>
+                  <label for="Morning">Morning</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="dewey" name="drone" value="dewey">
+                  <label for="Evening">Evening</label>
+                </div>
+              </div>
+            </div>
               </div>
 
               <div class="button">
@@ -623,9 +759,9 @@
                 <div class="col-md-6">
                   <div class="drop-down">
                     <select name="grams" id="grams">
-                      <option value="grams">250 gm</option>
-                      <option value="grams">500 gm</option>
-                      <option value="grams">1000 gm</option>
+                      <option value="grams">250 gms</option>
+                      <option value="grams">500 gms</option>
+                      <option value="grams">1 kg</option>
                     </select>
 
                   </div>
@@ -654,12 +790,28 @@
               </div>
 
               <div class="rate">
-                <p>500 gm - ₹ 15/-</p>
+                <p>250gms - ₹ 15/-</p>
               </div>
 
               <div class="calender">
+                <div class="row">
+
+                  <div class="col-md-6"
                 <i class="fa fa-calendar"></i>
                 <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+              </div>
+              <div class="col-md-6">
+                <div>
+                  <input type="radio" id="huey" name="drone" value="huey" checked>
+                  <label for="Morning">Morning</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="dewey" name="drone" value="dewey">
+                  <label for="Evening">Evening</label>
+                </div>
+              </div>
+            </div>
               </div>
 
               <div class="button">
@@ -678,1046 +830,1304 @@
   </section>
 
 
-<section class="fourth-sec" id="all-fruits">
+  <section class="fourth-sec" id="all-fruits">
 
     <h1 class="heading">Fruits</h2>
 
-  <div class="product-sec1">
-    <div class="row">
+      <div class="product-sec1">
+        <div class="row">
 
 
-      <div class="col-lg-3  col-sm-6 product-men">
-        <div class="card">
-          <div class="title">
-            <h4 class="card-title">Apple</h4>
-          </div>
-
-          <div class="product-card" width="25%" valign="top">
-
-            <img src="fruits/apple.jpg" width="100%" class="img-responsive" alt="">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="drop-down">
-                  <select name="grams" id="grams">
-                    <option value="grams">250 gm</option>
-                    <option value="grams">500 gm</option>
-                    <option value="grams">1000 gm</option>
-                  </select>
-
-                </div>
+          <div class="col-lg-3  col-sm-6 product-men">
+            <div class="card">
+              <div class="title">
+                <h4 class="card-title">Apple</h4>
               </div>
 
-              <div class="col-md-6">
+              <div class="product-card" width="25%" valign="top">
 
-                <div class="group">
+                <img src="fruits/apple.jpg" width="100%" class="img-responsive" alt="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="drop-down">
+                      <select name="grams" id="grams">
+                        <option value="grams">250 gms</option>
+                        <option value="grams">500 gms</option>
+                        <option value="grams">1 kg</option>
+                      </select>
 
-
-                  <div class="input-group  ">
-                    <div class="input-group-btn">
-                      <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
-                        <strong>-</strong>
-                      </button>
                     </div>
-                    <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
-                    <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
-                        <strong>+</strong>
-                      </button>
-                    </div>
+                  </div>
 
+                  <div class="col-md-6">
+
+                    <div class="group">
+
+
+                      <div class="input-group  ">
+                        <div class="input-group-btn">
+                          <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
+                            <strong>-</strong>
+                          </button>
+                        </div>
+                        <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
+                        <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
+                            <strong>+</strong>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rate">
+                  <p>250gms - ₹ 50/-</p>
+                </div>
+
+                <div class="calender">
+                  <div class="row">
+
+                    <div class="col-md-6"
+                  <i class="fa fa-calendar"></i>
+                  <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+                </div>
+                <div class="col-md-6">
+                  <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked>
+                    <label for="Morning">Morning</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey">
+                    <label for="Evening">Evening</label>
                   </div>
                 </div>
               </div>
-            </div>
+                </div>
 
-            <div class="rate">
-              <p>500 gm - ₹ 50/-</p>
-            </div>
-
-            <div class="calender">
-              <i class="fa fa-calendar"></i>
-              <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
-            </div>
-
-            <div class="button">
-              <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-sm-6 product-men">
-        <div class="card">
-          <div class="title">
-            <h4 class="card-title">Banana</h4>
-          </div>
-
-          <div class="product-card" width="25%" valign="top">
-
-            <img src="fruits/bananas.jpg" width="100%" class="img-responsive" alt="">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="drop-down">
-                  <select name="grams" id="grams">
-                    <option value="grams">250 gm</option>
-                    <option value="grams">500 gm</option>
-                    <option value="grams">1000 gm</option>
-                  </select>
+                <div class="button">
+                  <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
 
                 </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 product-men">
+            <div class="card">
+              <div class="title">
+                <h4 class="card-title">Banana</h4>
               </div>
 
-              <div class="col-md-6">
+              <div class="product-card" width="25%" valign="top">
 
-                <div class="group">
+                <img src="fruits/bananas.jpg" width="100%" class="img-responsive" alt="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="drop-down">
+                      <select name="grams" id="grams">
+                        <option value="grams">250 gms</option>
+                        <option value="grams">500 gms</option>
+                        <option value="grams">1 kg</option>
+                      </select>
 
-
-                  <div class="input-group  ">
-                    <div class="input-group-btn">
-                      <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
-                        <strong>-</strong>
-                      </button>
                     </div>
-                    <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
-                    <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
-                        <strong>+</strong>
-                      </button>
-                    </div>
+                  </div>
 
+                  <div class="col-md-6">
+
+                    <div class="group">
+
+
+                      <div class="input-group  ">
+                        <div class="input-group-btn">
+                          <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
+                            <strong>-</strong>
+                          </button>
+                        </div>
+                        <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
+                        <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
+                            <strong>+</strong>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rate">
+                  <p>250gms - ₹ 40/-</p>
+                </div>
+
+                <div class="calender">
+                  <div class="row">
+
+                    <div class="col-md-6"
+                  <i class="fa fa-calendar"></i>
+                  <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+                </div>
+                <div class="col-md-6">
+                  <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked>
+                    <label for="Morning">Morning</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey">
+                    <label for="Evening">Evening</label>
                   </div>
                 </div>
               </div>
-            </div>
+                </div>
 
-            <div class="rate">
-              <p>500 gm - ₹ 40/-</p>
-            </div>
-
-            <div class="calender">
-              <i class="fa fa-calendar"></i>
-              <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
-            </div>
-
-            <div class="button">
-              <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="col-lg-3 col-sm-6 product-men">
-        <div class="card">
-          <div class="title">
-            <h4 class="card-title">Mango</h4>
-          </div>
-
-          <div class="product-card" width="25%" valign="top">
-
-            <img src="fruits/mangoes.jpg" width="100%" class="img-responsive" alt="">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="drop-down">
-                  <select name="grams" id="grams">
-                    <option value="grams">250 gm</option>
-                    <option value="grams">500 gm</option>
-                    <option value="grams">1000 gm</option>
-                  </select>
+                <div class="button">
+                  <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
 
                 </div>
+
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-3 col-sm-6 product-men">
+            <div class="card">
+              <div class="title">
+                <h4 class="card-title">Mango</h4>
               </div>
 
-              <div class="col-md-6">
+              <div class="product-card" width="25%" valign="top">
 
-                <div class="group">
+                <img src="fruits/mangoes.jpg" width="100%" class="img-responsive" alt="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="drop-down">
+                      <select name="grams" id="grams">
+                        <option value="grams">250 gms</option>
+                        <option value="grams">500 gms</option>
+                        <option value="grams">1 kg</option>
+                      </select>
 
-
-                  <div class="input-group  ">
-                    <div class="input-group-btn">
-                      <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
-                        <strong>-</strong>
-                      </button>
                     </div>
-                    <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
-                    <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
-                        <strong>+</strong>
-                      </button>
-                    </div>
+                  </div>
 
+                  <div class="col-md-6">
+
+                    <div class="group">
+
+
+                      <div class="input-group  ">
+                        <div class="input-group-btn">
+                          <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
+                            <strong>-</strong>
+                          </button>
+                        </div>
+                        <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
+                        <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
+                            <strong>+</strong>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rate">
+                  <p>250gms - ₹120/-</p>
+                </div>
+
+                <div class="calender">
+                  <div class="row">
+
+                    <div class="col-md-6"
+                  <i class="fa fa-calendar"></i>
+                  <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+                </div>
+                <div class="col-md-6">
+                  <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked>
+                    <label for="Morning">Morning</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey">
+                    <label for="Evening">Evening</label>
                   </div>
                 </div>
               </div>
-            </div>
+                </div>
 
-            <div class="rate">
-              <p>500 gm - ₹120/-</p>
-            </div>
-
-            <div class="calender">
-              <i class="fa fa-calendar"></i>
-              <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
-            </div>
-
-            <div class="button">
-              <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-lg-3 col-sm-6 product-men">
-        <div class="card">
-          <div class="title">
-            <h4 class="card-title">Pomegranate</h4>
-          </div>
-
-          <div class="product-card" width="25%" valign="top">
-
-            <img src="fruits/pomegranate.jpg" width="100%" class="img-responsive" alt="">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="drop-down">
-                  <select name="grams" id="grams">
-                    <option value="grams">250 gm</option>
-                    <option value="grams">500 gm</option>
-                    <option value="grams">1000 gm</option>
-                  </select>
+                <div class="button">
+                  <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
 
                 </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-sm-6 product-men">
+            <div class="card">
+              <div class="title">
+                <h4 class="card-title">Pomegranate</h4>
               </div>
 
-              <div class="col-md-6">
+              <div class="product-card" width="25%" valign="top">
 
-                <div class="group">
+                <img src="fruits/pomegranate.jpg" width="100%" class="img-responsive" alt="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="drop-down">
+                      <select name="grams" id="grams">
+                        <option value="grams">250 gms</option>
+                        <option value="grams">500 gms</option>
+                        <option value="grams">1 kg</option>
+                      </select>
 
-
-                  <div class="input-group  ">
-                    <div class="input-group-btn">
-                      <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
-                        <strong>-</strong>
-                      </button>
                     </div>
-                    <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
-                    <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
-                        <strong>+</strong>
-                      </button>
-                    </div>
+                  </div>
 
+                  <div class="col-md-6">
+
+                    <div class="group">
+
+
+                      <div class="input-group  ">
+                        <div class="input-group-btn">
+                          <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
+                            <strong>-</strong>
+                          </button>
+                        </div>
+                        <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
+                        <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
+                            <strong>+</strong>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rate">
+                  <p>250gms - ₹ 60/-</p>
+                </div>
+
+                <div class="calender">
+                  <div class="row">
+
+                    <div class="col-md-6"
+                  <i class="fa fa-calendar"></i>
+                  <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+                </div>
+                <div class="col-md-6">
+                  <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked>
+                    <label for="Morning">Morning</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey">
+                    <label for="Evening">Evening</label>
                   </div>
                 </div>
               </div>
-            </div>
+                </div>
 
-            <div class="rate">
-              <p>500 gm - ₹ 60/-</p>
-            </div>
-
-            <div class="calender">
-              <i class="fa fa-calendar"></i>
-              <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
-            </div>
-
-            <div class="button">
-              <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-
-
-      <div class="col-lg-3  col-sm-6 product-men">
-        <div class="card">
-          <div class="title">
-            <h4 class="card-title">Oranges</h4></h4>
-          </div>
-
-          <div class="product-card" width="25%" valign="top">
-
-            <img src="fruits/orange (2).jpg" width="100%" class="img-responsive" alt="">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="drop-down">
-                  <select name="grams" id="grams">
-                    <option value="grams">250 gm</option>
-                    <option value="grams">500 gm</option>
-                    <option value="grams">1000 gm</option>
-                  </select>
+                <div class="button">
+                  <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
 
                 </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+
+          <div class="col-lg-3  col-sm-6 product-men">
+            <div class="card">
+              <div class="title">
+                <h4 class="card-title">Oranges</h4>
+                </h4>
               </div>
 
-              <div class="col-md-6">
+              <div class="product-card" width="25%" valign="top">
 
-                <div class="group">
+                <img src="fruits/orange (2).jpg" width="100%" class="img-responsive" alt="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="drop-down">
+                      <select name="grams" id="grams">
+                        <option value="grams">250 gms</option>
+                        <option value="grams">500 gms</option>
+                        <option value="grams">1 kg</option>
+                      </select>
 
-
-                  <div class="input-group  ">
-                    <div class="input-group-btn">
-                      <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
-                        <strong>-</strong>
-                      </button>
                     </div>
-                    <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
-                    <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
-                        <strong>+</strong>
-                      </button>
-                    </div>
+                  </div>
 
+                  <div class="col-md-6">
+
+                    <div class="group">
+
+
+                      <div class="input-group  ">
+                        <div class="input-group-btn">
+                          <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
+                            <strong>-</strong>
+                          </button>
+                        </div>
+                        <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
+                        <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
+                            <strong>+</strong>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rate">
+                  <p>250gms - ₹70/-</p>
+                </div>
+
+                <div class="calender">
+                  <div class="row">
+
+                    <div class="col-md-6"
+                  <i class="fa fa-calendar"></i>
+                  <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+                </div>
+                <div class="col-md-6">
+                  <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked>
+                    <label for="Morning">Morning</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey">
+                    <label for="Evening">Evening</label>
                   </div>
                 </div>
               </div>
-            </div>
+                </div>
 
-            <div class="rate">
-              <p>500 gm - ₹70/-</p>
-            </div>
-
-            <div class="calender">
-              <i class="fa fa-calendar"></i>
-              <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
-            </div>
-
-            <div class="button">
-              <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-sm-6 product-men">
-        <div class="card">
-          <div class="title">
-            <h4 class="card-title">Pineapple</h4>
-          </div>
-
-          <div class="product-card" width="25%" valign="top">
-
-            <img src="fruits/pineapple (2).jpg" width="100%" class="img-responsive" alt="">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="drop-down">
-                  <select name="grams" id="grams">
-                    <option value="grams">250 gm</option>
-                    <option value="grams">500 gm</option>
-                    <option value="grams">1000 gm</option>
-                  </select>
+                <div class="button">
+                  <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
 
                 </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 product-men">
+            <div class="card">
+              <div class="title">
+                <h4 class="card-title">Pineapple</h4>
               </div>
 
-              <div class="col-md-6">
+              <div class="product-card" width="25%" valign="top">
 
-                <div class="group">
+                <img src="fruits/pineapple (2).jpg" width="100%" class="img-responsive" alt="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="drop-down">
+                      <select name="grams" id="grams">
+                        <option value="grams">250 gms</option>
+                        <option value="grams">500 gms</option>
+                        <option value="grams">1 kg</option>
+                      </select>
 
-
-                  <div class="input-group  ">
-                    <div class="input-group-btn">
-                      <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
-                        <strong>-</strong>
-                      </button>
                     </div>
-                    <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
-                    <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
-                        <strong>+</strong>
-                      </button>
-                    </div>
+                  </div>
 
+                  <div class="col-md-6">
+
+                    <div class="group">
+
+
+                      <div class="input-group  ">
+                        <div class="input-group-btn">
+                          <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
+                            <strong>-</strong>
+                          </button>
+                        </div>
+                        <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
+                        <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
+                            <strong>+</strong>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rate">
+                  <p>250gms - ₹ 50/-</p>
+                </div>
+
+                <div class="calender">
+                  <div class="row">
+
+                    <div class="col-md-6"
+                  <i class="fa fa-calendar"></i>
+                  <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+                </div>
+                <div class="col-md-6">
+                  <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked>
+                    <label for="Morning">Morning</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey">
+                    <label for="Evening">Evening</label>
                   </div>
                 </div>
               </div>
-            </div>
+                </div>
 
-            <div class="rate">
-              <p>500 gm - ₹ 50/-</p>
-            </div>
-
-            <div class="calender">
-              <i class="fa fa-calendar"></i>
-              <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
-            </div>
-
-            <div class="button">
-              <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="col-lg-3 col-sm-6 product-men">
-        <div class="card">
-          <div class="title">
-            <h4 class="card-title">Grapes</h4>
-          </div>
-
-          <div class="product-card" width="25%" valign="top">
-
-            <img src="fruits/grapes (2).jpg" width="100%" class="img-responsive" alt="">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="drop-down">
-                  <select name="grams" id="grams">
-                    <option value="grams">250 gm</option>
-                    <option value="grams">500 gm</option>
-                    <option value="grams">1000 gm</option>
-                  </select>
+                <div class="button">
+                  <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
 
                 </div>
+
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-3 col-sm-6 product-men">
+            <div class="card">
+              <div class="title">
+                <h4 class="card-title">Grapes</h4>
               </div>
 
-              <div class="col-md-6">
+              <div class="product-card" width="25%" valign="top">
 
-                <div class="group">
+                <img src="fruits/grapes (2).jpg" width="100%" class="img-responsive" alt="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="drop-down">
+                      <select name="grams" id="grams">
+                        <option value="grams">250 gms</option>
+                        <option value="grams">500 gms</option>
+                        <option value="grams">1 kg</option>
+                      </select>
 
-
-                  <div class="input-group  ">
-                    <div class="input-group-btn">
-                      <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
-                        <strong>-</strong>
-                      </button>
                     </div>
-                    <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
-                    <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
-                        <strong>+</strong>
-                      </button>
-                    </div>
+                  </div>
 
+                  <div class="col-md-6">
+
+                    <div class="group">
+
+
+                      <div class="input-group  ">
+                        <div class="input-group-btn">
+                          <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
+                            <strong>-</strong>
+                          </button>
+                        </div>
+                        <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
+                        <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
+                            <strong>+</strong>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rate">
+                  <p>250gms - ₹ 40/-</p>
+                </div>
+
+                <div class="calender">
+                  <div class="row">
+
+                    <div class="col-md-6"
+                  <i class="fa fa-calendar"></i>
+                  <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+                </div>
+                <div class="col-md-6">
+                  <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked>
+                    <label for="Morning">Morning</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey">
+                    <label for="Evening">Evening</label>
                   </div>
                 </div>
               </div>
-            </div>
+                </div>
 
-            <div class="rate">
-              <p>500 gm - ₹ 40/-</p>
-            </div>
-
-            <div class="calender">
-              <i class="fa fa-calendar"></i>
-              <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
-            </div>
-
-            <div class="button">
-              <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-lg-3 col-sm-6 product-men">
-        <div class="card">
-          <div class="title">
-            <h4 class="card-title">Kiwi</h4>
-          </div>
-
-          <div class="product-card" width="25%" valign="top">
-
-            <img src="fruits/Kiwi.jpg" width="100%" class="img-responsive" alt="">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="drop-down">
-                  <select name="grams" id="grams">
-                    <option value="grams">250 gm</option>
-                    <option value="grams">500 gm</option>
-                    <option value="grams">1000 gm</option>
-                  </select>
+                <div class="button">
+                  <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
 
                 </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-sm-6 product-men">
+            <div class="card">
+              <div class="title">
+                <h4 class="card-title">Kiwi</h4>
               </div>
 
-              <div class="col-md-6">
+              <div class="product-card" width="25%" valign="top">
 
-                <div class="group">
+                <img src="fruits/Kiwi.jpg" width="100%" class="img-responsive" alt="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="drop-down">
+                      <select name="grams" id="grams">
+                        <option value="grams">250 gms</option>
+                        <option value="grams">500 gms</option>
+                        <option value="grams">1 kg</option>
+                      </select>
 
-
-                  <div class="input-group  ">
-                    <div class="input-group-btn">
-                      <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
-                        <strong>-</strong>
-                      </button>
                     </div>
-                    <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
-                    <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
-                        <strong>+</strong>
-                      </button>
-                    </div>
+                  </div>
 
+                  <div class="col-md-6">
+
+                    <div class="group">
+
+
+                      <div class="input-group  ">
+                        <div class="input-group-btn">
+                          <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
+                            <strong>-</strong>
+                          </button>
+                        </div>
+                        <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
+                        <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
+                            <strong>+</strong>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rate">
+                  <p>250gms - ₹70/-</p>
+                </div>
+
+                <div class="calender">
+                  <div class="row">
+
+                    <div class="col-md-6"
+                  <i class="fa fa-calendar"></i>
+                  <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+                </div>
+                <div class="col-md-6">
+                  <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked>
+                    <label for="Morning">Morning</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey">
+                    <label for="Evening">Evening</label>
                   </div>
                 </div>
               </div>
+                </div>
+
+                <div class="button">
+                  <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
+
+                </div>
+
+              </div>
             </div>
-
-            <div class="rate">
-              <p>500 gm - ₹70/-</p>
-            </div>
-
-            <div class="calender">
-              <i class="fa fa-calendar"></i>
-              <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
-            </div>
-
-            <div class="button">
-              <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
-
-            </div>
-
           </div>
         </div>
-      </div>
-    </div>
 
 
-</section>
+  </section>
 
-<section class="fiv-sec">
-<div class="container">
+  <section class="fiv-sec">
+    <div class="container">
       <div class="agileinfo-ads-display">
-         <div class="wrapper">
-            <div class="product-sec1">
-              <div class="row">
+        <div class="wrapper">
+          <div class="product-sec1">
+            <div class="row">
 
 
-               <div class="col-lg-6 effect-bg">
-                  <h1 style="font-weight:bold";>Healthy Thoughts</h1>
+              <div class="col-lg-6 effect-bg">
+                <h1 style="font-weight:bold" ;>Healthy Thoughts</h1>
 
-                  <p class="style">9 Thousands Steps, 8 Hours of Sleep, 7 Glasses of Water, 6 Minutes of Meditation, 5 Servings of Fruits / veggies, 4 Breaks - Stretching/Mental, 3 Healthy Meals, 2 Hours of No Electronic Gadgets before and after bed, 1 Session&nbsp;of Exercise.&nbsp;</p>
+                <p class="style">9 Thousands Steps, 8 Hours of Sleep, 7 Glasses of Water, 6 Minutes of Meditation, 5 Servings of Fruits / veggies, 4 Breaks - Stretching/Mental, 3 Healthy Meals, 2 Hours of No Electronic Gadgets before and after bed, 1
+                  Session&nbsp;of Exercise.&nbsp;</p>
 
-               </div>
+              </div>
 
-               <div class="col-lg-6 bg-right-nut">
-                  <img src="HealthTip.png" alt="">
-               </div>
-               </div>
-               <div class="clearfix"></div>
+              <div class="col-lg-6 bg-right-nut">
+                <img src="HealthTip.png" alt="">
+              </div>
             </div>
-         </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
       </div>
-   </div>
-</section>
+    </div>
+  </section>
 
   <section class="six-sec" id="all-pulses">
 
-      <h1 class="heading">Pulses</h2>
+    <h1 class="heading">Pulses</h2>
 
-    <div class="product-sec1">
-      <div class="row">
-
-
-        <div class="col-lg-3  col-sm-6 product-men">
-          <div class="card">
-            <div class="title">
-              <h4 class="card-title">Green Gram Beans</h4>
-            </div>
-
-            <div class="product-card" width="25%" valign="top">
-
-              <img src="pulses/green grams.jpeg" width="100%" class="img-responsive" alt="">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="drop-down">
-                    <select name="grams" id="grams">
-                      <option value="grams">250 gm</option>
-                      <option value="grams">500 gm</option>
-                      <option value="grams">1000 gm</option>
-                    </select>
-
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-
-                  <div class="group">
+      <div class="product-sec1">
+        <div class="row">
 
 
-                    <div class="input-group  ">
-                      <div class="input-group-btn">
-                        <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
-                          <strong>-</strong>
-                        </button>
-                      </div>
-                      <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
-                      <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
-                          <strong>+</strong>
-                        </button>
-                      </div>
+          <div class="col-lg-3  col-sm-6 product-men">
+            <div class="card">
+              <div class="title">
+                <h4 class="card-title">Green Gram Beans</h4>
+              </div>
+
+              <div class="product-card" width="25%" valign="top">
+
+                <img src="pulses/green grams.jpeg" width="100%" class="img-responsive" alt="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="drop-down">
+                      <select name="grams" id="grams">
+                        <option value="grams">250 gms</option>
+                        <option value="grams">500 gms</option>
+                        <option value="grams">1 kg</option>
+                      </select>
 
                     </div>
                   </div>
-                </div>
-              </div>
 
-              <div class="rate">
-                <p>500 gm - ₹ 50/-</p>
-              </div>
+                  <div class="col-md-6">
 
-              <div class="calender">
-                <i class="fa fa-calendar"></i>
-                <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
-              </div>
-
-              <div class="button">
-                <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
-
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6 product-men">
-          <div class="card">
-            <div class="title">
-              <h4 class="card-title">Red Lentils</h4>
-            </div>
-
-            <div class="product-card" width="25%" valign="top">
-
-              <img src="pulses/Red Lentils.jpeg" width="100%" class="img-responsive" alt="">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="drop-down">
-                    <select name="grams" id="grams">
-                      <option value="grams">250 gm</option>
-                      <option value="grams">500 gm</option>
-                      <option value="grams">1000 gm</option>
-                    </select>
-
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-
-                  <div class="group">
+                    <div class="group">
 
 
-                    <div class="input-group  ">
-                      <div class="input-group-btn">
-                        <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
-                          <strong>-</strong>
-                        </button>
+                      <div class="input-group  ">
+                        <div class="input-group-btn">
+                          <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
+                            <strong>-</strong>
+                          </button>
+                        </div>
+                        <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
+                        <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
+                            <strong>+</strong>
+                          </button>
+                        </div>
+
                       </div>
-                      <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
-                      <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
-                          <strong>+</strong>
-                        </button>
-                      </div>
-
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="rate">
-                <p>500 gm - ₹ 95/-</p>
-              </div>
-
-              <div class="calender">
-                <i class="fa fa-calendar"></i>
-                <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
-              </div>
-
-              <div class="button">
-                <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
-
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="col-lg-3 col-sm-6 product-men">
-          <div class="card">
-            <div class="title">
-              <h4 class="card-title">Dew Beans</h4>
-            </div>
-
-            <div class="product-card" width="25%" valign="top">
-
-              <img src="pulses/dew beans.jfif" width="100%" class="img-responsive" alt="">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="drop-down">
-                    <select name="grams" id="grams">
-                      <option value="grams">250 gm</option>
-                      <option value="grams">500 gm</option>
-                      <option value="grams">1000 gm</option>
-                    </select>
-
-                  </div>
+                <div class="rate">
+                  <p>250gms - ₹ 50/-</p>
                 </div>
 
+                <div class="calender">
+                  <div class="row">
+
+                    <div class="col-md-6"
+                  <i class="fa fa-calendar"></i>
+                  <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+                </div>
                 <div class="col-md-6">
+                  <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked>
+                    <label for="Morning">Morning</label>
+                  </div>
 
-                  <div class="group">
+                  <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey">
+                    <label for="Evening">Evening</label>
+                  </div>
+                </div>
+              </div>
+                </div>
 
+                <div class="button">
+                  <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
 
-                    <div class="input-group  ">
-                      <div class="input-group-btn">
-                        <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
-                          <strong>-</strong>
-                        </button>
-                      </div>
-                      <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
-                      <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
-                          <strong>+</strong>
-                        </button>
-                      </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 product-men">
+            <div class="card">
+              <div class="title">
+                <h4 class="card-title">Red Lentils</h4>
+              </div>
+
+              <div class="product-card" width="25%" valign="top">
+
+                <img src="pulses/Red Lentils.jpeg" width="100%" class="img-responsive" alt="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="drop-down">
+                      <select name="grams" id="grams">
+                        <option value="grams">250 gms</option>
+                        <option value="grams">500 gms</option>
+                        <option value="grams">1 kg</option>
+                      </select>
 
                     </div>
                   </div>
-                </div>
-              </div>
 
-              <div class="rate">
-                <p>500 gm - ₹ 35/-</p>
-              </div>
+                  <div class="col-md-6">
 
-              <div class="calender">
-                <i class="fa fa-calendar"></i>
-                <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
-              </div>
-
-              <div class="button">
-                <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
-
-              </div>
-
-            </div>
-          </div>
-        </div>
+                    <div class="group">
 
 
-        <div class="col-lg-3 col-sm-6 product-men">
-          <div class="card">
-            <div class="title">
-              <h4 class="card-title">Adzuk Beans</h4>
-            </div>
+                      <div class="input-group  ">
+                        <div class="input-group-btn">
+                          <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
+                            <strong>-</strong>
+                          </button>
+                        </div>
+                        <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
+                        <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
+                            <strong>+</strong>
+                          </button>
+                        </div>
 
-            <div class="product-card" width="25%" valign="top">
-
-              <img src="pulses/adzuk beans.jpeg" width="100%" class="img-responsive" alt="">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="drop-down">
-                    <select name="grams" id="grams">
-                      <option value="grams">250 gm</option>
-                      <option value="grams">500 gm</option>
-                      <option value="grams">1000 gm</option>
-                    </select>
-
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-
-                  <div class="group">
-
-
-                    <div class="input-group  ">
-                      <div class="input-group-btn">
-                        <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
-                          <strong>-</strong>
-                        </button>
                       </div>
-                      <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
-                      <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
-                          <strong>+</strong>
-                        </button>
-                      </div>
-
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="rate">
-                <p>500 gm - ₹ 50/-</p>
-              </div>
-
-              <div class="calender">
-                <i class="fa fa-calendar"></i>
-                <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
-              </div>
-
-              <div class="button">
-                <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
-
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-
-
-        <div class="col-lg-3  col-sm-6 product-men">
-          <div class="card">
-            <div class="title">
-              <h4 class="card-title">Yellow pigeo peas</h4>
-            </div>
-
-            <div class="product-card" width="25%" valign="top">
-
-              <img src="pulses/yellow pigeo peas.jpeg" width="100%" class="img-responsive" alt="">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="drop-down">
-                    <select name="grams" id="grams">
-                      <option value="grams">250 gm</option>
-                      <option value="grams">500 gm</option>
-                      <option value="grams">1000 gm</option>
-                    </select>
-
-                  </div>
+                <div class="rate">
+                  <p>250gms - ₹ 95/-</p>
                 </div>
 
+                <div class="calender">
+                  <div class="row">
+
+                    <div class="col-md-6"
+                  <i class="fa fa-calendar"></i>
+                  <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+                </div>
                 <div class="col-md-6">
+                  <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked>
+                    <label for="Morning">Morning</label>
+                  </div>
 
-                  <div class="group">
+                  <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey">
+                    <label for="Evening">Evening</label>
+                  </div>
+                </div>
+              </div>
+                </div>
+
+                <div class="button">
+                  <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
 
 
-                    <div class="input-group  ">
-                      <div class="input-group-btn">
-                        <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
-                          <strong>-</strong>
-                        </button>
-                      </div>
-                      <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
-                      <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
-                          <strong>+</strong>
-                        </button>
-                      </div>
+
+          <div class="col-lg-3 col-sm-6 product-men">
+            <div class="card">
+              <div class="title">
+                <h4 class="card-title">Dew Beans</h4>
+              </div>
+
+              <div class="product-card" width="25%" valign="top">
+
+                <img src="pulses/dew beans.jfif" width="100%" class="img-responsive" alt="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="drop-down">
+                      <select name="grams" id="grams">
+                        <option value="grams">250 gms</option>
+                        <option value="grams">500 gms</option>
+                        <option value="grams">1 kg</option>
+                      </select>
 
                     </div>
                   </div>
-                </div>
-              </div>
 
-              <div class="rate">
-                <p>500 gm - ₹ 60/-</p>
-              </div>
+                  <div class="col-md-6">
 
-              <div class="calender">
-                <i class="fa fa-calendar"></i>
-                <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
-              </div>
-
-              <div class="button">
-                <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
-
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6 product-men">
-          <div class="card">
-            <div class="title">
-              <h4 class="card-title">Chana dal</h4>
-            </div>
-
-            <div class="product-card" width="25%" valign="top">
-
-              <img src="pulses/chana dal.jfif" width="100%" class="img-responsive" alt="">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="drop-down">
-                    <select name="grams" id="grams">
-                      <option value="grams">250 gm</option>
-                      <option value="grams">500 gm</option>
-                      <option value="grams">1000 gm</option>
-                    </select>
-
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-
-                  <div class="group">
+                    <div class="group">
 
 
-                    <div class="input-group  ">
-                      <div class="input-group-btn">
-                        <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
-                          <strong>-</strong>
-                        </button>
+                      <div class="input-group  ">
+                        <div class="input-group-btn">
+                          <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
+                            <strong>-</strong>
+                          </button>
+                        </div>
+                        <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
+                        <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
+                            <strong>+</strong>
+                          </button>
+                        </div>
+
                       </div>
-                      <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
-                      <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
-                          <strong>+</strong>
-                        </button>
-                      </div>
-
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="rate">
-                <p>500 gm - ₹ 45/-</p>
-              </div>
-
-              <div class="calender">
-                <i class="fa fa-calendar"></i>
-                <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
-              </div>
-
-              <div class="button">
-                <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
-
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="col-lg-3 col-sm-6 product-men">
-          <div class="card">
-            <div class="title">
-              <h4 class="card-title">Black Gram</h4>
-            </div>
-
-            <div class="product-card" width="25%" valign="top">
-
-              <img src="pulses/black gram.jfif" width="100%" class="img-responsive" alt="">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="drop-down">
-                    <select name="grams" id="grams">
-                      <option value="grams">250 gm</option>
-                      <option value="grams">500 gm</option>
-                      <option value="grams">1000 gm</option>
-                    </select>
-
-                  </div>
+                <div class="rate">
+                  <p>250gms - ₹ 35/-</p>
                 </div>
 
+                <div class="calender">
+                  <div class="row">
+
+                    <div class="col-md-6"
+                  <i class="fa fa-calendar"></i>
+                  <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+                </div>
                 <div class="col-md-6">
+                  <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked>
+                    <label for="Morning">Morning</label>
+                  </div>
 
-                  <div class="group">
+                  <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey">
+                    <label for="Evening">Evening</label>
+                  </div>
+                </div>
+              </div>
+                </div>
+
+                <div class="button">
+                  <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
 
 
-                    <div class="input-group  ">
-                      <div class="input-group-btn">
-                        <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
-                          <strong>-</strong>
-                        </button>
-                      </div>
-                      <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
-                      <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
-                          <strong>+</strong>
-                        </button>
-                      </div>
+          <div class="col-lg-3 col-sm-6 product-men">
+            <div class="card">
+              <div class="title">
+                <h4 class="card-title">Adzuk Beans</h4>
+              </div>
+
+              <div class="product-card" width="25%" valign="top">
+
+                <img src="pulses/adzuk beans.jpeg" width="100%" class="img-responsive" alt="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="drop-down">
+                      <select name="grams" id="grams">
+                        <option value="grams">250 gms</option>
+                        <option value="grams">500 gms</option>
+                        <option value="grams">1 kg</option>
+                      </select>
 
                     </div>
                   </div>
-                </div>
-              </div>
 
-              <div class="rate">
-                <p>500 gm - ₹ 50/-</p>
-              </div>
+                  <div class="col-md-6">
 
-              <div class="calender">
-                <i class="fa fa-calendar"></i>
-                <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
-              </div>
-
-              <div class="button">
-                <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
-
-              </div>
-
-            </div>
-          </div>
-        </div>
+                    <div class="group">
 
 
-        <div class="col-lg-3 col-sm-6 product-men">
-          <div class="card">
-            <div class="title">
-              <h4 class="card-title">Ground Nuts</h4>
-            </div>
+                      <div class="input-group  ">
+                        <div class="input-group-btn">
+                          <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
+                            <strong>-</strong>
+                          </button>
+                        </div>
+                        <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
+                        <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
+                            <strong>+</strong>
+                          </button>
+                        </div>
 
-            <div class="product-card" width="25%" valign="top">
-
-              <img src="pulses/groundnuts.jpeg" width="100%" class="img-responsive" alt="">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="drop-down">
-                    <select name="grams" id="grams">
-                      <option value="grams">250 gm</option>
-                      <option value="grams">500 gm</option>
-                      <option value="grams">1000 gm</option>
-                    </select>
-
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-
-                  <div class="group">
-
-
-                    <div class="input-group  ">
-                      <div class="input-group-btn">
-                        <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
-                          <strong>-</strong>
-                        </button>
                       </div>
-                      <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
-                      <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
-                          <strong>+</strong>
-                        </button>
-                      </div>
-
                     </div>
                   </div>
                 </div>
+
+                <div class="rate">
+                  <p>250gms - ₹ 50/-</p>
+                </div>
+
+                <div class="calender">
+                  <div class="row">
+
+                    <div class="col-md-6"
+                  <i class="fa fa-calendar"></i>
+                  <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+                </div>
+                <div class="col-md-6">
+                  <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked>
+                    <label for="Morning">Morning</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey">
+                    <label for="Evening">Evening</label>
+                  </div>
+                </div>
               </div>
+                </div>
 
-              <div class="rate">
-                <p>500 gm - ₹ 35/-</p>
-              </div>
+                <div class="button">
+                  <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
 
-              <div class="calender">
-                <i class="fa fa-calendar"></i>
-                <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
-              </div>
-
-              <div class="button">
-                <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
+                </div>
 
               </div>
-
             </div>
           </div>
         </div>
-      </div>
+        <div class="row">
+
+
+          <div class="col-lg-3  col-sm-6 product-men">
+            <div class="card">
+              <div class="title">
+                <h4 class="card-title">Yellow pigeo peas</h4>
+              </div>
+
+              <div class="product-card" width="25%" valign="top">
+
+                <img src="pulses/yellow pigeo peas.jpeg" width="100%" class="img-responsive" alt="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="drop-down">
+                      <select name="grams" id="grams">
+                        <option value="grams">250 gms</option>
+                        <option value="grams">500 gms</option>
+                        <option value="grams">1 kg</option>
+                      </select>
+
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+
+                    <div class="group">
+
+
+                      <div class="input-group  ">
+                        <div class="input-group-btn">
+                          <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
+                            <strong>-</strong>
+                          </button>
+                        </div>
+                        <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
+                        <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
+                            <strong>+</strong>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rate">
+                  <p>250gms - ₹ 60/-</p>
+                </div>
+
+                <div class="calender">
+                  <div class="row">
+
+                    <div class="col-md-6"
+                  <i class="fa fa-calendar"></i>
+                  <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+                </div>
+                <div class="col-md-6">
+                  <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked>
+                    <label for="Morning">Morning</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey">
+                    <label for="Evening">Evening</label>
+                  </div>
+                </div>
+              </div>
+                </div>
+
+                <div class="button">
+                  <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 product-men">
+            <div class="card">
+              <div class="title">
+                <h4 class="card-title">Chana dal</h4>
+              </div>
+
+              <div class="product-card" width="25%" valign="top">
+
+                <img src="pulses/chana dal.jfif" width="100%" class="img-responsive" alt="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="drop-down">
+                      <select name="grams" id="grams">
+                        <option value="grams">250 gms</option>
+                        <option value="grams">500 gms</option>
+                        <option value="grams">1 kg</option>
+                      </select>
+
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+
+                    <div class="group">
+
+
+                      <div class="input-group  ">
+                        <div class="input-group-btn">
+                          <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
+                            <strong>-</strong>
+                          </button>
+                        </div>
+                        <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
+                        <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
+                            <strong>+</strong>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rate">
+                  <p>250gms - ₹ 45/-</p>
+                </div>
+
+                <div class="calender">
+                  <div class="row">
+
+                    <div class="col-md-6"
+                  <i class="fa fa-calendar"></i>
+                  <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+                </div>
+                <div class="col-md-6">
+                  <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked>
+                    <label for="Morning">Morning</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey">
+                    <label for="Evening">Evening</label>
+                  </div>
+                </div>
+              </div>
+                </div>
+
+                <div class="button">
+                  <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-3 col-sm-6 product-men">
+            <div class="card">
+              <div class="title">
+                <h4 class="card-title">Black Gram</h4>
+              </div>
+
+              <div class="product-card" width="25%" valign="top">
+
+                <img src="pulses/black gram.jfif" width="100%" class="img-responsive" alt="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="drop-down">
+                      <select name="grams" id="grams">
+                        <option value="grams">250 gms</option>
+                        <option value="grams">500 gms</option>
+                        <option value="grams">1 kg</option>
+                      </select>
+
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+
+                    <div class="group">
+
+
+                      <div class="input-group  ">
+                        <div class="input-group-btn">
+                          <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
+                            <strong>-</strong>
+                          </button>
+                        </div>
+                        <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
+                        <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
+                            <strong>+</strong>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rate">
+                  <p>250gms - ₹ 50/-</p>
+                </div>
+
+                <div class="calender">
+                  <div class="row">
+
+                    <div class="col-md-6"
+                  <i class="fa fa-calendar"></i>
+                  <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+                </div>
+                <div class="col-md-6">
+                  <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked>
+                    <label for="Morning">Morning</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey">
+                    <label for="Evening">Evening</label>
+                  </div>
+                </div>
+              </div>
+                </div>
+
+                <div class="button">
+                  <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-sm-6 product-men">
+            <div class="card">
+              <div class="title">
+                <h4 class="card-title">Ground Nuts</h4>
+              </div>
+
+              <div class="product-card" width="25%" valign="top">
+
+                <img src="pulses/groundnuts.jpeg" width="100%" class="img-responsive" alt="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="drop-down">
+                      <select name="grams" id="grams">
+                        <option value="grams">250 gms</option>
+                        <option value="grams">500 gms</option>
+                        <option value="grams">1 kg</option>
+                      </select>
+
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+
+                    <div class="group">
+
+
+                      <div class="input-group  ">
+                        <div class="input-group-btn">
+                          <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
+                            <strong>-</strong>
+                          </button>
+                        </div>
+                        <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
+                        <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
+                            <strong>+</strong>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rate">
+                  <p>250gms - ₹ 35/-</p>
+                </div>
+
+                <div class="calender">
+                  <div class="row">
+
+                    <div class="col-md-6"
+                  <i class="fa fa-calendar"></i>
+                  <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+                </div>
+                <div class="col-md-6">
+                  <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked>
+                    <label for="Morning">Morning</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey">
+                    <label for="Evening">Evening</label>
+                  </div>
+                </div>
+              </div>
+                </div>
+
+                <div class="button">
+                  <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
 
 
   </section>
@@ -1725,509 +2135,638 @@
 
   <section class="sev-sec" id="all-spices">
 
-      <h1 class="heading">Spices</h2>
+    <h1 class="heading">Spices</h2>
 
-    <div class="product-sec1">
-      <div class="row">
-
-
-        <div class="col-lg-3  col-sm-6 product-men">
-          <div class="card">
-            <div class="title">
-              <h4 class="card-title">turmeric</h4>
-            </div>
-
-            <div class="product-card" width="25%" valign="top">
-
-              <img src="spices/turmeric1.jfif" width="100%" class="img-responsive" alt="">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="drop-down">
-                    <select name="grams" id="grams">
-                      <option value="grams">250 gm</option>
-                      <option value="grams">500 gm</option>
-                      <option value="grams">1000 gm</option>
-                    </select>
-
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-
-                  <div class="group">
+      <div class="product-sec1">
+        <div class="row">
 
 
-                    <div class="input-group  ">
-                      <div class="input-group-btn">
-                        <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
-                          <strong>-</strong>
-                        </button>
-                      </div>
-                      <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
-                      <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
-                          <strong>+</strong>
-                        </button>
-                      </div>
+          <div class="col-lg-3  col-sm-6 product-men">
+            <div class="card">
+              <div class="title">
+                <h4 class="card-title">turmeric</h4>
+              </div>
+
+              <div class="product-card" width="25%" valign="top">
+
+                <img src="spices/turmeric1.jfif" width="100%" class="img-responsive" alt="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="drop-down">
+                      <select name="grams" id="grams">
+                        <option value="grams">250 gms</option>
+                        <option value="grams">500 gms</option>
+                        <option value="grams">1 kg</option>
+                      </select>
 
                     </div>
                   </div>
-                </div>
-              </div>
 
-              <div class="rate">
-                <p>500 gm - ₹ 30/-</p>
-              </div>
+                  <div class="col-md-6">
 
-              <div class="calender">
-                <i class="fa fa-calendar"></i>
-                <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
-              </div>
-
-              <div class="button">
-                <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
-
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6 product-men">
-          <div class="card">
-            <div class="title">
-              <h4 class="card-title">Star Anise</h4>
-            </div>
-
-            <div class="product-card" width="25%" valign="top">
-
-              <img src="spices/star.jfif" width="100%" class="img-responsive" alt="">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="drop-down">
-                    <select name="grams" id="grams">
-                      <option value="grams">250 gm</option>
-                      <option value="grams">500 gm</option>
-                      <option value="grams">1000 gm</option>
-                    </select>
-
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-
-                  <div class="group">
+                    <div class="group">
 
 
-                    <div class="input-group  ">
-                      <div class="input-group-btn">
-                        <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
-                          <strong>-</strong>
-                        </button>
+                      <div class="input-group  ">
+                        <div class="input-group-btn">
+                          <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
+                            <strong>-</strong>
+                          </button>
+                        </div>
+                        <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
+                        <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
+                            <strong>+</strong>
+                          </button>
+                        </div>
+
                       </div>
-                      <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
-                      <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
-                          <strong>+</strong>
-                        </button>
-                      </div>
-
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="rate">
-                <p>500 gm - ₹ 200/-</p>
-              </div>
-
-              <div class="calender">
-                <i class="fa fa-calendar"></i>
-                <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
-              </div>
-
-              <div class="button">
-                <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
-
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="col-lg-3 col-sm-6 product-men">
-          <div class="card">
-            <div class="title">
-              <h4 class="card-title">Cinnamon</h4>
-            </div>
-
-            <div class="product-card" width="25%" valign="top">
-
-              <img src="spices/cinnamon.jfif" width="100%" class="img-responsive" alt="">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="drop-down">
-                    <select name="grams" id="grams">
-                      <option value="grams">250 gm</option>
-                      <option value="grams">500 gm</option>
-                      <option value="grams">1000 gm</option>
-                    </select>
-
-                  </div>
+                <div class="rate">
+                  <p>250gms - ₹ 30/-</p>
                 </div>
 
+                <div class="calender">
+                  <div class="row">
+
+                    <div class="col-md-6"
+                  <i class="fa fa-calendar"></i>
+                  <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+                </div>
                 <div class="col-md-6">
+                  <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked>
+                    <label for="Morning">Morning</label>
+                  </div>
 
-                  <div class="group">
+                  <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey">
+                    <label for="Evening">Evening</label>
+                  </div>
+                </div>
+              </div>
+                </div>
 
+                <div class="button">
+                  <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
 
-                    <div class="input-group  ">
-                      <div class="input-group-btn">
-                        <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
-                          <strong>-</strong>
-                        </button>
-                      </div>
-                      <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
-                      <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
-                          <strong>+</strong>
-                        </button>
-                      </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 product-men">
+            <div class="card">
+              <div class="title">
+                <h4 class="card-title">Star Anise</h4>
+              </div>
+
+              <div class="product-card" width="25%" valign="top">
+
+                <img src="spices/star.jfif" width="100%" class="img-responsive" alt="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="drop-down">
+                      <select name="grams" id="grams">
+                        <option value="grams">250 gms</option>
+                        <option value="grams">500 gms</option>
+                        <option value="grams">1 kg</option>
+                      </select>
 
                     </div>
                   </div>
-                </div>
-              </div>
 
-              <div class="rate">
-                <p>500 gm - ₹200/-</p>
-              </div>
+                  <div class="col-md-6">
 
-              <div class="calender">
-                <i class="fa fa-calendar"></i>
-                <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
-              </div>
-
-              <div class="button">
-                <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
-
-              </div>
-
-            </div>
-          </div>
-        </div>
+                    <div class="group">
 
 
-        <div class="col-lg-3 col-sm-6 product-men">
-          <div class="card">
-            <div class="title">
-              <h4 class="card-title">Cardamon</h4>
-            </div>
+                      <div class="input-group  ">
+                        <div class="input-group-btn">
+                          <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
+                            <strong>-</strong>
+                          </button>
+                        </div>
+                        <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
+                        <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
+                            <strong>+</strong>
+                          </button>
+                        </div>
 
-            <div class="product-card" width="25%" valign="top">
-
-              <img src="spices/green-cardamom.webp" width="100%" class="img-responsive" alt="">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="drop-down">
-                    <select name="grams" id="grams">
-                      <option value="grams">250 gm</option>
-                      <option value="grams">500 gm</option>
-                      <option value="grams">1000 gm</option>
-                    </select>
-
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-
-                  <div class="group">
-
-
-                    <div class="input-group  ">
-                      <div class="input-group-btn">
-                        <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
-                          <strong>-</strong>
-                        </button>
                       </div>
-                      <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
-                      <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
-                          <strong>+</strong>
-                        </button>
-                      </div>
-
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="rate">
-                <p>500 gm - ₹ 800/-</p>
-              </div>
-
-              <div class="calender">
-                <i class="fa fa-calendar"></i>
-                <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
-              </div>
-
-              <div class="button">
-                <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
-
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-
-
-        <div class="col-lg-3  col-sm-6 product-men">
-          <div class="card">
-            <div class="title">
-              <h4 class="card-title">Cloves</h4></h4>
-            </div>
-
-            <div class="product-card" width="25%" valign="top">
-
-              <img src="spices/cloves.jfif" width="100%" class="img-responsive" alt="">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="drop-down">
-                    <select name="grams" id="grams">
-                      <option value="grams">250 gm</option>
-                      <option value="grams">500 gm</option>
-                      <option value="grams">1000 gm</option>
-                    </select>
-
-                  </div>
+                <div class="rate">
+                  <p>250gms - ₹ 200/-</p>
                 </div>
 
+                <div class="calender">
+                  <div class="row">
+
+                    <div class="col-md-6"
+                  <i class="fa fa-calendar"></i>
+                  <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+                </div>
                 <div class="col-md-6">
+                  <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked>
+                    <label for="Morning">Morning</label>
+                  </div>
 
-                  <div class="group">
+                  <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey">
+                    <label for="Evening">Evening</label>
+                  </div>
+                </div>
+              </div>
+                </div>
+
+                <div class="button">
+                  <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
 
 
-                    <div class="input-group  ">
-                      <div class="input-group-btn">
-                        <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
-                          <strong>-</strong>
-                        </button>
-                      </div>
-                      <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
-                      <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
-                          <strong>+</strong>
-                        </button>
-                      </div>
+
+          <div class="col-lg-3 col-sm-6 product-men">
+            <div class="card">
+              <div class="title">
+                <h4 class="card-title">Cinnamon</h4>
+              </div>
+
+              <div class="product-card" width="25%" valign="top">
+
+                <img src="spices/cinnamon.jfif" width="100%" class="img-responsive" alt="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="drop-down">
+                      <select name="grams" id="grams">
+                        <option value="grams">250 gms</option>
+                        <option value="grams">500 gms</option>
+                        <option value="grams">1 kg</option>
+                      </select>
 
                     </div>
                   </div>
-                </div>
-              </div>
 
-              <div class="rate">
-                <p>500 gm - ₹700/-</p>
-              </div>
+                  <div class="col-md-6">
 
-              <div class="calender">
-                <i class="fa fa-calendar"></i>
-                <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
-              </div>
-
-              <div class="button">
-                <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
-
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-sm-6 product-men">
-          <div class="card">
-            <div class="title">
-              <h4 class="card-title">Ginger</h4>
-            </div>
-
-            <div class="product-card" width="25%" valign="top">
-
-              <img src="spices/ginger 1.jfif" width="100%" class="img-responsive" alt="">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="drop-down">
-                    <select name="grams" id="grams">
-                      <option value="grams">250 gm</option>
-                      <option value="grams">500 gm</option>
-                      <option value="grams">1000 gm</option>
-                    </select>
-
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-
-                  <div class="group">
+                    <div class="group">
 
 
-                    <div class="input-group  ">
-                      <div class="input-group-btn">
-                        <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
-                          <strong>-</strong>
-                        </button>
+                      <div class="input-group  ">
+                        <div class="input-group-btn">
+                          <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
+                            <strong>-</strong>
+                          </button>
+                        </div>
+                        <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
+                        <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
+                            <strong>+</strong>
+                          </button>
+                        </div>
+
                       </div>
-                      <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
-                      <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
-                          <strong>+</strong>
-                        </button>
-                      </div>
-
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="rate">
-                <p>500 gm - ₹30/-</p>
-              </div>
-
-              <div class="calender">
-                <i class="fa fa-calendar"></i>
-                <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
-              </div>
-
-              <div class="button">
-                <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
-
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="col-lg-3 col-sm-6 product-men">
-          <div class="card">
-            <div class="title">
-              <h4 class="card-title">Saffaron</h4>
-            </div>
-
-            <div class="product-card" width="25%" valign="top">
-
-              <img src="spices/saffaron 1.jfif" width="100%" class="img-responsive" alt="">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="drop-down">
-                    <select name="grams" id="grams">
-                      <option value="grams">250 gm</option>
-                      <option value="grams">500 gm</option>
-                      <option value="grams">1000 gm</option>
-                    </select>
-
-                  </div>
+                <div class="rate">
+                  <p>250gms - ₹200/-</p>
                 </div>
 
+                <div class="calender">
+                  <div class="row">
+
+                    <div class="col-md-6"
+                  <i class="fa fa-calendar"></i>
+                  <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+                </div>
                 <div class="col-md-6">
+                  <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked>
+                    <label for="Morning">Morning</label>
+                  </div>
 
-                  <div class="group">
+                  <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey">
+                    <label for="Evening">Evening</label>
+                  </div>
+                </div>
+              </div>
+                </div>
+
+                <div class="button">
+                  <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
 
 
-                    <div class="input-group  ">
-                      <div class="input-group-btn">
-                        <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
-                          <strong>-</strong>
-                        </button>
-                      </div>
-                      <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
-                      <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
-                          <strong>+</strong>
-                        </button>
-                      </div>
+          <div class="col-lg-3 col-sm-6 product-men">
+            <div class="card">
+              <div class="title">
+                <h4 class="card-title">Cardamon</h4>
+              </div>
+
+              <div class="product-card" width="25%" valign="top">
+
+                <img src="spices/green-cardamom.webp" width="100%" class="img-responsive" alt="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="drop-down">
+                      <select name="grams" id="grams">
+                        <option value="grams">250 gms</option>
+                        <option value="grams">500 gms</option>
+                        <option value="grams">1 kg</option>
+                      </select>
 
                     </div>
                   </div>
-                </div>
-              </div>
 
-              <div class="rate">
-                <p>500 gm - ₹ 655/-</p>
-              </div>
+                  <div class="col-md-6">
 
-              <div class="calender">
-                <i class="fa fa-calendar"></i>
-                <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
-              </div>
-
-              <div class="button">
-                <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
-
-              </div>
-
-            </div>
-          </div>
-        </div>
+                    <div class="group">
 
 
-        <div class="col-lg-3 col-sm-6 product-men">
-          <div class="card">
-            <div class="title">
-              <h4 class="card-title">Tamarind</h4>
-            </div>
+                      <div class="input-group  ">
+                        <div class="input-group-btn">
+                          <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
+                            <strong>-</strong>
+                          </button>
+                        </div>
+                        <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
+                        <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
+                            <strong>+</strong>
+                          </button>
+                        </div>
 
-            <div class="product-card" width="25%" valign="top">
-
-              <img src="spices/tamarind.jfif" width="100%" class="img-responsive" alt="">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="drop-down">
-                    <select name="grams" id="grams">
-                      <option value="grams">250 gm</option>
-                      <option value="grams">500 gm</option>
-                      <option value="grams">1000 gm</option>
-                    </select>
-
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-
-                  <div class="group">
-
-
-                    <div class="input-group  ">
-                      <div class="input-group-btn">
-                        <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
-                          <strong>-</strong>
-                        </button>
                       </div>
-                      <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
-                      <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
-                          <strong>+</strong>
-                        </button>
-                      </div>
-
                     </div>
                   </div>
                 </div>
+
+                <div class="rate">
+                  <p>250gms - ₹ 800/-</p>
+                </div>
+
+                <div class="calender">
+                  <div class="row">
+
+                    <div class="col-md-6"
+                  <i class="fa fa-calendar"></i>
+                  <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+                </div>
+                <div class="col-md-6">
+                  <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked>
+                    <label for="Morning">Morning</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey">
+                    <label for="Evening">Evening</label>
+                  </div>
+                </div>
               </div>
+                </div>
 
-              <div class="rate">
-                <p>500 gm - ₹ 550/-</p>
-              </div>
+                <div class="button">
+                  <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
 
-              <div class="calender">
-                <i class="fa fa-calendar"></i>
-                <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
-              </div>
-
-              <div class="button">
-                <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
+                </div>
 
               </div>
-
             </div>
           </div>
         </div>
-      </div>
+        <div class="row">
+
+
+          <div class="col-lg-3  col-sm-6 product-men">
+            <div class="card">
+              <div class="title">
+                <h4 class="card-title">Cloves</h4>
+                </h4>
+              </div>
+
+              <div class="product-card" width="25%" valign="top">
+
+                <img src="spices/cloves.jfif" width="100%" class="img-responsive" alt="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="drop-down">
+                      <select name="grams" id="grams">
+                        <option value="grams">250 gms</option>
+                        <option value="grams">500 gms</option>
+                        <option value="grams">1 kg</option>
+                      </select>
+
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+
+                    <div class="group">
+
+
+                      <div class="input-group  ">
+                        <div class="input-group-btn">
+                          <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
+                            <strong>-</strong>
+                          </button>
+                        </div>
+                        <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
+                        <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
+                            <strong>+</strong>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rate">
+                  <p>250gms - ₹700/-</p>
+                </div>
+
+                <div class="calender">
+                  <div class="row">
+
+                    <div class="col-md-6"
+                  <i class="fa fa-calendar"></i>
+                  <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+                </div>
+                <div class="col-md-6">
+                  <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked>
+                    <label for="Morning">Morning</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey">
+                    <label for="Evening">Evening</label>
+                  </div>
+                </div>
+              </div>
+                </div>
+
+                <div class="button">
+                  <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 product-men">
+            <div class="card">
+              <div class="title">
+                <h4 class="card-title">Ginger</h4>
+              </div>
+
+              <div class="product-card" width="25%" valign="top">
+
+                <img src="spices/ginger 1.jfif" width="100%" class="img-responsive" alt="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="drop-down">
+                      <select name="grams" id="grams">
+                        <option value="grams">250 gms</option>
+                        <option value="grams">500 gms</option>
+                        <option value="grams">1 kg</option>
+                      </select>
+
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+
+                    <div class="group">
+
+
+                      <div class="input-group  ">
+                        <div class="input-group-btn">
+                          <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
+                            <strong>-</strong>
+                          </button>
+                        </div>
+                        <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
+                        <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
+                            <strong>+</strong>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rate">
+                  <p>250gms - ₹30/-</p>
+                </div>
+
+                <div class="calender">
+                  <div class="row">
+
+                    <div class="col-md-6"
+                  <i class="fa fa-calendar"></i>
+                  <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+                </div>
+                <div class="col-md-6">
+                  <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked>
+                    <label for="Morning">Morning</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey">
+                    <label for="Evening">Evening</label>
+                  </div>
+                </div>
+              </div>
+                </div>
+
+                <div class="button">
+                  <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-3 col-sm-6 product-men">
+            <div class="card">
+              <div class="title">
+                <h4 class="card-title">Saffaron</h4>
+              </div>
+
+              <div class="product-card" width="25%" valign="top">
+
+                <img src="spices/saffaron 1.jfif" width="100%" class="img-responsive" alt="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="drop-down">
+                      <select name="grams" id="grams">
+                        <option value="grams">250 gms</option>
+                        <option value="grams">500 gms</option>
+                        <option value="grams">1 kg</option>
+                      </select>
+
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+
+                    <div class="group">
+
+
+                      <div class="input-group  ">
+                        <div class="input-group-btn">
+                          <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
+                            <strong>-</strong>
+                          </button>
+                        </div>
+                        <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
+                        <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
+                            <strong>+</strong>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rate">
+                  <p>250gms - ₹ 655/-</p>
+                </div>
+
+                <div class="calender">
+                  <div class="row">
+
+                    <div class="col-md-6"
+                  <i class="fa fa-calendar"></i>
+                  <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+                </div>
+                <div class="col-md-6">
+                  <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked>
+                    <label for="Morning">Morning</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey">
+                    <label for="Evening">Evening</label>
+                  </div>
+                </div>
+              </div>
+                </div>
+
+                <div class="button">
+                  <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-sm-6 product-men">
+            <div class="card">
+              <div class="title">
+                <h4 class="card-title">Tamarind</h4>
+              </div>
+
+              <div class="product-card" width="25%" valign="top">
+
+                <img src="spices/tamarind.jfif" width="100%" class="img-responsive" alt="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="drop-down">
+                      <select name="grams" id="grams">
+                        <option value="grams">250 gms</option>
+                        <option value="grams">500 gms</option>
+                        <option value="grams"> gms</option>
+                      </select>
+
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+
+                    <div class="group">
+
+
+                      <div class="input-group  ">
+                        <div class="input-group-btn">
+                          <button style="min-width: 1rem" class="btn btn-decrement btn-outline-secondary" type="button">
+                            <strong>-</strong>
+                          </button>
+                        </div>
+                        <input type="text" style="text-align: center" ; class="form-control qty-spinner cart-calculat" placeholder="1">
+                        <div class="input-group-btn"><button style="min-width: 1rem" class="btn btn-increment btn-outline-secondary" type="button">
+                            <strong>+</strong>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rate">
+                  <p>250 gms-₹ 550/-</p>
+                </div>
+
+                <div class="calender">
+                  <div class="row">
+
+                    <div class="col-md-6"
+                  <i class="fa fa-calendar"></i>
+                  <span id="delivery-date-C0" rel="C0" style="font-weight:bold;">Delivery by Tue, Jul 18</span>
+                </div>
+                <div class="col-md-6">
+                  <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked>
+                    <label for="Morning">Morning</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey">
+                    <label for="Evening">Evening</label>
+                  </div>
+                </div>
+              </div>
+                </div>
+
+                <div class="button">
+                  <button type="button" class=" button-1 btn btn-success" name="button">Add to cart</button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
 
 
   </section>
@@ -2243,11 +2782,11 @@
   <section class="footer-sec">
     <div class="footer">
       <div class="row" id="div-row">
-        <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="col-lg-4 col-md-6 col-sm-6" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-400px;">
 
 
           <h5 style="text-align:left;color:orange;">About us</h5>
-          <p class="sub-info" style="text-align:justify">Magic Farm is committed to being a trustworthy & Innovative leader by providing genuine True wellness products. We work with Thousands of small farmers in India to cultivate ten of thousands of
+          <p class="sub-info" style="text-align:left">Magic Farm is committed to being a trustworthy & Innovative leader by providing genuine True wellness products. We work with Thousands of small farmers in India to cultivate ten of thousands of
             acres of sustainable Organic Farmland.
           </p>
           <h5 style="text-align:left;color:orange;">Contact</h5>
@@ -2255,37 +2794,37 @@
 
             <ul class="list-line">
 
-              <li class="lists">
-                <i id="icon" class="fas fa-phone-square-alt"></i><span id="text-link"><a href="tel:8317520094">+91-8317520094</a></span><br>
+              <li class="sub-info1">
+                <i id="icon" class="fas fa-phone-square-alt"></i><span id="text-link"><a class="no" href="tel:8317520094">+91-8317520094</a></span><br>
               </li>
 
-              <li class="lists">
-                <i id="icon" class="fas fa-envelope"></i><span id="text-link"><a href="mailto:priyaboddeti1998@gmail.com"> priyaboddeti1998@gmail.com </a></span>
+              <li class="sub-info1">
+                <i id="icon" class="fas fa-envelope"></i><span id="text-link"><a class="no" href="mailto:priyaboddeti1998@gmail.com"> priyaboddeti1998@gmail.com </a></span>
               </li>
             </ul>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 center">
+        <div class="col-lg-4 col-md-6 col-sm-6  mid " data-center-center="opacity:1;bottom:0;" data-0-bottom="opacity:0;bottom:-600px;">
           <div class="Info">
             <h5 style="color:orange" ; "text-align:left">Information</h5>
 
 
             <div class="sub-info">
 
+              <p class="links"><a class="no" href="../index.html">Home</a></p>
+              <p class="links"><a class="no" href="../about-us/index.html">About-us </a></p>
+              <p class="links"><a class="no" href="../shop/index.html">Shop</a></p>
+              <p class="links"><a class="no" href="../Blog/index.html">Blog</a></p>
+              <p class="links"><a class="no" href="../News/index.html">News</a></p>
+              <p class="links"><a class="no" href="../cart/index.html">Cart</a></p>
 
-              <p class="links"><a href="about-us/index.html">About-us </a></p>
-              <p class="links"> <a href="#">Home</a></p>
-              <p class="links"><a href="Blog/index.html">Blog</a></p>
-              <p class="links"><a href="News/index.html">News</a></p>
-              <p class="links"><a href="#">Cart</a></p>
-              <p class="links"><a href="#">Sign-in</a></p>
             </div>
 
           </div>
         </div>
 
 
-        <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="col-lg-4 col-md-6 col-sm-6" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:400px;">
 
 
           <div class="card1">
@@ -2326,25 +2865,27 @@
               <input class="input-field" type="text-area" name="usrnm">
             </div>
             <div class="input-container">
-              <button type="button" class="butt btn btn-outline-orange">Submit</button>
+              <a class="abt-us" href="" role="button">Submit</a>
 
             </div>
           </div>
         </div>
       </div>
+
+
       <div class="social">
         <h5 style="color:orange;">social media</h5>
         <a href="" class="soc-icon fab fa-facebook-f"></a>
         <a href="" class="soc-icon fab fa-instagram"></a>
         <a href="" class="soc-icon fab fa-twitter"></a>
         <a href="" class="soc-icon far fa-envelope"></a>
-        <p style="color:white">© Copyright 2021 Magic Farm</p>
+        <p>© Copyright 2021 Magic Farm</p>
       </div>
   </section>
   <script src="skrollr.js"></script>
   <script type="text/javascript">
     var s = skrollr.init();
-    </script>
+  </script>
 
 </body>
 

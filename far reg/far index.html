@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap|Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -23,33 +29,40 @@
     <label for="check" class="checkbtn">
       <i class="fas fa-bars"></i>
     </label>
-    <img class="logo" src="../images/logo-2 crop.png" height="90px" width="280px" alt="logo">
+    <img class="logo" src="../images/logo-2 crop.png" height="90px" width="230px" alt="logo">
 
 
     <ul>
-      <li><a  href="../index.html">Home</a></li>
-      <li><a href="../Blog/index.html" >Blog</a></li>
+      <li class="dropdown">
+        <a  href="../index.html" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <a href="../about-us/index.html">About Us</a>
+
+        </div>
+      </li>
       <li><a href="../shop/index.html">Shop</a></li>
+      <li><a href="../Blog/index.html">Blog</a></li>
+
 
       <li><a href="../news/index.html">News</a></li>
 
       <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Sign Up</a>
-    <div class="dropdown-content">
-      <a  href="../cust reg/index1.html">Customer</a>
-      <a class="active" href="../far reg/far index.html">Farmer</a>
-    </div>
-  </li>
+        <a href="javascript:void(0)" class="dropbtn">Sign Up <i class="fa fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <a  href="../cust reg/index1.html">Customer</a>
+          <a class="active" href="../far reg/far index.html">Farmer</a>
+        </div>
+      </li>
       <li><a href="../login/index3.html">Login</a></li>
       <li> <a href="../cart/index.html">
-        <img src="../icons/cart.png" height="30px",width="30px"/></a>
+          <img src="../icons/cart.png" height="30px" ,width="30px" /></a>
       </li>
     </ul>
   </nav>
 <section class="first-sec">
 
   <div class="image">
-    <img src="farmers.jpg" width="100%" alt="cust">
+    <img src="farmer1.jpg" width="100%" alt="cust">
   </div>
 
 </section>
@@ -69,6 +82,7 @@
               <p>Please fill this form to create an account.</p>
               <p><b>Already have an account?</b> <a href="../login/index3.html">Sign in</a>.</p>
             </div>
+              <form action="/action_page.php">
             <div class="row">
 
              <div class="col-lg-6 ">
@@ -79,35 +93,38 @@
 
        <div class="text">
        <label class="left-text" for="email"><b class="name">Email</b></label> <br>
-       <input class="box" type="text" placeholder="Enter Email" name="email" id="email" required><br>
+       <input class="box" type="text" placeholder="Enter your Email" name="email" id="email" required><br>
       </div>
 
       <div class="text">
-       <label class="left-text" for="address"><b class="name">Address</b></label><br>
-       <input class="box" type="text" placeholder="Address" name="address" id="address" required><br>
+         <label class="left-text" for="country"><b class="name">City</b></label><br>
+        <input class="box" type="text" placeholder="Enter Your city" name="country" id="country" required><br>
       </div>
+
 
     <div class="text">
        <label class="left-text"  for="state"><b class="name">State</b></label><br>
       <select class="box" id="state" name="state">
       <option value="">--select state--</option>
       <option value="">Andhra pradesh</option>
-      <option value="">Telangana</option>
+
     </select><br>
+    </div>
+
+    <div class="text">
+       <label class="left-text" for="country"><b class="name">Pin Code</b></label><br>
+      <input class="box" type="text" placeholder="Enter your Pin code" name="country" id="country" required><br>
     </div>
 
       <div class="text">
       <label class="left-text" for="farm-loc"><b class="name">Farm Location</b></label><br>
-      <input class="box" type="text" placeholder="Locality" name="farm-loc" id="farm-loc" required><br>
+      <input class="box" type="text" placeholder="Enter your Farm Locality" name="farm-loc" id="farm-loc" required><br>
       </div>
       <div class="text">
         <label class="left-text" for="mobile "><b class="name">which Crops are you Harvesting?</b></label><br>
-        <input  class="box" type="text" placeholder="Enter 10-digit mobile no." name="mobile" id="mobile"  required><br>
+        <input  class="box" type="text" placeholder="eg:wheat,potato" name="mobile" id="mobile"  required><br>
      </div>
-     <div class="text">
-        <label class="left-text" for="country"><b class="name">How many Acres?</b></label><br>
-       <input class="box" type="text" placeholder="country" name="country" id="country" required><br>
-     </div>
+
 
   </div>
       <div class="col-lg-6 ">
@@ -115,45 +132,48 @@
 
       <div class="text">
         <label class="left-text" for="psw"><b class="name">Mobile No</b></label><br>
-       <input class="box" type="password" placeholder="Enter Password" name="psw" id="psw" required><br>
+       <input class="box" type="password" placeholder="Enter your Mobile Number" name="psw" id="psw" required><br>
       </div>
 
       <div class="text">
         <label class="left-text" for="city"><b class="name">Password</b></label><br>
-        <input class="box" type="text" placeholder="city" name="city" id="city" required><br>
+        <input class="box" type="text" placeholder="Enter your password" name="city" id="city" required><br>
       </div>
 
       <div class="text">
-         <label class="left-text" for="country"><b class="name">City</b></label><br>
-        <input class="box" type="text" placeholder="country" name="country" id="country" required><br>
+       <label class="left-text" for="address"><b class="name">Address</b></label><br>
+       <input class="box" type="text" placeholder="Enter your Adress" name="address" id="address" required><br>
       </div>
 
       <div class="text">
          <label class="left-text" for="country"><b class="name">Country</b></label><br>
-        <input class="box" type="text" placeholder="country" name="country" id="country" required><br>
+        <input class="box" type="text" placeholder="Enter your Country" name="country" id="country" required><br>
       </div>
 
       <div class="text">
          <label class="left-text" for="country"><b class="name">How many Acres?</b></label><br>
-        <input class="box" type="text" placeholder="country" name="country" id="country" required><br>
+        <input class="box" type="text" placeholder="No.of Acres you own" name="country" id="country" required><br>
       </div>
 
       <div class="text">
          <label class="form-label" for="crop"><b class="name">What Fruits & Vegetables do you have capacity to supply?</label>
-         <textarea id="w3review" name="w3review" rows="4" cols="60"></textarea>
+         <textarea id="w3review" name="w3review" rows="4" cols="54"></textarea>
       </div>
 
     </div>
 
   </div>
-
+  </form>
 
     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
       <div class="button1">
 
 
-      <button type="submit" class="btn1">Register</button>
+      <button type="submit" class="btn1"><a href="far reg/form.html"></a>Register</button>
         </div>
+
+
+
      </div>
 
     </div>
@@ -185,20 +205,21 @@
           </ul>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 center" data-center-center="opacity:1;bottom:0;" data-0-bottom="opacity:0;bottom:-400px;">
+      <div class="col-lg-4 col-md-6 col-sm-6 mid" data-center-center="opacity:1;bottom:0;" data-0-bottom="opacity:0;bottom:-400px;">
         <div class="Info">
           <h5 style="color:orange" ; "text-align:left">Information</h5>
 
 
           <div class="sub-info">
 
+            <p class="links"> <a class="no" href="../index.html">Home</a></p>
+            <p class="links"><a class="no" href="../about-us/index.html">About-us </a></p>
 
-            <p class="links"><a class="no" href="about-us/index.html">About-us </a></p>
-            <p class="links"> <a class="no" href="#">Home</a></p>
-            <p class="links"><a class="no" href="Blog/index.html">Blog</a></p>
-            <p class="links"><a class="no" href="News/index.html">News</a></p>
-            <p class="links"><a class="no" href="#">Cart</a></p>
-            <p class="links"><a  class="no"href="#">Sign-in</a></p>
+            <p class="links"><a class="no" href="../Blog/index.html">Blog</a></p>
+            <p class="links"><a class="no" href="../shop/index.html">Shop</a></p>
+            <p class="links"><a class="no" href="../News/index.html">News</a></p>
+
+
           </div>
 
         </div>
@@ -212,13 +233,15 @@
           <h5 style="color:orange;">Contact-us</h5>
 
           <div class="input-container">
+              <form action="/action_page.php">
             <div class="txt">
               <i class="fa fa-user icon"></i>
               <label class="label" for="Name"><b class="text-1">Name</b></label>
             </div>
 
-            <input class="input-field" type="text"  name="usrnm">
+            <input class="input-field" type="text"  name="usrnm" required>
           </div>
+        </form>
 
           <div class="input-container">
 
@@ -227,7 +250,7 @@
               <label class="label" for="Name"><b class="text-1">Email</b></label>
             </div>
 
-            <input class="input-field" type="text"  name="usrnm">
+            <input class="input-field" type="text"  name="usrnm" required>
           </div>
           <div class="input-container">
             <div class="txt">
@@ -235,7 +258,7 @@
               <label class="label" for="Name"><b class="text-1">Phone Number</b></label>
             </div>
 
-            <input class="input-field" type="text"  name="usrnm">
+            <input class="input-field" type="text"  name="usrnm" required>
           </div>
           <div class="input-container">
             <div class="txt">
@@ -243,12 +266,15 @@
               <label class="label" for="Name"><b class="text-1">Your Query</b></label>
             </div>
 
-            <input class="input-field" type="text-area" name="usrnm">
+            <input class="input-field" type="text-area" name="usrnm" required>
           </div>
           <div class="input-container">
-            <button type="button" class="button btn btn-outline-orange">Submit</button>
+            <input type="submit" onclick="clicked();" value="Button" />
 
           </div>
+
+
+            </form>
           </div>
         </div>
         </div>
@@ -263,10 +289,10 @@
         <p>© Copyright 2021 Magic Farm</p>
       </div>
 </section>
-<script src="skrollr.js"></script>
 <script type="text/javascript">
-  var s = skrollr.init();
-  </script>
+function clicked() {
+    alert('clicked');
+}
 
 </body>
 </html>

@@ -28,13 +28,32 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-<!--scroll-scripts-->
-<script type="text/javascript">
-!function(t,e){t.artibotApi={l:[],t:[],on:function(){this.l.push(arguments)},trigger:function(){this.t.push(arguments)}};var a=!1,i=e.createElement("script");
-i.async=!0,i.type="text/javascript",i.src="https://app.artibot.ai/loader.js",e.getElementsByTagName("head").item(0).appendChild(i),i.onreadystatechange=i.onload=function(){if(!(a||this.readyState&&"loaded"!=this.readyState&&"complete"!=this.readyState))
-{new window.ArtiBot({i:"f5c005ca-5faf-4593-b380-2ce4cb062dc4"});a=!0}}}
-(window,document);
-</script>
+  <!--scroll-scripts-->
+  <script type="text/javascript">
+    ! function(t, e) {
+      t.artibotApi = {
+        l: [],
+        t: [],
+        on: function() {
+          this.l.push(arguments)
+        },
+        trigger: function() {
+          this.t.push(arguments)
+        }
+      };
+      var a = !1,
+        i = e.createElement("script");
+      i.async = !0, i.type = "text/javascript", i.src = "https://app.artibot.ai/loader.js", e.getElementsByTagName("head").item(0).appendChild(i), i.onreadystatechange = i.onload = function() {
+        if (!(a || this.readyState && "loaded" != this.readyState && "complete" != this.readyState)) {
+          new window.ArtiBot({
+            i: "f5c005ca-5faf-4593-b380-2ce4cb062dc4"
+          });
+          a = !0
+        }
+      }
+    }
+    (window, document);
+  </script>
 
 <body>
 
@@ -45,43 +64,45 @@ i.async=!0,i.type="text/javascript",i.src="https://app.artibot.ai/loader.js",e.g
     <label for="check" class="checkbtn">
       <i class="fas fa-bars"></i>
     </label>
-    <img class="logo" src="images/logo-2 crop.png" height="90px" width="280px" alt="logo">
+    <img class="logo" src="images/logo-2 crop.png" height="90px" width="230px" alt="logo">
 
 
     <ul>
-      <li><a class="active" href="#">Home</a></li>
-      <li><a href="Blog/index.html" >Blog</a></li>
+      <li class="dropdown">
+        <a class="active" href="javascript:void(0)" class="dropbtn">Home <i class="fa fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <a href="about-us/index.html">About Us</a>
+
+        </div>
+      </li>
       <li><a href="shop/index.html">Shop</a></li>
+      <li><a href="Blog/index.html">Blog</a></li>
+
 
       <li><a href="news/index.html">News</a></li>
 
       <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Sign Up</a>
-    <div class="dropdown-content">
-      <a href="cust reg/index1.html">Customer</a>
-      <a href="far reg/far index.html">Farmer</a>
-    </div>
-  </li>
+        <a href="javascript:void(0)" class="dropbtn">Sign Up <i class="fa fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <a href="cust reg/index1.html">Customer</a>
+          <a href="far reg/far index.html">Farmer</a>
+        </div>
+      </li>
       <li><a href="login/index3.html">Login</a></li>
       <li> <a href="cart/index.html">
-        <img src="icons/cart.png" height="30px",width="30px"/></a>
+          <img src="icons/cart.png" height="30px" ,width="30px" /></a>
       </li>
     </ul>
   </nav>
 
 
   <div class="bg-image ">
-    <div class="trans-content"  >
-      <h4 class="Delivery">Deliver your Package with Love</h4>
+    <div class="trans-content">
+      <h4 class="Delivery">Deliver your  vegetable Package with Love</h4>
       <p class="del-info">From Farm to your Door</p>
       <div>
-        <button  class="btn-grad" type="button">
-          <p style="font-size:20px;margin-bottom: 0px;">Learn More</p>
-        </button>
-
-        <button  class="btn-grad" type="button">
-          <p style="font-size:20px;margin-bottom: 0px;">Register</p>
-        </button>
+        <a class="first-but" href="" role="button">Learn More</a>&nbsp
+        <a class="first-but" href="" role="button">Register</a>
 
       </div>
     </div>
@@ -90,7 +111,7 @@ i.async=!0,i.type="text/javascript",i.src="https://app.artibot.ai/loader.js",e.g
   <!--sec-sec-->
   <section class="sec-sec">
 
-    <div class="container-fluid" >
+    <div class="container-fluid">
       <h2 class='how-works-h2' data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:500px;">How it works</h2>
       <h5 class='how-works-h5'>Fresh Produce Direct From the Farm to your Home </h5>
       <div class="row sec-row">
@@ -122,7 +143,7 @@ i.async=!0,i.type="text/javascript",i.src="https://app.artibot.ai/loader.js",e.g
         <div class="col-sm-2 col-md-2 col-lg-2">
           <p></p>
         </div>
-        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 center-block">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 center-block">
           <div class="center-box">
             <div class="row" id="delivery-area-check">
 
@@ -136,20 +157,34 @@ i.async=!0,i.type="text/javascript",i.src="https://app.artibot.ai/loader.js",e.g
 
               <div class="col-lg-8 col-md-12 col-sm-12 check-box">
 
+                <form>
 
-                <input class="box" type="text" placeholder="Enter your Pincode" name="name" id="name" required>
+
+                  <input id="zipcode" class="zipcode" type="text" value="" required pattern="\d{6,6}(-\d{4,4})?" placeholder="Enter your Pincode">
               </div>
               <div class="col-lg-4 col-md-5 col-sm-5 radio-box">
-                <input type="radio" id="html" name="fav_language" value="HTML" checked>
-                  <label for="html">Home</label><span></span>
-                  <input type="radio" id="css" name="fav_language" value="CSS">
-                  <label for="css">Office</label><br>
+                <label for="html">
+                  <input type="radio" id="html" name="fav_language" value="HTML" checked>
+                  <span>Home</span>
+                    </label>
+                <label for="html">
+                    <input type="radio" id="html" name="fav_language" value="Html">
+                    <span>Office</span>
+                </label>
+
                 <div class="go">
-                  <button class="go-btn" type="button" name="button">Go!</button>
+
+                  <input class="go1" type="submit" text="Go!" value="GO!">
+                  </form>
+                  <!--  -->
                 </div>
+
               </div>
             </div>
           </div>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <p></p>
         </div>
       </div>
     </div>
@@ -165,24 +200,25 @@ i.async=!0,i.type="text/javascript",i.src="https://app.artibot.ai/loader.js",e.g
   <section class="third-sec">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center"  data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:-400px;">
-          <div class="About-us-left" >
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-400px;">
+          <div class="About-us-left">
 
 
-            <img src="images/collage.jpeg" height=500px width=500px alt="image">
+            <img src="images/collage.jpeg" height=550px width=550px alt="image">
           </div>
         </div>
-        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center" >
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center">
           <div class="About-us-right">
             <h2 class='how-works-h2' data-center-center="opacity:1;right:0;" data-0-bottom="opacity:0;right:-400px;" style="padding-top:40px;">About us</h2>
-            <div class="matter" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:400px;" >
+            <div class="matter" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:400px;">
 
 
-            <p class="para" >" We are on a mission to do something meaningful and bring a fundamental change in lives of our farmers and customers at large."</p>
-            <p class="para-2"  >It gives us great joy when we are able to increase income of our farmers and and bring a smile of the faces of customers as they enjoy the freshness of the produce. <em><b>Because what we eat is the fuel that drives
-                  us.</b></em> So, we started <strong style="color:#FFA33E" ;>Magic Farm</strong> as a solution to benefit the farmer who is producing organic food products as well as the customers who seek to eat healthy at affordable prices.</p>
-            <a class="abt-us" href="about-us/index.html"><u>Read more..</u></a>
-</div>
+              <p class="para">"We are on a mission to do something meaningful and bring a fundamental change in lives of our farmers and customers at large."</p>
+              <p class="para-2">It gives us great joy when we are able to increase income of our farmers and and bring a smile of the faces of customers as they enjoy the freshness of the produce.<b class="para"> Because what we eat is the fuel that
+                  drives
+                  us.</b> So, we started Magic Farm</strong> as a solution to benefit the farmer who is producing organic food products as well as the customers who seek to eat healthy at affordable prices.</p>
+              <a class="abt-us" href="about-us/index.html"><u>Read more..</u></a>
+            </div>
           </div>
         </div>
       </div>
@@ -195,33 +231,38 @@ i.async=!0,i.type="text/javascript",i.src="https://app.artibot.ai/loader.js",e.g
       <div class="products">
         <h2 class='how-works-h2-4' data-center-center="opacity:1;top:0;" data-0-bottom="opacity:0;top:-100px;">Are you looking for healthy ?</h2>
       </div>
+      <p class="slogan">Let's add years to your life with organic food</p>
       <div class="row" id="prod-row">
-        <div class="col-lg-3 col-md-4 col-sm-6 prod-col" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:-400px;">
+        <div class="col-lg-3 col-md-4 col-sm-6 prod-col" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-400px;">
           <img class="prod-img" src="products/veg.jpeg" alt="veg">
           <a href="#">
-            <p class="text"><a href="shop/index.html">All Vegetables</p></a>
+            <p class="text"><a href="shop/index.html">Vegetables</p>
+          </a>
           </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 prod-col" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:-400px;">
+        <div class="col-lg-3 col-md-4 col-sm-6 prod-col" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-400px;">
           <img class="prod-img" src="products/Fruits.jpeg" alt="Fruits">
           <a href="#">
-            <p class="text"><a href="shop/index.html">Fruits</p></a>
+            <p class="text"><a href="shop/index.html">Fruits</p>
+          </a>
           </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 prod-col" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:400px;">
+        <div class="col-lg-3 col-md-4 col-sm-6 prod-col" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:400px;">
           <img class="prod-img" src="products/Millets.jpg" alt="Millets & Grains">
           <a href="#">
-            <p class="text"><a href="shop/index.html">Pulses</p></a>
+            <p class="text"><a href="shop/index.html">Pulses</p>
+          </a>
           </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 prod-col" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:400px;">
+        <div class="col-lg-3 col-md-4 col-sm-6 prod-col" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:400px;">
           <img class="prod-img" src="products/spices.jfif" alt="Herbs">
           <a href="#">
-            <p class="text"><a href="shop/index.html">Spices</p></a>
+            <p class="text"><a href="shop/index.html">Spices</p>
+          </a>
           </a>
         </div>
       </div>
-      <p class="slogan">Let's add years to your life with organic food</p>
+
 
     </div>
   </section>
@@ -232,17 +273,17 @@ i.async=!0,i.type="text/javascript",i.src="https://app.artibot.ai/loader.js",e.g
         <h2 class='how-works-h2-5'>Choose Who you Are ?</h2>
       </div>
       <div class="row" id="row-farm">
-        <div class="col-lg-6 col-sm-6" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:-400px;">
+        <div class="col-lg-6 col-sm-6" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-400px;">
           <div class="farm-con">
             <h4 class='how-works-h4-5'>I'm a Customer</h4>
-            <p class='quote' style="text-align:justify" ;>Looking to fresh, hygenic organic farm food directly from farmers.</p>
+            <p class='quote' style="text-align:center" ;>Looking to fresh, hygenic organic <br> farm food directly from farmers.</p>
             <div class="bn">
-              <a class="btn btn-success" href="cust reg/index1.html" role="button">Connect With Us</a>
+              <a class="abt-us" href="cust reg/index1.html" role="button">Connect With Us</a>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-6 col-md-6 col-sm-6" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:-400px;">
+        <div class="col-lg-6 col-md-6 col-sm-6" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:-400px;">
           <div class="farm-con">
             <img class="con-style" src="customers/cust illu.jpeg" height=200px width=200px alt="Farmers-pic">
           </div>
@@ -250,19 +291,19 @@ i.async=!0,i.type="text/javascript",i.src="https://app.artibot.ai/loader.js",e.g
       </div>
 
       <div class="row" id="row-farm">
-        <div class="col-lg-6 col-md-6 col-sm-6" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:400px;">
+        <div class="col-lg-6 col-md-6 col-sm-6" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:400px;">
           <div class="farm-con">
             <h4 class='how-works-h4-5'>I'm a Supplier</h4>
-            <p class='quote' style="text-align:justify">Produce fresh organic farms to customers <br>
+            <p class='quote' style="text-align:center">Produce fresh organic farms to <br>customers
               I farm,You eat
             </p>
 
             <div class="bn">
-              <a class="btn btn-success" href="farmer-reg/index3.html" role="button">Connect With Us</a>
+              <a class="abt-us" href="farmer-reg/index3.html" role="button">Connect With Us</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-6" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:400px;">
+        <div class="col-lg-6 col-md-6 col-sm-6" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:400px;">
           <div class="farm-con">
             <img class="con-style" src="Farmers/Farmer.jpeg" height=200px width=200px alt="cust-pic">
           </div>
@@ -271,15 +312,65 @@ i.async=!0,i.type="text/javascript",i.src="https://app.artibot.ai/loader.js",e.g
     </div>
     </div>
   </section>
+  <!-- Testimonials -->
+
+  <section class="colored-section" id="testimonials">
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-pause="hover">
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active cont">
+          <img class="testimonials-icon" src="images/farm.jpg" alt="dog-profile"><br>
+
+          <em>Ramana,Madanapalle</em>
+
+          <h2 class="testimonial-text">By Magic farm,I was get the Hygenic and Organic Farm foods within the 24 hours.</h2>
+
+
+
+        </div>
+
+        <div class="carousel-item  cont">
+          <img class="testimonials-icon" src="images/images (1).jfif" alt="lady-profile"><br>
+
+          <em>Shreya, visakhapatnam</em>
+
+          <h2 class="testimonial-text">In this panademic situation,Magic farm helps me a lot by producing their healthy Organic Food to our door. </h2>
+
+
+
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+        <span class="sr-only">Previous</span>
+
+      </a>
+
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+        <span class="sr-only">Next</span>
+
+      </a>
+
+    </div>
+  </section>
 
   <section class="footer-sec">
     <div class="footer">
       <div class="row" id="div-row">
-        <div class="col-lg-4 col-md-6 col-sm-6" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:-400px;" >
+        <div class="col-lg-4 col-md-6 col-sm-6 l1" >
 
 
           <h5 style="text-align:left;color:orange;">About us</h5>
-          <p class="sub-info" style="text-align:justify">Magic Farm is committed to being a trustworthy & Innovative leader by providing genuine True wellness products. We work with Thousands of small farmers in India to cultivate ten of thousands of
+          <p class="sub-info" style="text-align:left">Magic Farm is committed to being a trustworthy & Innovative leader by providing genuine True wellness products. We work with Thousands of small farmers in India to cultivate ten of thousands of
             acres of sustainable Organic Farmland.
           </p>
           <h5 style="text-align:left;color:orange;">Contact</h5>
@@ -287,17 +378,17 @@ i.async=!0,i.type="text/javascript",i.src="https://app.artibot.ai/loader.js",e.g
 
             <ul class="list-line">
 
-              <li class="lists">
+              <li class="sub-info1">
                 <i id="icon" class="fas fa-phone-square-alt"></i><span id="text-link"><a class="no" href="tel:8317520094">+91-8317520094</a></span><br>
               </li>
 
-              <li class="lists">
+              <li class="sub-info1">
                 <i id="icon" class="fas fa-envelope"></i><span id="text-link"><a class="no" href="mailto:priyaboddeti1998@gmail.com"> priyaboddeti1998@gmail.com </a></span>
               </li>
             </ul>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 center" data-center-center="opacity:1;bottom:0;" data-0-bottom="opacity:0;bottom:-400px;">
+        <div class="col-lg-4 col-md-6 col-sm-6 center mid" >
           <div class="Info">
             <h5 style="color:orange" ; "text-align:left">Information</h5>
 
@@ -306,18 +397,18 @@ i.async=!0,i.type="text/javascript",i.src="https://app.artibot.ai/loader.js",e.g
 
 
               <p class="links"><a class="no" href="about-us/index.html">About-us </a></p>
-              <p class="links"> <a class="no" href="#">Home</a></p>
+              <p class="links"><a class="no" href="shop/index.html">Shop</a></p>
               <p class="links"><a class="no" href="Blog/index.html">Blog</a></p>
               <p class="links"><a class="no" href="News/index.html">News</a></p>
-              <p class="links"><a class="no" href="#">Cart</a></p>
-              <p class="links"><a  class="no"href="#">Sign-in</a></p>
+
+
             </div>
 
           </div>
         </div>
 
 
-        <div class="col-lg-4 col-md-6 col-sm-6" data-0-bottom="opacity:1;left:0;" data-300-bottom="opacity:0;left:400px;">
+        <div class="col-lg-4 col-md-6 col-sm-6" data-center-center="opacity:1;left:0;" data-0-bottom="opacity:0;left:400px;">
 
 
           <div class="card">
@@ -329,17 +420,17 @@ i.async=!0,i.type="text/javascript",i.src="https://app.artibot.ai/loader.js",e.g
                 <label class="label" for="Name"><b class="text-1">Name</b></label>
               </div>
 
-              <input class="input-field" type="text"  name="usrnm">
+              <input class="input-field" type="text" name="usrnm">
             </div>
 
             <div class="input-container">
 
               <div class="txt">
-           <i class="fas fa-envelope"></i>
+                <i class="fas fa-envelope"></i>
                 <label class="label" for="Name"><b class="text-1">Email</b></label>
               </div>
 
-              <input class="input-field" type="text"  name="usrnm">
+              <input class="input-field" type="text" name="usrnm">
             </div>
             <div class="input-container">
               <div class="txt">
@@ -347,7 +438,7 @@ i.async=!0,i.type="text/javascript",i.src="https://app.artibot.ai/loader.js",e.g
                 <label class="label" for="Name"><b class="text-1">Phone Number</b></label>
               </div>
 
-              <input class="input-field" type="text"  name="usrnm">
+              <input class="input-field" type="text" name="usrnm">
             </div>
             <div class="input-container">
               <div class="txt">
@@ -358,29 +449,26 @@ i.async=!0,i.type="text/javascript",i.src="https://app.artibot.ai/loader.js",e.g
               <input class="input-field" type="text-area" name="usrnm">
             </div>
             <div class="input-container">
-              <button type="button" class="button btn btn-outline-orange">Submit</button>
+              <a class="abt-us" href="" role="button">Submit</a>
 
             </div>
-            </div>
           </div>
-          </div>
-
-
-        <div class="social" >
-          <h5 style="color:orange;">social media</h5>
-          <a href="" class="soc-icon fab fa-facebook-f" ></a>
-          <a href="" class="soc-icon fab fa-instagram"></a>
-          <a href="" class="soc-icon fab fa-twitter"></a>
-          <a href="" class="soc-icon far fa-envelope"></a>
-          <p>© Copyright 2021 Magic Farm</p>
         </div>
+      </div>
+
+
+      <div class="social">
+        <h5 style="color:orange;">social media</h5>
+        <a href="" class="soc-icon fab fa-facebook-f"></a>
+        <a href="" class="soc-icon fab fa-instagram"></a>
+        <a href="" class="soc-icon fab fa-twitter"></a>
+        <a href="" class="soc-icon far fa-envelope"></a>
+        <p>© Copyright 2021 Magic Farm</p>
+      </div>
   </section>
 
-  <script src="skrollr.js"></script>
-  <script type="text/javascript">
-    var s = skrollr.init();
-    </script>
 
 
 </body>
+
 </html>

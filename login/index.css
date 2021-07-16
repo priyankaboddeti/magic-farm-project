@@ -1,74 +1,102 @@
-nav{
-  background:white;
+/*NAVBAR*/
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: 'Montserrat', serif;
+  background-color:#B1D056;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  position: relative;
+  font-family: "Montserrat", serif;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: 'Montserrat'
+}
+
+nav {
+  background: white;
   height: 100px;
   width: 100%;
   z-index: 1;
-  top:0px;
+  top: 0px;
+  border-bottom: 2px solid green;
+}
 
-  border-bottom:2px solid green;
-}
-.logo
-{
+.logo {
   padding-top: 8px;
-  padding-left: 30px;
+  padding-left: 20px;
 }
-/*label.logo{
-  color:green;
-  font-size: 35px;
-  line-height: 80px;
-  padding: 0 100px;
-  font-weight: bold;
-}*/
-nav ul{
-  font-family:'Montserrat', san-serif;
-  font-weight:500;
-  margin-top: 0px;
+
+
+nav ul {
+  font-family: 'Montserrat', serif;
+  font-weight: 500;
+  margin-top: 28px;
   font-size: 20px;
   float: right;
-  margin-right: 20px;
-}
-nav ul li{
-  display: inline-block;
-  line-height:70px;
-  margin: 0 5px;
 
+  margin-right: 5px;
+  margin-bottom: 10px;
 }
-nav ul li a{
-  color:green;
+
+nav ul li {
+  display: inline-block;
+  line-height: 30px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: orange;
   font-size: 17px;
-  padding: 7px 13px;
+  padding-bottom: 3px;
+  padding-top: 12px ;
+  padding-left:12px;
+  padding-right: 12px;
   border-radius: 3px;
   text-transform: uppercase;
 }
 
-a.active,a:hover{
-  background:white;
+nav ul li a.active {
+  border-bottom: 3px solid orange;
+}
+
+a.active, a:hover {
+  background: white;
   transition: .5s;
   text-decoration: none;
-  color:inherit;
-
+  color: inherit;
 }
-.checkbtn{
+
+.checkbtn {
   font-size: 30px;
-  color:green;
+  color: green;
   float: right;
-  line-height: 80px;
+  line-height: 100px;
   margin-right: 40px;
   cursor: pointer;
   display: none;
+  height: 50px;
 }
-#check{
+
+#check {
   display: none;
 }
+
 li a, .dropbtn {
   display: inline-block;
-  color: green;
+  color: Orange;
   text-align: center;
-  padding: 14px 16px;
+  padding: 12px 10px;
   text-decoration: none;
 }
-
-
 
 li.dropdown {
   display: inline-block;
@@ -78,85 +106,93 @@ li.dropdown {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 20px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  min-width: 40px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
   color: black;
-  padding: 0px 8px;
+  padding: 12px 10px;
   text-decoration: none;
   display: block;
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color:#FFA33E;}
+.dropdown-content a:hover {
+  background-color: #FFA33E;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
-@media (max-width: 952px){
-  label.logo{
+
+@media (max-width: 952px) {
+  .logo {
     font-size: 30px;
-    padding-left: 50px;
+    padding-left: 10px;
+    height: 90px;
+    width: 180px;
   }
-  nav ul li a{
+
+  nav ul li a {
     font-size: 16px;
   }
 }
-@media (max-width: 858px){
-  .checkbtn{
+
+@media (max-width: 858px) {
+  .checkbtn {
     display: block;
+    font-size: 30px;
+    height: 40px;
   }
-  ul{
+
+  ul {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background:white;
-
+    background: white;
     top: 80px;
     left: -100%;
+    padding-top: 20px;
     text-align: center;
     transition: all .5s;
   }
-  nav ul li{
+
+  nav ul li {
     display: block;
-    margin: 50px 0;
-    line-height: 30px;
+    margin: 19px 0;
+    line-height: 19px;
   }
-  nav ul li a{
+
+  li.dropdown {
+    margin: 19px 0;
+    line-height: 19px;
+    margin-top: 0px;
+  }
+
+  nav ul li a {
     font-size: 20px;
   }
 
-    a.active{
+  a.active {
     background: none;
-    color:blue;
+    color: black;
   }
-  #check:checked ~ ul{
-    left: 0;
-    z-index:1;
 
+  #check:checked~ul {
+    left: 0;
+    z-index: 1;
   }
 }
 .container-fluid
 {
-  padding-bottom: 100px;
+  padding-bottom: 70px;
+  padding-top: 30px;
 }
-.card
-{
-  width:80%;
-  top:50px;
-  bottom:100px;
-  left:136px;
-  height:auto;
-  border: 1px solid green;
-  background: #4DA0B0;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #D39D38, #4DA0B0);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #D39D38, #4DA0B0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
+.img{
+  height:312px;
+  width:480px;
 }
 .row{
   padding:0px 15px;
@@ -171,16 +207,19 @@ background: linear-gradient(to right, #D39D38, #4DA0B0); /* W3C, IE 10+/ Edge, F
 .col1{
   text-align: center;
   width:100%;
-  padding-left: 0px;
+
+  padding-top: 90px;
 }
-.img{
-  height:528px;
-  z-index:-1;
-}
+
 .col2
 {
-  width:100%;
+
   padding-left: 5px;
+
+}
+.with{
+  padding-left:0px;
+  padding-top:60px;
 }
 
 
@@ -189,35 +228,38 @@ background: linear-gradient(to right, #D39D38, #4DA0B0); /* W3C, IE 10+/ Edge, F
   padding-top: 7px;
 }
 .left-text{
-  padding-top: 10px;
+  padding-top: 15px;
   padding-bottom: 3px;
 
 }
 .name{
-  font-family:"san-serif";
-  font-weight: bold;
-  font-size: 18px;
+  font-family:'Montserrat',serif;
+  font-weight: 600;
+  font-size: 17px;
 }
 .box{
 
-  width:80%;
-  height:50px;
+  width:60%;
+  height:45px;
 }
 .col-lg-2
 {
-  padding:10px;
+  margin-right:-31px;
+  padding-top: 10px;
+  padding-right:10px;
 }
 .button1
 {
-  padding-top: 20px;
+  padding-top: 30px;
+  padding-left: 0px;
 
 }
 
 
-         .button {background-image: linear-gradient(to right, #16A085 0%, #F4D03F  51%, #16A085  100%)}
+
          .button {
-            margin: 10px;
-            padding: 15px 45px;
+
+            padding: 13px 41px;
             text-align: center;
             text-transform: uppercase;
             transition: 0.5s;
@@ -226,6 +268,7 @@ background: linear-gradient(to right, #D39D38, #4DA0B0); /* W3C, IE 10+/ Edge, F
             box-shadow: 0 0 20px #eee;
             border-radius: 10px;
             display: block;
+            background-color: orange;
           }
 
           .button:hover {
@@ -273,4 +316,172 @@ background: linear-gradient(to right, #D39D38, #4DA0B0); /* W3C, IE 10+/ Edge, F
 .google {
   background-color: #dd4b39;
   color: white;
+}
+@media (max-width:940px)
+{
+  .col2
+  {
+    padding-left: 220px;
+  }
+  .box{
+
+    width:80%;
+    height:45px;
+  }
+}
+
+@media (min-width:480px)
+{
+  .col2
+  {
+    padding-left: 70px;
+  }
+}
+
+
+/* footer section */
+.footer-sec {
+  background-color: Black;
+  color: white;
+}
+
+.footer {
+  padding: 30px;
+  text-align: left;
+}
+
+#div-row {
+  padding-top: 30px;
+}
+
+.contact {
+  text-align: left;
+  color: orange;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+#text-link a:hover {
+  color: orange;
+}
+
+#icon {
+  vertical-align: middle;
+}
+
+.sub-info {
+  padding-top: 5px;
+  text-align: left;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.list-line {
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+
+.sub-info1 {
+  padding-top: 0px;
+  text-align: left;
+  text-decoration: none;
+}
+
+.no {
+  color: white;
+  padding-left: 5px;
+  padding-right: 0px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+}
+
+a:hover {
+  color: orange;
+  background: none;
+  color: inherit
+}
+
+.links a:hover {
+  color: orange;
+}
+
+.center {
+  padding-left: 80px;
+}
+
+.card {
+  padding-top: 10px;
+  padding-left: 20px;
+  height: 330px;
+  width: 280px;
+  background-color: black;
+  border: 2px solid white;
+}
+
+.input-container {
+  border-radius: 50%;
+  padding-top: 5px;
+  color: orange;
+}
+
+.label {
+  padding-left: 5px;
+  margin-bottom: 0px;
+}
+
+.txt {
+  text-align: left;
+  padding-left: 5px;
+  font-size: 15px;
+  font-weight: lighter;
+  padding-bottom: 0px;
+}
+
+.input-field {
+  padding-top: 10px;
+  height: 25px;
+  width: 90%;
+}
+
+.abt-us:link, .abt-us:visited {
+  background-color: Orange;
+  border-radius: 10px;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid white;
+}
+
+.abt-us:hover, .abt-us:active {
+  background-color: #F7CE68;
+  ;
+}
+
+.social {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.soc-icon {
+  margin: 20px 10px;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+
+.soc-icon:hover {
+  color: orange;
+}
+@media screen and (max-width:480px){
+nav ul{
+  margin-top: 19px;
+}
+}
+@media screen and (min-width:480px){
+.mid{
+  padding-left: 10px;
+}
 }
