@@ -586,6 +586,10 @@ a:hover {
 .soc-icon:hover {
   color: orange;
 }
+.mid
+{
+  padding-left: 40px;
+}
 
 
 @media screen and (max-width:480px){
