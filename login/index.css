@@ -479,16 +479,17 @@ a:hover {
 nav ul{
   margin-top: 19px;
 }
+.col1{
+  padding-top: 10px;
+}
 }
 @media screen and (min-width:480px){
 .mid{
   padding-left: 10px;
 }
-.col1{
-  padding-top: 10px;
+
 }
-}
-@media screen and (min-width:360px){
+@media screen and (max-width:360px){
   .img{
     height: 212px;
     width: 300px;
@@ -502,5 +503,10 @@ nav ul{
 }
 .header {
     padding-top: 20px;
+}
+}
+@media screen and (max-width:480px){
+.col1{
+  padding-top: 50px;
 }
 }
