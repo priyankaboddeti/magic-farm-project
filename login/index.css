@@ -484,4 +484,23 @@ nav ul{
 .mid{
   padding-left: 10px;
 }
+.col1{
+  padding-top: 10px;
+}
+}
+@media screen and (min-width:360px){
+  .img{
+    height: 212px;
+    width: 300px;
+  }
+  .col1{
+    padding-top: 10px;
+  }
+  .col2 {
+    padding-left: 30px;
+
+}
+.header {
+    padding-top: 20px;
+}
 }
