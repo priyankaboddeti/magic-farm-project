@@ -367,7 +367,9 @@ form{
   padding-left: 0px;
   margin-left: -25px;
 }
-
+.text-1{
+  color:Orange;
+}
 @media (max-width: 1180px) {
   .check-box {
     padding-top:31px;
