@@ -248,6 +248,12 @@ h1:hover{
     text-align: justify;
   }
 }
+@media (max-width: 360px){
+  .center-text{
+    top:5%;
+    font-size: 31px;
+  }
+}
 /* footer section */
 .footer-sec {
   background-color: Black;

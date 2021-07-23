@@ -28,6 +28,7 @@ nav {
   z-index: 1;
   top: 0px;
   border-bottom: 2px solid green;
+  position: sticky;
 }
 
 .logo {
@@ -160,7 +161,9 @@ li.dropdown {
     text-align: center;
     transition: all .5s;
   }
-
+nav ul{
+  margin-top: 20px;
+}
   nav ul li {
     display: block;
     margin: 19px 0;
